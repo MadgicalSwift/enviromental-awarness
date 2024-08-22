@@ -37,16 +37,16 @@ export class ChatbotService {
         await this.createTopicButtonsFromQuizData(from);
       }else if(button_response.body === "Not right now."){
         this.message.endSession(from, button_response.body);
-      }else if(this.topicListShown && button_response.body === "Tell me more."){
+      }else if (this.quizResponse.length > 0) {
+        // Handle the quiz answer if we're in the middle of a quiz
+        await this.handleQuizResponse(from, button_response);
+    }else if(this.topicListShown && button_response.body === "Tell me more."){
         await this.handleTellMeMore(from);
       }else if(this.topicListShown && button_response.body === "Got it, let's quiz!"){
         await this.startQuiz(from);
       }else if(this.topicListShown){
   
         await this.handleTopicClick(from, button_response);
-      }else if (this.quizResponse.length > 0) {
-          // Handle the quiz answer if we're in the middle of a quiz
-          await this.handleQuizResponse(from, button_response);
       }
     }else{
       if (userData.language === 'english' || userData.language === 'hindi') {
@@ -75,26 +75,27 @@ export class ChatbotService {
 
     this.quizResponse = []; // Reset quiz responses
 
-    const askQuestion = async (questionIndex: number) => {
-        if (questionIndex < questions.length) {
-            const question = questions[questionIndex];
-            const button_data = {
-                buttons: question.options.map(option => ({
-                    type: 'solid',
-                    body: option,
-                    reply: option,
-                })),
-                body: question.question
-            };
-            this.quizResponse.push({ questionIndex, userAnswer: null });
-            return this.createButtons(from, button_data);
-        } else {
-            return this.endQuiz(from); // All questions have been answered
-        }
-    };
-
-    return askQuestion(currentQuestionIndex);
+    this.askQuestion(from, currentQuestionIndex);
 }
+
+  private async askQuestion (from: string, questionIndex: number){
+  const questions = data.topics[this.topicSelected].questions;
+  if (questionIndex < questions.length) {
+      const question = questions[questionIndex];
+      const button_data = {
+          buttons: question.options.map(option => ({
+              type: 'solid',
+              body: option,
+              reply: option,
+          })),
+          body: question.question
+      };
+      this.quizResponse.push({ questionIndex, userAnswer: null });
+      return this.createButtons(from, button_data);
+  } else {
+      return this.endQuiz(from); // All questions have been answered
+  }
+};
 
 private async handleQuizResponse(from: string, button_response: any): Promise<void> {
     const questions = data.topics[this.topicSelected].questions;
@@ -102,6 +103,8 @@ private async handleQuizResponse(from: string, button_response: any): Promise<vo
     const currentQuestion = questions[currentQuestionIndex];
 
     this.quizResponse[currentQuestionIndex].userAnswer = button_response.body;
+    this.quizResponse[currentQuestionIndex].isCorrect = button_response.body === currentQuestion.correctAnswer;
+    
 
     if (button_response.body === currentQuestion.correctAnswer) {
         await this.message.sendTextMessage(from, "Correct!");
@@ -109,19 +112,19 @@ private async handleQuizResponse(from: string, button_response: any): Promise<vo
         await this.message.sendTextMessage(from, `Incorrect. The correct answer is: ${currentQuestion.correctAnswer}`);
     }
 
-    return this.startQuiz(from); // Ask the next question
+    this.askQuestion(from, currentQuestionIndex+1);
 }
 
 private async endQuiz(from: string): Promise<void> {
-    await this.message.sendTextMessage(from, "You've completed the quiz! Here are your results:");
 
-    this.quizResponse.forEach(async (response, index) => {
-        const question = data.topics[this.topicSelected].questions[index];
-        await this.message.sendTextMessage(from, `Q: ${question.question}`);
-        await this.message.sendTextMessage(from, `Your answer: ${response.userAnswer}`);
-        await this.message.sendTextMessage(from, `Correct answer: ${question.correctAnswer}`);
+    let correctAnsCount = 0;
+    this.quizResponse.forEach(response => {
+      if(response.isCorrect){
+        correctAnsCount++;
+      }
     });
-
+    await this.message.sendTextMessage(from, `You’ve completed the quiz on ${data.topics[this.topicSelected]}! Here’s how you did:`);
+    await this.message.sendTextMessage(from, `You answered ${correctAnsCount} out of ${data?.topics[this.topicSelected]?.questions?.length} questions correctly!`);
     this.topicSelected = undefined; // Reset topic selection
     this.quizResponse = []; // Reset quiz responses
     this.topicListShown = false; // Reset topic list shown state

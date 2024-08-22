@@ -1,16 +1,16 @@
-import ChatbotService from './chat/chatbot.service';
-import { Body, Controller, Get, Post, Res } from '@nestjs/common';
-import { log } from './common/middleware/logger.help';
+import { Controller, Get, Post, Body, Res } from '@nestjs/common';
 import { Response } from 'express';
+import  ChatbotService  from './chat/chatbot.service'; // Named import
 import { UserService } from './model/user.service';
 import * as dotenv from 'dotenv';
-dotenv.config()
+
+dotenv.config();
+
 @Controller()
 export class AppController {
-  UserService: any;
   constructor(
     private readonly chatbotService: ChatbotService,
-    private readonly langugae: UserService,
+    private readonly language: UserService,
   ) {}
 
   @Get('/api/status')
@@ -24,11 +24,10 @@ export class AppController {
   }
 
   @Post('/message')
-  async handelUserMessage(@Body() body, @Res() res): Promise<void> {
+  async handleUserMessage(@Body() body, @Res() res: Response): Promise<void> {
     try {
       const { from, text } = body;
-      this.chatbotService.processMessage(body);
-      log(body.from, text.body);
+      await this.chatbotService.processMessage(body);
       res.status(200).send({
         status: {
           code: 0,
