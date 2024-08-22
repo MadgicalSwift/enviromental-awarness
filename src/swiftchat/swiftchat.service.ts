@@ -23,10 +23,13 @@ export class SwiftchatMessageService extends MessageService {
   }
   async sendWelcomeMessage(from: string, language: string) {
     const localisedStrings = LocalizationService.getLocalisedString(language);
+    console.log("localisedStrings: ", localisedStrings);
     const requestData = this.prepareRequestData(
       from,
       localisedStrings.welcomeMessage,
     );
+
+    console.log("request data from here: ", requestData)
 
     const response = await this.sendMessage(
       this.baseUrl,
@@ -38,9 +41,59 @@ export class SwiftchatMessageService extends MessageService {
 
   async sendLanguageChangedMessage(from: string, language: string) {
     const localisedStrings = LocalizationService.getLocalisedString(language);
+    console.log("localisedStrings: ", localisedStrings);
     const requestData = this.prepareRequestData(
       from,
-      localisedStrings.select_language,
+      localisedStrings.language_changed,
+    );
+
+    console.log("request data from here: ", requestData)
+    const response = await this.sendMessage(
+      this.baseUrl,
+      requestData,
+      this.apiKey,
+    );
+    return response;
+  }
+
+  async startEnvironmentSession(from: string, language: string) {
+    const localisedStrings = LocalizationService.getLocalisedString(language);
+    console.log("localisedStrings: ", localisedStrings);
+    const requestData = this.prepareRequestData(
+      from,
+      localisedStrings.choose_topics,
+    );
+
+    console.log("request data from here: ", requestData)
+    const response = await this.sendMessage(
+      this.baseUrl,
+      requestData,
+      this.apiKey,
+    );
+    return response;
+  }
+
+  async endSession(from: string, language: string) {
+    const localisedStrings = LocalizationService.getLocalisedString(language);
+    console.log("localisedStrings: ", localisedStrings);
+    const requestData = this.prepareRequestData(
+      from,
+      localisedStrings.end_session,
+    );
+
+    console.log("request data from here: ", requestData)
+    const response = await this.sendMessage(
+      this.baseUrl,
+      requestData,
+      this.apiKey,
+    );
+    return response;
+  }
+
+  async sendTextMessage(from: string, message: string) {
+    const requestData = this.prepareRequestData(
+      from,
+      message,
     );
 
     const response = await this.sendMessage(

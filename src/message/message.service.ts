@@ -13,6 +13,7 @@ export abstract class MessageService {
   }
 
   async sendMessage(baseUrl: string, requestData: any, token: string) {
+    console.log("request data: ", requestData);
     try {
       const response = await axios.post(baseUrl, requestData, {
         headers: {
@@ -28,4 +29,7 @@ export abstract class MessageService {
 
   abstract sendWelcomeMessage(from: string, language: string);
   abstract sendLanguageChangedMessage(from: string, language: string);
+  abstract startEnvironmentSession(from: string, language: string);
+  abstract endSession(from: string, language: string);
+  abstract sendTextMessage(from: string, message: string);
 }
