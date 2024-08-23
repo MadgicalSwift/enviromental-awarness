@@ -33,7 +33,13 @@ export class ChatbotService {
     const userData = await this.userService.findUserByMobileNumber(from);
     const { intent = undefined, entities = undefined } = text? this.intentClassifier.getIntent(text.body): {};
     if(button_response){
-      if (button_response.body === "Yes, let's start!"){
+      if(button_response.body === "Next question"){
+        const currentQuestionIndex = this.quizResponse.length;
+        this.askQuestion(from, currentQuestionIndex);
+      }else if(button_response.body === "Retake Quiz"){
+        await this.startQuiz(from);
+      }else if (button_response.body === "Choose Another Topic" || button_response.body === "Yes, let's start!" || button_response.body === "Go to topic selection"){
+        this.resetState();
         await this.createTopicButtonsFromQuizData(from);
       }else if(button_response.body === "Not right now."){
         this.message.endSession(from, button_response.body);
@@ -55,7 +61,6 @@ export class ChatbotService {
       if (intent === 'greeting') {
         await this.message.sendWelcomeMessage(from, userData.language);
         // await this.createLanguageButton(from);
-        // this.createTopicButtonsFromQuizData(from);
         await this.createYesNoButton(from);
       } else if (intent === 'select_language') {
         const selectedLanguage = entities[0];
@@ -76,28 +81,34 @@ export class ChatbotService {
     this.quizResponse = []; // Reset quiz responses
 
     this.askQuestion(from, currentQuestionIndex);
-}
+  }
+
+  private resetState(){
+    this.quizResponse = []; // Reset quiz responses
+    this.topicListShown = false; // Reset topic list shown state
+  }
 
   private async askQuestion (from: string, questionIndex: number){
-  const questions = data.topics[this.topicSelected].questions;
-  if (questionIndex < questions.length) {
-      const question = questions[questionIndex];
-      const button_data = {
-          buttons: question.options.map(option => ({
-              type: 'solid',
-              body: option,
-              reply: option,
-          })),
-          body: question.question
-      };
-      this.quizResponse.push({ questionIndex, userAnswer: null });
-      return this.createButtons(from, button_data);
-  } else {
-      return this.endQuiz(from); // All questions have been answered
-  }
-};
+    const questions = data.topics[this.topicSelected].questions;
+    if (questionIndex < questions.length) {
+        const question = questions[questionIndex];
+        const button_data = {
+            buttons: question.options.map(option => ({
+                type: 'solid',
+                body: option,
+                reply: option,
+                
+            })),
+            body: question.question
+        };
+        this.quizResponse.push({ questionIndex, userAnswer: null });
+        return this.createButtons(from, button_data);
+    } else {
+        return this.endQuiz(from); // All questions have been answered
+    }
+  };
 
- private async handleQuizResponse(from: string, button_response: any): Promise<void> {
+private async handleQuizResponse(from: string, button_response: any): Promise<void> {
     const questions = data.topics[this.topicSelected].questions;
     const currentQuestionIndex = this.quizResponse.length - 1;
     const currentQuestion = questions[currentQuestionIndex];
@@ -107,15 +118,40 @@ export class ChatbotService {
     
 
     if (button_response.body === currentQuestion.correctAnswer) {
-        await this.message.sendTextMessage(from, "Correct!");
+        await this.message.sendTextMessage(from, currentQuestion.responseMessage);
+        await this.message.sendTextMessage(from, currentQuestion.explanation);  
+        if(currentQuestionIndex === questions.length-1){
+          this.endQuiz(from);
+        }
+        await this.createTopicSelectionAndNextQuesBtn(from);
     } else {
-        await this.message.sendTextMessage(from, `Incorrect. The correct answer is: ${currentQuestion.correctAnswer}`);
+        await this.message.sendTextMessage(from, `Not quite. The correct answer is : ${currentQuestion.correctAnswer}`);
+        await this.message.sendTextMessage(from, currentQuestion.explanation); 
+        if(currentQuestionIndex === questions.length-1){
+          this.endQuiz(from);
+        } 
+        await this.createTopicSelectionAndNextQuesBtn(from);
     }
+}
 
-    this.askQuestion(from, currentQuestionIndex+1);
- }
-
-
+private async createTopicSelectionAndNextQuesBtn(from: string){
+  const button_data = {
+    buttons: [
+      { 
+        type: 'solid',
+        body: "Go to topic selection",
+        reply: "Go to topic selection",
+      },
+      { 
+        type: 'solid',
+        body: "Next question",
+        reply: "Next question",
+      }
+    ],
+    body: " "
+  };  
+  this.createButtons(from, button_data);
+}
 
 private async endQuiz(from: string): Promise<void> {
 
@@ -125,14 +161,27 @@ private async endQuiz(from: string): Promise<void> {
         correctAnsCount++;
       }
     });
-    await this.message.sendTextMessage(from, `You’ve completed the quiz on ${data.topics[this.topicSelected]}! Here’s how you did:`);
+    await this.message.sendTextMessage(from, `You’ve completed the quiz on ${data.topics[this.topicSelected].name}! Here’s how you did:`);
     await this.message.sendTextMessage(from, `You answered ${correctAnsCount} out of ${data?.topics[this.topicSelected]?.questions?.length} questions correctly!`);
-    this.topicSelected = undefined; // Reset topic selection
-    this.quizResponse = []; // Reset quiz responses
-    this.topicListShown = false; // Reset topic list shown state
+    this.resetState();
 
-    // Optionally, prompt user for next action
-    await this.message.sendTextMessage(from, "Would you like to try another quiz?");
+    const button_data = {
+      buttons: [
+        {
+            type: 'solid',
+            body: "Retake Quiz",
+            reply: "Retake Quiz",
+        },
+        {
+          type: 'solid',
+          body: "Choose Another Topic",
+          reply: "Choose Another Topic",
+      }
+        ],
+        body: " "
+    }
+
+    await this.createButtons(from, button_data);
 }
 
 

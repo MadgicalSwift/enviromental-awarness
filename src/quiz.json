@@ -1,327 +1,236 @@
 {
-    "topics": [
-      {
-        "name": "Recycling",
-        "explanation": "Learn about the importance of recycling and how it helps the environment.",
-        "fullExplanation": "Recycling is the process of converting waste materials into new materials and objects. It helps reduce pollution, save energy, and conserve natural resources.",
-        "questions": [
-          {
-            "question": "Which of the following can be recycled?",
-            "options": ["Plastic bottles", "Food waste", "Old clothes", "All of the above"],
-            "correctAnswer": "Plastic bottles",
-            "explanation)":"bjnckwemdle"
-          },
-          {
-            "question": "What color bin is typically used for recycling paper?",
-            "options": ["Green", "Blue", "Red", "Yellow"],
-            "correctAnswer": "Blue"
-          },
-          {
-            "question": "Which material cannot be recycled?",
-            "options": ["Glass", "Metal", "Plastic", "Styrofoam"],
-            "correctAnswer": "Styrofoam"
-          },
-          {
-            "question": "What is the first step in the recycling process?",
-            "options": ["Collection", "Sorting", "Processing", "Reusing"],
-            "correctAnswer": "Collection"
-          },
-          {
-            "question": "What percentage of energy can be saved by recycling aluminum?",
-            "options": ["10%", "25%", "50%", "95%"],
-            "correctAnswer": "95%"
-          },
-          {
-            "question": "Which of these items is NOT recyclable?",
-            "options": ["Newspaper", "Plastic bags", "Glass bottles", "Cardboard"],
-            "correctAnswer": "Plastic bags"
-          },
-          {
-            "question": "What does the recycling symbol with three arrows represent?",
-            "options": ["Reduce", "Reuse", "Recycle", "All of the above"],
-            "correctAnswer": "All of the above"
-          },
-          {
-            "question": "Recycling one ton of paper can save how many trees?",
-            "options": ["5 trees", "10 trees", "17 trees", "25 trees"],
-            "correctAnswer": "17 trees"
-          },
-          {
-            "question": "Which of the following metals is commonly recycled?",
-            "options": ["Iron", "Aluminum", "Copper", "All of the above"],
-            "correctAnswer": "All of the above"
-          },
-          {
-            "question": "Recycling helps to reduce the need for what?",
-            "options": ["New raw materials", "Waste disposal", "Energy consumption", "All of the above"],
-            "correctAnswer": "All of the above"
-          },
-          {
-            "question": "What is 'downcycling'?",
-            "options": ["Recycling into a lower-quality product", "Recycling into the same product", "Not recycling at all", "None of the above"],
-            "correctAnswer": "Recycling into a lower-quality product"
-          },
-          {
-            "question": "Which of these is a benefit of recycling?",
-            "options": ["Reduces landfill waste", "Conserves natural resources", "Saves energy", "All of the above"],
-            "correctAnswer": "All of the above"
-          },
-          {
-            "question": "Which plastic recycling code is the most widely accepted for recycling?",
-            "options": ["1 (PET)", "2 (HDPE)", "3 (PVC)", "7 (Other)"],
-            "correctAnswer": "1 (PET)"
-          },
-          {
-            "question": "Which country is the largest producer of plastic waste?",
-            "options": ["China", "United States", "India", "Brazil"],
-            "correctAnswer": "United States"
-          },
-          {
-            "question": "What is composting?",
-            "options": ["Recycling organic waste into soil", "Burning waste", "Throwing away food scraps", "None of the above"],
-            "correctAnswer": "Recycling organic waste into soil"
-          },
-          {
-            "question": "How long does it take for glass to decompose if not recycled?",
-            "options": ["100 years", "500 years", "1 million years", "Never"],
-            "correctAnswer": "Never"
-          },
-          {
-            "question": "What is the main reason people recycle?",
-            "options": ["It's a legal requirement", "It saves money", "It's good for the environment", "It's easy to do"],
-            "correctAnswer": "It's good for the environment"
-          },
-          {
-            "question": "Recycling one ton of glass saves how many pounds of carbon dioxide from being released?",
-            "options": ["200 pounds", "300 pounds", "500 pounds", "700 pounds"],
-            "correctAnswer": "700 pounds"
-          },
-          {
-            "question": "What is 'e-waste'?",
-            "options": ["Electronic waste", "Economic waste", "Ecological waste", "Environmental waste"],
-            "correctAnswer": "Electronic waste"
-          },
-          {
-            "question": "Which of the following is a step in the recycling process?",
-            "options": ["Collection", "Sorting", "Processing", "All of the above"],
-            "correctAnswer": "All of the above"
-          }
-        ]
-      },
-      {
-        "name": "Climate Change",
-        "explanation": "Understand the impact of climate change and what can be done to mitigate it.",
-        "fullExplanation": "Climate change refers to significant changes in global temperatures and weather patterns over time. While climate change is a natural phenomenon, scientific evidence shows that human activities are currently driving an unprecedented rate of change.",
-        "questions": [
-          {
-            "question": "What is the main cause of recent climate change?",
-            "options": ["Natural variations", "Human activities", "Solar cycles", "Volcanic eruptions"],
-            "correctAnswer": "Human activities"
-          },
-          {
-            "question": "Which greenhouse gas is the most abundant in Earth's atmosphere?",
-            "options": ["Carbon dioxide", "Methane", "Nitrous oxide", "Water vapor"],
-            "correctAnswer": "Water vapor"
-          },
-          {
-            "question": "What is the primary source of carbon dioxide emissions?",
-            "options": ["Deforestation", "Burning fossil fuels", "Agriculture", "Industrial processes"],
-            "correctAnswer": "Burning fossil fuels"
-          },
-          {
-            "question": "Which of the following is a consequence of climate change?",
-            "options": ["Rising sea levels", "Increased extreme weather events", "Melting polar ice", "All of the above"],
-            "correctAnswer": "All of the above"
-          },
-          {
-            "question": "What is the term for the gradual increase in Earth's average temperature?",
-            "options": ["Global warming", "Climate variability", "Ocean acidification", "Greenhouse effect"],
-            "correctAnswer": "Global warming"
-          },
-          {
-            "question": "Which international agreement aims to limit global temperature rise?",
-            "options": ["Kyoto Protocol", "Paris Agreement", "Montreal Protocol", "Copenhagen Accord"],
-            "correctAnswer": "Paris Agreement"
-          },
-          {
-            "question": "Which sector is the largest contributor to greenhouse gas emissions?",
-            "options": ["Transportation", "Energy production", "Agriculture", "Manufacturing"],
-            "correctAnswer": "Energy production"
-          },
-          {
-            "question": "What is ocean acidification?",
-            "options": ["Decrease in ocean pH due to increased CO2", "Increase in ocean salinity", "Rising ocean temperatures", "None of the above"],
-            "correctAnswer": "Decrease in ocean pH due to increased CO2"
-          },
-          {
-            "question": "Which renewable energy source does not contribute to climate change?",
-            "options": ["Solar power", "Wind power", "Hydropower", "All of the above"],
-            "correctAnswer": "All of the above"
-          },
-          {
-            "question": "What is a carbon footprint?",
-            "options": ["The total greenhouse gases emitted by an individual", "A type of energy conservation method", "A renewable energy source", "None of the above"],
-            "correctAnswer": "The total greenhouse gases emitted by an individual"
-          },
-          {
-            "question": "Which country is the largest emitter of CO2?",
-            "options": ["United States", "India", "China", "Russia"],
-            "correctAnswer": "China"
-          },
-          {
-            "question": "What is the main effect of melting polar ice caps?",
-            "options": ["Decreased global temperatures", "Rising sea levels", "Increased landmass", "None of the above"],
-            "correctAnswer": "Rising sea levels"
-          },
-          {
-            "question": "Which of the following is a strategy to reduce carbon emissions?",
-            "options": ["Carbon taxing", "Carbon offsetting", "Using renewable energy", "All of the above"],
-            "correctAnswer": "All of the above"
-          },
-          {
-            "question": "What is the greenhouse effect?",
-            "options": ["The trapping of heat in the Earth's atmosphere", "The release of heat from the Earth's core", "The reflection of solar radiation", "None of the above"],
-            "correctAnswer": "The trapping of heat in the Earth's atmosphere"
-          },
-          {
-            "question": "Which gas is most commonly associated with the greenhouse effect?",
-            "options": ["Oxygen", "Nitrogen", "Carbon dioxide", "Methane"],
-            "correctAnswer": "Carbon dioxide"
-          },
-          {
-            "question": "Which of the following can help mitigate climate change?",
-            "options": ["Planting trees", "Reducing energy consumption", "Switching to public transportation", "All of the above"],
-            "correctAnswer": "All of the above"
-          },
-          {
-            "question": "What percentage of global energy comes from renewable sources?",
-            "options": ["10%", "25%", "50%", "75%"],
-            "correctAnswer": "25%"
-          },
-          {
-            "question": "What is deforestation?",
-            "options": ["Cutting down forests for agriculture", "Replanting trees", "Conserving wildlife habitats", "None of the above"],
-            "correctAnswer": "Cutting down forests for agriculture"
-          },
-          {
-            "question": "Which of the following is a renewable energy source?",
-            "options": ["Coal", "Natural gas", "Wind", "Nuclear"],
-            "correctAnswer": "Wind"
-          },
-          {
-            "question": "What is the main goal of the Paris Agreement?",
-            "options": ["To limit global warming to below 2°C", "To eliminate all carbon emissions", "To end deforestation", "To ban fossil fuels"],
-            "correctAnswer": "To limit global warming to below 2°C"
-          }
-        ]
-      },
-      {
-        "name": "Solar Power",
-        "explanation": "Discover how solar power works and its benefits to the environment.",
-        "fullExplanation": "Solar power is energy from the sun that is converted into thermal or electrical energy. It is one of the most abundant and renewable energy sources available.",
-        "questions": [
-          {
-            "question": "What is the primary component of solar panels?",
-            "options": ["Silicon", "Copper", "Aluminum", "Glass"],
-            "correctAnswer": "Silicon"
-          },
-          {
-            "question": "How do solar panels generate electricity?",
-            "options": ["By capturing wind energy", "By converting sunlight into electricity", "By using geothermal energy", "By burning fossil fuels"],
-            "correctAnswer": "By converting sunlight into electricity"
-          },
-          {
-            "question": "Which of the following is a benefit of solar power?",
-            "options": ["Reduces electricity bills", "Reduces carbon footprint", "Requires low maintenance", "All of the above"],
-            "correctAnswer": "All of the above"
-          },
-          {
-            "question": "What is the average lifespan of a solar panel?",
-            "options": ["5-10 years", "10-15 years", "20-25 years", "30-35 years"],
-            "correctAnswer": "20-25 years"
-          },
-          {
-            "question": "Which country is the largest producer of solar energy?",
-            "options": ["United States", "Germany", "China", "India"],
-            "correctAnswer": "China"
-          },
-          {
-            "question": "What is the efficiency range of most commercial solar panels?",
-            "options": ["5-10%", "10-15%", "15-20%", "20-25%"],
-            "correctAnswer": "15-20%"
-          },
-          {
-            "question": "What is the main challenge of solar energy?",
-            "options": ["Initial cost", "Availability at night", "Weather dependency", "All of the above"],
-            "correctAnswer": "All of the above"
-          },
-          {
-            "question": "What type of current do solar panels produce?",
-            "options": ["Alternating current (AC)", "Direct current (DC)", "Pulsating current", "None of the above"],
-            "correctAnswer": "Direct current (DC)"
-          },
-          {
-            "question": "How is solar power stored for later use?",
-            "options": ["In batteries", "In water tanks", "In power grids", "None of the above"],
-            "correctAnswer": "In batteries"
-          },
-          {
-            "question": "Which of the following can solar energy be used for?",
-            "options": ["Heating water", "Generating electricity", "Cooking food", "All of the above"],
-            "correctAnswer": "All of the above"
-          },
-          {
-            "question": "What is a solar inverter?",
-            "options": ["A device that stores solar energy", "A device that converts DC to AC", "A type of solar panel", "A solar tracking system"],
-            "correctAnswer": "A device that converts DC to AC"
-          },
-          {
-            "question": "Which of the following is NOT a type of solar panel?",
-            "options": ["Monocrystalline", "Polycrystalline", "Thin-film", "Hybrid"],
-            "correctAnswer": "Hybrid"
-          },
-          {
-            "question": "What is the main environmental benefit of using solar power?",
-            "options": ["It reduces greenhouse gas emissions", "It increases water usage", "It requires mining", "None of the above"],
-            "correctAnswer": "It reduces greenhouse gas emissions"
-          },
-          {
-            "question": "What time of day is solar power generation at its peak?",
-            "options": ["Morning", "Noon", "Afternoon", "Evening"],
-            "correctAnswer": "Noon"
-          },
-          {
-            "question": "What is a solar farm?",
-            "options": ["A group of solar panels installed together", "A farm that uses solar energy", "A type of solar panel", "None of the above"],
-            "correctAnswer": "A group of solar panels installed together"
-          },
-          {
-            "question": "Which of the following is a disadvantage of solar power?",
-            "options": ["High initial cost", "Requires sunlight", "Intermittent energy supply", "All of the above"],
-            "correctAnswer": "All of the above"
-          },
-          {
-            "question": "What is net metering?",
-            "options": ["Measuring the energy produced by solar panels", "A billing mechanism that credits solar energy users", "A method of tracking solar panel efficiency", "None of the above"],
-            "correctAnswer": "A billing mechanism that credits solar energy users"
-          },
-          {
-            "question": "Which device tracks the sun's movement to maximize energy capture?",
-            "options": ["Solar tracker", "Solar inverter", "Solar array", "Solar cell"],
-            "correctAnswer": "Solar tracker"
-          },
-          {
-            "question": "What is the term for solar energy that is directly used without conversion?",
-            "options": ["Passive solar energy", "Active solar energy", "Solar thermal energy", "None of the above"],
-            "correctAnswer": "Passive solar energy"
-          },
-          {
-            "question": "What is the name of the process where sunlight is converted into electricity?",
-            "options": ["Photosynthesis", "Electrolysis", "Photovoltaic effect", "Thermionic emission"],
-            "correctAnswer": "Photovoltaic effect"
-          }
-        ]
-      }
-    ]
-  }
-  
+  "topics": [
+    {
+      "name": "Recycling",
+      "explanation": "Learn about the importance of recycling and how it helps the environment.",
+      "fullExplanation": "Recycling is the process of converting waste materials into new materials and objects. It helps reduce pollution, save energy, and conserve natural resources.",
+      "questions": [
+        {
+          "question": "Which of the following can be recycled?",
+          "options": ["Plastic bottles", "Food waste", "Old clothes", "All of the above"],
+          "correctAnswer": "Plastic bottles",
+          "responseMessage": "That's right! Plastic bottles can be recycled. :recycle:",
+          "explanation": "Recycling these items helps reduce waste and conserve resources."
+        },
+        {
+          "question": "What color bin is typically used for recycling paper?",
+          "options": ["Green", "Blue", "Red", "Yellow"],
+          "correctAnswer": "Blue",
+          "responseMessage": "That's right! Blue is the color typically used for recycling paper.",
+          "explanation": "Using the correct bin ensures that paper is properly recycled, reducing contamination."
+        },
+        {
+          "question": "Which material cannot be recycled?",
+          "options": ["Glass", "Metal", "Plastic", "Styrofoam"],
+          "correctAnswer": "Styrofoam",
+          "responseMessage": "That's right! Styrofoam cannot be recycled.",
+          "explanation": "Styrofoam is a major pollutant, particularly in marine environments."
+        },
+        {
+          "question": "What is the first step in the recycling process?",
+          "options": ["Collection", "Sorting", "Processing", "Reusing"],
+          "correctAnswer": "Collection",
+          "responseMessage": "That's right! Collection is the first step in the recycling process.",
+          "explanation": "The term 'collection' refers to gathering recyclable materials for processing."
+        },
+        {
+          "question": "What percentage of energy can be saved by recycling aluminum?",
+          "options": ["10%", "25%", "50%", "95%"],
+          "correctAnswer": "95%",
+          "responseMessage": "That's right! Recycling aluminum saves 95% of the energy required to produce it from raw materials.",
+          "explanation": "Recycling aluminum is highly efficient and conserves a significant amount of energy."
+        },
+        {
+          "question": "Which of these items is NOT recyclable?",
+          "options": ["Newspaper", "Plastic bags", "Glass bottles", "Cardboard"],
+          "correctAnswer": "Plastic bags",
+          "responseMessage": "That's right! Plastic bags are not typically recyclable.",
+          "explanation": "Plastic bags can cause issues in recycling facilities and are better reused or disposed of properly."
+        },
+        {
+          "question": "What does the recycling symbol with three arrows represent?",
+          "options": ["Reduce", "Reuse", "Recycle", "All of the above"],
+          "correctAnswer": "All of the above",
+          "responseMessage": "That's right! The recycling symbol represents reduce, reuse, and recycle.",
+          "explanation": "This symbol encourages responsible use and management of resources."
+        },
+        {
+          "question": "Recycling one ton of paper can save how many trees?",
+          "options": ["5 trees", "10 trees", "17 trees", "25 trees"],
+          "correctAnswer": "17 trees",
+          "responseMessage": "That's right! Recycling one ton of paper saves 17 trees.",
+          "explanation": "Recycling paper is a crucial way to conserve forests and natural resources."
+        },
+        {
+          "question": "Which of the following metals is commonly recycled?",
+          "options": ["Iron", "Aluminum", "Copper", "All of the above"],
+          "correctAnswer": "All of the above",
+          "responseMessage": "That's right! All of these metals are commonly recycled.",
+          "explanation": "Recycling metals helps reduce mining and conserves natural resources."
+        },
+        {
+          "question": "Recycling helps to reduce the need for what?",
+          "options": ["New raw materials", "Waste disposal", "Energy consumption", "All of the above"],
+          "correctAnswer": "All of the above",
+          "responseMessage": "That's right! Recycling reduces the need for new raw materials, waste disposal, and energy consumption.",
+          "explanation": "Recycling contributes to a more sustainable environment by minimizing resource use."
+        }
+        
+      ]
+    },
+    {
+      "name": "Climate Change",
+      "explanation": "Understand the impact of climate change and what can be done to mitigate it.",
+      "fullExplanation": "Climate change refers to significant changes in global temperatures and weather patterns over time. While climate change is a natural phenomenon, scientific evidence shows that human activities are currently driving an unprecedented rate of change.",
+      "questions": [
+        {
+          "question": "What is the main cause of recent climate change?",
+          "options": ["Natural variations", "Human activities", "Solar cycles", "Volcanic eruptions"],
+          "correctAnswer": "Human activities",
+          "responseMessage": "That's right! Human activities are the main cause of recent climate change.",
+          "explanation": "These activities, such as burning fossil fuels, contribute to greenhouse gas emissions."
+        },
+        {
+          "question": "Which greenhouse gas is the most abundant in Earth's atmosphere?",
+          "options": ["Carbon dioxide", "Methane", "Nitrous oxide", "Water vapor"],
+          "correctAnswer": "Water vapor",
+          "responseMessage": "That's right! Water vapor is the most abundant greenhouse gas.",
+          "explanation": "Water vapor plays a significant role in Earth's climate by trapping heat in the atmosphere."
+        },
+        {
+          "question": "What is the primary source of carbon dioxide emissions?",
+          "options": ["Deforestation", "Burning fossil fuels", "Agriculture", "Industrial processes"],
+          "correctAnswer": "Burning fossil fuels",
+          "responseMessage": "That's right! Burning fossil fuels is the primary source of carbon dioxide emissions.",
+          "explanation": "Fossil fuels, such as coal and oil, release large amounts of CO2 when burned."
+        },
+        {
+          "question": "Which of the following is a consequence of climate change?",
+          "options": ["Rising sea levels", "Increased extreme weather events", "Melting polar ice", "All of the above"],
+          "correctAnswer": "All of the above",
+          "responseMessage": "That's right! Climate change leads to rising sea levels, extreme weather events, and melting polar ice.",
+          "explanation": "These consequences have profound effects on ecosystems, communities, and economies."
+        },
+        {
+          "question": "What is the term for the gradual increase in Earth's average temperature?",
+          "options": ["Global warming", "Climate variability", "Ocean acidification", "Greenhouse effect"],
+          "correctAnswer": "Global warming",
+          "responseMessage": "That's right! The gradual increase in Earth's average temperature is called global warming.",
+          "explanation": "Global warming is primarily caused by the buildup of greenhouse gases in the atmosphere."
+        },
+        {
+          "question": "Which international agreement aims to limit global temperature rise?",
+          "options": ["Kyoto Protocol", "Paris Agreement", "Montreal Protocol", "Copenhagen Accord"],
+          "correctAnswer": "Paris Agreement",
+          "responseMessage": "That's right! The Paris Agreement aims to limit global temperature rise.",
+          "explanation": "This agreement seeks to mitigate the effects of climate change through international cooperation."
+        },
+        {
+          "question": "Which sector is the largest contributor to greenhouse gas emissions?",
+          "options": ["Transportation", "Energy production", "Agriculture", "Manufacturing"],
+          "correctAnswer": "Energy production",
+          "responseMessage": "That's right! Energy production is the largest contributor to greenhouse gas emissions.",
+          "explanation": "Burning fossil fuels for energy generates the majority of greenhouse gases."
+        },
+        {
+          "question": "What is ocean acidification?",
+          "options": ["Decrease in ocean pH due to increased CO2", "Increase in ocean salinity", "Rising ocean temperatures", "None of the above"],
+          "correctAnswer": "Decrease in ocean pH due to increased CO2",
+          "responseMessage": "That's right! Ocean acidification refers to the decrease in ocean pH due to increased CO2.",
+          "explanation": "This process affects marine life and ecosystems, particularly coral reefs."
+        },
+        {
+          "question": "Which renewable energy source does not contribute to climate change?",
+          "options": ["Solar power", "Wind power", "Hydropower", "All of the above"],
+          "correctAnswer": "All of the above",
+          "responseMessage": "That's right! Solar power, wind power, and hydropower do not contribute to climate change.",
+          "explanation": "These renewable energy sources produce little to no greenhouse gas emissions."
+        },
+        {
+          "question": "What is a carbon footprint?",
+          "options": ["The total greenhouse gases emitted by an individual", "A type of energy conservation method", "A renewable energy source", "None of the above"],
+          "correctAnswer": "The total greenhouse gases emitted by an individual",
+          "responseMessage": "That's right! A carbon footprint refers to the total greenhouse gases emitted by an individual.",
+          "explanation": "Understanding your carbon footprint helps in making more sustainable choices."
+        }
+      ]
+    },
+    {
+      "name": "Solar Power",
+      "explanation": "Discover how solar power works and its benefits to the environment.",
+      "fullExplanation": "Solar power is energy from the sun that is converted into thermal or electrical energy. It is one of the most abundant and renewable energy sources available.",
+      "questions": [
+        {
+          "question": "What is the primary component of solar panels?",
+          "options": ["Silicon", "Copper", "Aluminum", "Glass"],
+          "correctAnswer": "Silicon",
+          "responseMessage": "That's right! Silicon is the primary component of solar panels.",
+          "explanation": "Silicon is used due to its excellent photovoltaic properties, converting sunlight into electricity."
+        },
+        {
+          "question": "How do solar panels generate electricity?",
+          "options": ["By capturing wind energy", "By converting sunlight into electricity", "By using geothermal energy", "By burning fossil fuels"],
+          "correctAnswer": "By converting sunlight into electricity",
+          "responseMessage": "That's right! Solar panels generate electricity by converting sunlight into electricity.",
+          "explanation": "Photovoltaic cells in the panels convert light into electrical energy."
+        },
+        {
+          "question": "Which of the following is a benefit of solar power?",
+          "options": ["Reduces electricity bills", "Reduces carbon footprint", "Requires low maintenance", "All of the above"],
+          "correctAnswer": "All of the above",
+          "responseMessage": "That's right! Solar power reduces electricity bills, carbon footprint, and requires low maintenance.",
+          "explanation": "Solar power is a sustainable and cost-effective energy solution."
+        },
+        {
+          "question": "What is the average lifespan of a solar panel?",
+          "options": ["5-10 years", "10-15 years", "20-25 years", "30-35 years"],
+          "correctAnswer": "20-25 years",
+          "responseMessage": "That's right! The average lifespan of a solar panel is 20-25 years.",
+          "explanation": "With proper maintenance, solar panels can efficiently generate electricity for decades."
+        },
+        {
+          "question": "Which country is the largest producer of solar energy?",
+          "options": ["United States", "Germany", "China", "India"],
+          "correctAnswer": "China",
+          "responseMessage": "That's right! China is the largest producer of solar energy.",
+          "explanation": "China has invested heavily in solar power, leading the world in production capacity."
+        },
+        {
+          "question": "What is the efficiency range of most commercial solar panels?",
+          "options": ["5-10%", "10-15%", "15-20%", "20-25%"],
+          "correctAnswer": "15-20%",
+          "responseMessage": "That's right! The efficiency range of most commercial solar panels is 15-20%.",
+          "explanation": "Efficiency refers to how much sunlight the panel can convert into usable electricity."
+        },
+        {
+          "question": "What is the main challenge of solar energy?",
+          "options": ["Initial cost", "Availability at night", "Weather dependency", "All of the above"],
+          "correctAnswer": "All of the above",
+          "responseMessage": "That's right! Solar energy faces challenges such as initial cost, availability at night, and weather dependency.",
+          "explanation": "Despite these challenges, solar power remains a viable renewable energy source."
+        },
+        {
+          "question": "What type of current do solar panels produce?",
+          "options": ["Alternating current (AC)", "Direct current (DC)", "Pulsating current", "None of the above"],
+          "correctAnswer": "Direct current (DC)",
+          "responseMessage": "That's right! Solar panels produce direct current (DC).",
+          "explanation": "This DC is typically converted to alternating current (AC) for use in homes and businesses."
+        },
+        {
+          "question": "How is solar power stored for later use?",
+          "options": ["In batteries", "In water tanks", "In power grids", "None of the above"],
+          "correctAnswer": "In batteries",
+          "responseMessage": "That's right! Solar power is stored in batteries for later use.",
+          "explanation": "Batteries allow solar energy to be used when the sun is not shining."
+        },
+        {
+          "question": "Which of the following can solar energy be used for?",
+          "options": ["Heating water", "Generating electricity", "Cooking food", "All of the above"],
+          "correctAnswer": "All of the above",
+          "responseMessage": "That's right! Solar energy can be used for heating water, generating electricity, and cooking food.",
+          "explanation": "Solar energy is versatile and can be applied in various household and industrial applications."
+        }
+      ]
+    }
+  ]
+}
