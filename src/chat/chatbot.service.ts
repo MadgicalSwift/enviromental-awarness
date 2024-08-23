@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';                                                        
 import IntentClassifier from '../intent/intent.classifier';
 import { MessageService } from 'src/message/message.service';
 import { UserService } from 'src/model/user.service';
@@ -97,7 +97,7 @@ export class ChatbotService {
   }
 };
 
-private async handleQuizResponse(from: string, button_response: any): Promise<void> {
+ private async handleQuizResponse(from: string, button_response: any): Promise<void> {
     const questions = data.topics[this.topicSelected].questions;
     const currentQuestionIndex = this.quizResponse.length - 1;
     const currentQuestion = questions[currentQuestionIndex];
@@ -113,7 +113,9 @@ private async handleQuizResponse(from: string, button_response: any): Promise<vo
     }
 
     this.askQuestion(from, currentQuestionIndex+1);
-}
+ }
+
+
 
 private async endQuiz(from: string): Promise<void> {
 

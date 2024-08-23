@@ -16,7 +16,7 @@ import { MockUserService } from 'src/model/mockuser.service';
     IntentClassifier,
     {
       provide: UserService,
-      useClass: MockUserService,
+     useClass: MockUserService,
     },
     {
       provide: MessageService,

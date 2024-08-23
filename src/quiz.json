@@ -8,7 +8,8 @@
           {
             "question": "Which of the following can be recycled?",
             "options": ["Plastic bottles", "Food waste", "Old clothes", "All of the above"],
-            "correctAnswer": "Plastic bottles"
+            "correctAnswer": "Plastic bottles",
+            "explanation)":"bjnckwemdle"
           },
           {
             "question": "What color bin is typically used for recycling paper?",
