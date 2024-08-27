@@ -2,235 +2,1438 @@
   "topics": [
     {
       "name": "Recycling",
-      "explanation": "Learn about the importance of recycling and how it helps the environment.",
-      "fullExplanation": "Recycling is the process of converting waste materials into new materials and objects. It helps reduce pollution, save energy, and conserve natural resources.",
-      "questions": [
+      "explanation": "Recycling is the process of collecting and processing materials that would otherwise be thrown away as trash and turning them into new products. Recycling can benefit your community, the economy, and the environment.",
+      "fullExplanation": "Recycling is the process of converting waste into reusable materials. It plays a crucial role in minimizing pollution, conserving energy, and preserving natural resources. By recycling, we can reduce the amount of waste sent to landfills, decrease the need for raw materials, and lower our environmental impact, contributing to a more sustainable future.",
+      "sets": [
         {
-          "question": "Which of the following can be recycled?",
-          "options": ["Plastic bottles", "Food waste", "Old clothes", "All of the above"],
-          "correctAnswer": "Plastic bottles",
-          "responseMessage": "That's right! Plastic bottles can be recycled. :recycle:",
-          "explanation": "Recycling these items helps reduce waste and conserve resources."
+          "setNumber": 1,
+          "questions": [
+            {
+              "question": "Which of the following can be recycled?",
+              "options": ["Plastic bottles", "Food waste", "Old clothes", "All of the above"],
+              "correctAnswer": "Plastic bottles",
+              "responseMessage": "✅That's right! Plastic bottles can be recycled. :recycle:",
+              "explanation": "Recycling these items helps reduce waste and conserve resources."
+            },
+            {
+              "question": "What color bin is typically used for recycling paper?",
+              "options": ["Green", "Blue", "Red", "Yellow"],
+              "correctAnswer": "Blue",
+              "responseMessage": "✅That's right! Blue is the color typically used for recycling paper.",
+              "explanation": "Using the correct bin ensures that paper is properly recycled, reducing contamination."
+            },
+            {
+              "question": "Which material cannot be recycled?",
+              "options": ["Glass", "Metal", "Plastic", "Styrofoam"],
+              "correctAnswer": "Styrofoam",
+              "responseMessage": "✅That's right! Styrofoam cannot be recycled.",
+              "explanation": "Styrofoam is a major pollutant, particularly in marine environments."
+            },
+            {
+              "question": "What is the first step in the recycling process?",
+              "options": ["Collection", "Sorting", "Processing", "Reusing"],
+              "correctAnswer": "Collection",
+              "responseMessage": "✅That's right! Collection is the first step in the recycling process.",
+              "explanation": "The term 'collection' refers to gathering recyclable materials for processing."
+            },
+            {
+              "question": "What percentage of energy can be saved by recycling aluminum?",
+              "options": ["10%", "25%", "50%", "95%"],
+              "correctAnswer": "95%",
+              "responseMessage": "✅That's right! Recycling aluminum saves 95% of the energy required to produce it from raw materials.",
+              "explanation": "Recycling aluminum is highly efficient and conserves a significant amount of energy."
+            },
+            {
+              "question": "Which of these items is NOT recyclable?",
+              "options": ["Newspaper", "Plastic bags", "Glass bottles", "Cardboard"],
+              "correctAnswer": "Plastic bags",
+              "responseMessage": "✅That's right! Plastic bags are not typically recyclable.",
+              "explanation": "Plastic bags can cause issues in recycling facilities and are better reused or disposed of properly."
+            },
+            {
+              "question": "What does the recycling symbol with three arrows represent?",
+              "options": ["Reduce", "Reuse", "Recycle", "All of the above"],
+              "correctAnswer": "All of the above",
+              "responseMessage": "✅That's right! The recycling symbol represents reduce, reuse, and recycle.",
+              "explanation": "This symbol encourages responsible use and management of resources."
+            },
+            {
+              "question": "Recycling one ton of paper can save how many trees?",
+              "options": ["5 trees", "10 trees", "17 trees", "25 trees"],
+              "correctAnswer": "17 trees",
+              "responseMessage": "✅That's right! Recycling one ton of paper saves 17 trees.",
+              "explanation": "Recycling paper is a crucial way to conserve forests and natural resources."
+            },
+            {
+              "question": "Which of the following metals is commonly recycled?",
+              "options": ["Iron", "Aluminum", "Copper", "All of the above"],
+              "correctAnswer": "All of the above",
+              "responseMessage": "✅That's right! All of these metals are commonly recycled.",
+              "explanation": "Recycling metals helps reduce mining and conserves natural resources."
+            },
+            {
+              "question": "Recycling helps to reduce the need for what?",
+              "options": ["New raw materials", "Waste disposal", "Energy consumption", "All of the above"],
+              "correctAnswer": "All of the above",
+              "responseMessage": "✅That's right! Recycling reduces the need for new raw materials, waste disposal, and energy consumption.",
+              "explanation": "Recycling contributes to a more sustainable environment by minimizing resource use."
+            }
+          ]
         },
-        {
-          "question": "What color bin is typically used for recycling paper?",
-          "options": ["Green", "Blue", "Red", "Yellow"],
-          "correctAnswer": "Blue",
-          "responseMessage": "That's right! Blue is the color typically used for recycling paper.",
-          "explanation": "Using the correct bin ensures that paper is properly recycled, reducing contamination."
-        },
-        {
-          "question": "Which material cannot be recycled?",
-          "options": ["Glass", "Metal", "Plastic", "Styrofoam"],
-          "correctAnswer": "Styrofoam",
-          "responseMessage": "That's right! Styrofoam cannot be recycled.",
-          "explanation": "Styrofoam is a major pollutant, particularly in marine environments."
-        },
-        {
-          "question": "What is the first step in the recycling process?",
-          "options": ["Collection", "Sorting", "Processing", "Reusing"],
-          "correctAnswer": "Collection",
-          "responseMessage": "That's right! Collection is the first step in the recycling process.",
-          "explanation": "The term 'collection' refers to gathering recyclable materials for processing."
-        },
-        {
-          "question": "What percentage of energy can be saved by recycling aluminum?",
-          "options": ["10%", "25%", "50%", "95%"],
-          "correctAnswer": "95%",
-          "responseMessage": "That's right! Recycling aluminum saves 95% of the energy required to produce it from raw materials.",
-          "explanation": "Recycling aluminum is highly efficient and conserves a significant amount of energy."
-        },
-        {
-          "question": "Which of these items is NOT recyclable?",
-          "options": ["Newspaper", "Plastic bags", "Glass bottles", "Cardboard"],
-          "correctAnswer": "Plastic bags",
-          "responseMessage": "That's right! Plastic bags are not typically recyclable.",
-          "explanation": "Plastic bags can cause issues in recycling facilities and are better reused or disposed of properly."
-        },
-        {
-          "question": "What does the recycling symbol with three arrows represent?",
-          "options": ["Reduce", "Reuse", "Recycle", "All of the above"],
-          "correctAnswer": "All of the above",
-          "responseMessage": "That's right! The recycling symbol represents reduce, reuse, and recycle.",
-          "explanation": "This symbol encourages responsible use and management of resources."
-        },
-        {
-          "question": "Recycling one ton of paper can save how many trees?",
-          "options": ["5 trees", "10 trees", "17 trees", "25 trees"],
-          "correctAnswer": "17 trees",
-          "responseMessage": "That's right! Recycling one ton of paper saves 17 trees.",
-          "explanation": "Recycling paper is a crucial way to conserve forests and natural resources."
-        },
-        {
-          "question": "Which of the following metals is commonly recycled?",
-          "options": ["Iron", "Aluminum", "Copper", "All of the above"],
-          "correctAnswer": "All of the above",
-          "responseMessage": "That's right! All of these metals are commonly recycled.",
-          "explanation": "Recycling metals helps reduce mining and conserves natural resources."
-        },
-        {
-          "question": "Recycling helps to reduce the need for what?",
-          "options": ["New raw materials", "Waste disposal", "Energy consumption", "All of the above"],
-          "correctAnswer": "All of the above",
-          "responseMessage": "That's right! Recycling reduces the need for new raw materials, waste disposal, and energy consumption.",
-          "explanation": "Recycling contributes to a more sustainable environment by minimizing resource use."
-        }
         
+          {
+            "setNumber": 2,
+            "questions": [
+              {
+                "question": "What is the main benefit of recycling paper products?",
+                "options": ["Conserves water", "Reduces landfill waste", "Increases energy consumption", "Creates more pollution"],
+                "correctAnswer": "Reduces landfill waste",
+                "responseMessage": "✅That's right! Recycling paper products reduces landfill waste.",
+                "explanation": "Recycling paper prevents it from ending up in landfills, helping to manage waste more effectively."
+              },
+              {
+                "question": "Which type of glass is commonly recycled?",
+                "options": ["Broken glass", "Food and drink bottles", "Windows", "All of the above"],
+                "correctAnswer": "Food and drink bottles",
+                "responseMessage": "✅That's right! Food and drink bottles are commonly recycled.",
+                "explanation": "Glass bottles and jars from food and beverages are widely accepted in recycling programs."
+              },
+              {
+                "question": "Why should you avoid contaminating recycling bins with food waste?",
+                "options": ["It makes recycling easier", "It reduces recycling costs", "It can spoil recyclable materials", "It improves the quality of recyclables"],
+                "correctAnswer": "It can spoil recyclable materials",
+                "responseMessage": "✅That's right! Contaminating recycling bins with food waste can spoil recyclable materials.",
+                "explanation": "Food waste can cause contamination, making it difficult to process recyclable materials."
+              },
+              {
+                "question": "What is the term for recycling materials into products of lower quality?",
+                "options": ["Upcycling", "Downcycling", "Precycling", "Recycling"],
+                "correctAnswer": "Downcycling",
+                "responseMessage": "✅That's right! Downcycling refers to recycling materials into products of lower quality.",
+                "explanation": "Downcycling involves breaking down materials into new products that are not as valuable as the original."
+              },
+              {
+                "question": "Which of these materials is considered high value in recycling?",
+                "options": ["Aluminum", "Styrofoam", "Plastic wrap", "Broken glass"],
+                "correctAnswer": "Aluminum",
+                "responseMessage": "✅That's right! Aluminum is considered high value in recycling.",
+                "explanation": "Aluminum is highly valued in recycling due to its ability to be recycled indefinitely and its significant energy savings."
+              },
+              {
+                "question": "What is the primary reason for sorting recyclables before collection?",
+                "options": ["To reduce processing time", "To increase recycling fees", "To make sorting more efficient", "To decrease collection costs"],
+                "correctAnswer": "To make sorting more efficient",
+                "responseMessage": "✅That's right! Sorting recyclables before collection makes the recycling process more efficient.",
+                "explanation": "Proper sorting helps in managing and processing recyclables more effectively, leading to better recycling outcomes."
+              },
+              {
+                "question": "What type of paper is generally recyclable?",
+                "options": ["Wet paper towels", "Used tissue paper", "Cardboard", "Food-stained paper"],
+                "correctAnswer": "Cardboard",
+                "responseMessage": "✅That's right! Cardboard is generally recyclable.",
+                "explanation": "Cardboard can be recycled into new paper products, while other types of paper may be contaminated or not recyclable."
+              },
+              {
+                "question": "Which of these plastic types is accepted in many recycling programs?",
+                "options": ["Plastic bags", "Polystyrene", "HDPE", "PVC"],
+                "correctAnswer": "HDPE",
+                "responseMessage": "✅That's right! HDPE is accepted in many recycling programs.",
+                "explanation": "High-density polyethylene (HDPE) is widely accepted and recyclable, unlike other types of plastic."
+              },
+              {
+                "question": "How can individuals contribute to improving recycling rates?",
+                "options": ["By throwing all waste in one bin", "By following local recycling guidelines", "By avoiding recycling altogether", "By mixing recyclables with trash"],
+                "correctAnswer": "By following local recycling guidelines",
+                "responseMessage": "✅That's right! Following local recycling guidelines helps improve recycling rates.",
+                "explanation": "Adhering to local recycling rules ensures that materials are properly sorted and processed."
+              },
+              {
+                "question": "What does 'precycling' refer to?",
+                "options": ["Recycling before disposal", "Reducing waste before it starts", "Reusing materials", "Sorting recyclables at home"],
+                "correctAnswer": "Reducing waste before it starts",
+                "responseMessage": "✅That's right! Precycling refers to reducing waste before it starts.",
+                "explanation": "Precycling involves taking steps to avoid creating waste in the first place, thus supporting recycling efforts."
+              }
+            ]
+          },
+          {
+            "setNumber": 3,
+            "questions": [
+              {
+                "question": "What is the purpose of recycling labels on products?",
+                "options": ["To increase product cost", "To indicate recyclability", "To add product value", "To make products more attractive"],
+                "correctAnswer": "To indicate recyclability",
+                "responseMessage": "✅That's right! Recycling labels indicate whether a product is recyclable.",
+                "explanation": "Labels help consumers know if the product or its packaging can be recycled."
+              },
+              {
+                "question": "Which type of plastic is often not accepted in curbside recycling programs?",
+                "options": ["PET", "HDPE", "PVC", "LDPE"],
+                "correctAnswer": "LDPE",
+                "responseMessage": "✅That's right! LDPE is often not accepted in curbside recycling programs.",
+                "explanation": "Low-density polyethylene (LDPE) is less commonly accepted due to limited recycling facilities."
+              },
+              {
+                "question": "What is an example of a common recycled product?",
+                "options": ["Newspapers", "Plastic bags", "Styrofoam cups", "Glass windows"],
+                "correctAnswer": "Newspapers",
+                "responseMessage": "✅That's right! Newspapers are commonly recycled into new paper products.",
+                "explanation": "Recycled newspapers are used to create new paper products and reduce waste."
+              },
+              {
+                "question": "Which of these practices is not recommended for improving recycling efficiency?",
+                "options": ["Sorting recyclables correctly", "Rinsing containers before recycling", "Mixing recyclables with trash", "Following local recycling guidelines"],
+                "correctAnswer": "Mixing recyclables with trash",
+                "responseMessage": "✅That's right! Mixing recyclables with trash reduces recycling efficiency.",
+                "explanation": "Proper sorting and rinsing of recyclables are essential for efficient recycling."
+              },
+              {
+                "question": "How does recycling benefit future generations?",
+                "options": ["By increasing waste production", "By depleting natural resources", "By conserving resources and reducing pollution", "By consuming more energy"],
+                "correctAnswer": "By conserving resources and reducing pollution",
+                "responseMessage": "✅That's right! Recycling conserves resources and reduces pollution for future generations.",
+                "explanation": "Sustainable recycling practices help ensure resources are available and the environment is protected for future generations."
+              },
+              {
+                "question": "Which of these materials is NOT usually accepted in curbside recycling programs?",
+                "options": ["Plastic bottles", "Glass jars", "Pizza boxes", "Aluminum cans"],
+                "correctAnswer": "Pizza boxes",
+                "responseMessage": "✅That's right! Pizza boxes are often not accepted due to contamination.",
+                "explanation": "Pizza boxes are contaminated with food and grease, making them difficult to recycle."
+              },
+              {
+                "question": "What is a key benefit of recycling metals?",
+                "options": ["Decreases landfill space", "Increases pollution", "Requires more energy", "Reduces raw material usage"],
+                "correctAnswer": "Reduces raw material usage",
+                "responseMessage": "✅That's right! Recycling metals reduces the need for raw materials.",
+                "explanation": "Recycling metals helps preserve natural resources and decreases the need for new raw materials."
+              },
+              {
+                "question": "Which material is considered high quality for recycling?",
+                "options": ["Used paper towels", "Plastic food containers", "Aluminum cans", "Styrofoam packaging"],
+                "correctAnswer": "Aluminum cans",
+                "responseMessage": "✅That's right! Aluminum cans are considered high quality for recycling.",
+                "explanation": "Aluminum cans are easily recyclable and can be processed into new cans without loss of quality."
+              },
+              {
+                "question": "How can consumers help reduce contamination in recycling bins?",
+                "options": ["By including non-recyclable waste", "By washing recyclables before disposal", "By mixing recyclables with food waste", "By using any bin for recyclables"],
+                "correctAnswer": "By washing recyclables before disposal",
+                "responseMessage": "✅That's right! Washing recyclables before disposal helps reduce contamination.",
+                "explanation": "Clean recyclables are easier to process and help maintain the quality of recycled materials."
+              },
+              {
+                "question": "What does the term 'recycling rate' refer to?",
+                "options": ["The cost of recycling", "The amount of waste recycled compared to total waste", "The speed of recycling processes", "The variety of materials recycled"],
+                "correctAnswer": "The amount of waste recycled compared to total waste",
+                "responseMessage": "✅That's right! The recycling rate refers to the amount of waste recycled compared to total waste.",
+                "explanation": "The recycling rate measures how effectively waste materials are being recycled."
+              }
+            ]
+          },
+          {
+            "setNumber": 4,
+            "questions": [
+              {
+                "question": "Which of these items is typically accepted in curbside recycling programs?",
+                "options": ["Tissues", "Pizza boxes", "Metal cans", "Used batteries"],
+                "correctAnswer": "Metal cans",
+                "responseMessage": "✅That's right! Metal cans are typically accepted in curbside recycling programs.",
+                "explanation": "Metal cans are widely recyclable and are usually accepted in curbside pickup."
+              },
+              {
+                "question": "What is a common use for recycled glass?",
+                "options": ["New glass bottles", "Styrofoam cups", "Plastic containers", "Food waste compost"],
+                "correctAnswer": "New glass bottles",
+                "responseMessage": "✅That's right! Recycled glass is commonly used to make new glass bottles.",
+                "explanation": "Recycled glass can be melted down and reformed into new glass bottles and jars."
+              },
+              {
+                "question": "What type of paper is generally not recyclable?",
+                "options": ["Office paper", "Magazine paper", "Toilet paper", "Cardboard"],
+                "correctAnswer": "Toilet paper",
+                "responseMessage": "✅That's right! Toilet paper is generally not recyclable.",
+                "explanation": "Toilet paper is often too contaminated to be recycled."
+              },
+              {
+                "question": "Which of these materials can often be recycled into new products?",
+                "options": ["Rubber tires", "Food scraps", "Construction debris", "All of the above"],
+                "correctAnswer": "All of the above",
+                "responseMessage": "✅That's right! Rubber tires, food scraps, and construction debris can often be recycled into new products.",
+                "explanation": "Many materials, including tires, food scraps, and construction debris, can be recycled or repurposed."
+              },
+              {
+                "question": "What is a major challenge for recycling programs?",
+                "options": ["High participation rates", "Low contamination levels", "Access to recycling facilities", "High-quality materials"],
+                "correctAnswer": "Access to recycling facilities",
+                "responseMessage": "✅That's right! Access to recycling facilities can be a major challenge for recycling programs.",
+                "explanation": "Limited availability of recycling facilities can hinder effective recycling efforts."
+              },
+              {
+                "question": "What does the recycling symbol with a number inside it indicate?",
+                "options": ["The type of material", "The recycling process", "The cost of recycling", "The color of the bin"],
+                "correctAnswer": "The type of material",
+                "responseMessage": "✅That's right! The number inside the recycling symbol indicates the type of material.",
+                "explanation": "The number helps identify the type of plastic or material, guiding proper recycling."
+              },
+              {
+                "question": "Which material is most commonly recycled from electronic waste?",
+                "options": ["Copper", "Glass", "Rubber", "Wood"],
+                "correctAnswer": "Copper",
+                "responseMessage": "✅That's right! Copper is most commonly recycled from electronic waste.",
+                "explanation": "Copper is valuable and frequently recycled from electronic devices and cables."
+              },
+              {
+                "question": "What is the purpose of 'single-stream recycling'?",
+                "options": ["Separating recyclables at the curb", "Combining all recyclables into one bin", "Reducing recycling costs", "Increasing waste generation"],
+                "correctAnswer": "Combining all recyclables into one bin",
+                "responseMessage": "✅That's right! Single-stream recycling combines all recyclables into one bin for collection.",
+                "explanation": "Single-stream recycling simplifies collection but requires careful sorting at processing facilities."
+              },
+              {
+                "question": "Which material is typically not recyclable in curbside programs?",
+                "options": ["Cardboard", "Glass bottles", "Plastic containers", "Used motor oil"],
+                "correctAnswer": "Used motor oil",
+                "responseMessage": "✅That's right! Used motor oil is typically not recyclable in curbside programs.",
+                "explanation": "Used motor oil requires special disposal due to its hazardous nature."
+              },
+              {
+                "question": "What can you do to reduce waste before recycling?",
+                "options": ["Reuse items whenever possible", "Mix recyclables with trash", "Throw away reusable items", "Buy single-use products"],
+                "correctAnswer": "Reuse items whenever possible",
+                "responseMessage": "✅That's right! Reusing items whenever possible helps reduce waste before recycling.",
+                "explanation": "Reuse reduces the amount of waste generated and lessens the burden on recycling programs."
+              }
+            ]
+          },
+          {
+            "setNumber": 5,
+            "questions": [
+              {
+                "question": "What should you do with non-recyclable waste?",
+                "options": ["Place it in the recycling bin", "Throw it in the compost bin", "Dispose of it in the trash", "Burn it"],
+                "correctAnswer": "Dispose of it in the trash",
+                "responseMessage": "✅That's right! Non-recyclable waste should be disposed of in the trash.",
+                "explanation": "Non-recyclable waste needs to be sent to the landfill or treated as per local waste management guidelines."
+              },
+              {
+                "question": "Which of the following is a benefit of recycling glass?",
+                "options": ["Decreases energy use", "Increases landfill waste", "Requires more raw materials", "Depletes natural resources"],
+                "correctAnswer": "Decreases energy use",
+                "responseMessage": "✅That's right! Recycling glass decreases energy use compared to producing new glass.",
+                "explanation": "Recycling glass uses less energy and reduces the need for raw materials, making it more environmentally friendly."
+              },
+              {
+                "question": "How can recycling positively impact the economy?",
+                "options": ["By increasing waste disposal costs", "By creating jobs", "By reducing resource availability", "By increasing raw material costs"],
+                "correctAnswer": "By creating jobs",
+                "responseMessage": "✅That's right! Recycling creates jobs and supports economic growth.",
+                "explanation": "The recycling industry generates employment opportunities in collection, sorting, and processing."
+              },
+              {
+                "question": "What is 'closed-loop recycling'?",
+                "options": ["Recycling materials into different products", "Recycling materials back into the same product", "Recycling materials without processing", "Discarding materials after single use"],
+                "correctAnswer": "Recycling materials back into the same product",
+                "responseMessage": "✅That's right! Closed-loop recycling means recycling materials back into the same product.",
+                "explanation": "Closed-loop recycling helps maintain the quality and value of the materials, minimizing waste."
+              },
+              {
+                "question": "Which type of plastic is commonly accepted in recycling programs?",
+                "options": ["Plastic bags", "Plastic containers marked with '1' or '2'", "Styrofoam cups", "Food waste"],
+                "correctAnswer": "Plastic containers marked with '1' or '2'",
+                "responseMessage": "✅That's right! Plastic containers marked with '1' or '2' are commonly accepted in recycling programs.",
+                "explanation": "Plastics labeled with '1' or '2' are widely accepted and easier to recycle."
+              },
+              {
+                "question": "What is a key factor in determining the recyclability of an item?",
+                "options": ["Its color", "Its size", "Its material", "Its weight"],
+                "correctAnswer": "Its material",
+                "responseMessage": "✅That's right! The material of an item determines its recyclability.",
+                "explanation": "Recycling programs accept specific materials based on local guidelines and capabilities."
+              },
+              {
+                "question": "Which practice is essential for effective recycling at home?",
+                "options": ["Mixing recyclables with trash", "Leaving items dirty", "Following local recycling guidelines", "Ignoring sorting rules"],
+                "correctAnswer": "Following local recycling guidelines",
+                "responseMessage": "✅That's right! Following local recycling guidelines is essential for effective recycling at home.",
+                "explanation": "Adhering to local guidelines helps ensure that recyclables are properly sorted and processed."
+              },
+              {
+                "question": "Which of these materials is typically recyclable?",
+                "options": ["Plastic wrap", "Batteries", "Glass jars", "Food waste"],
+                "correctAnswer": "Glass jars",
+                "responseMessage": "✅That's right! Glass jars are typically recyclable.",
+                "explanation": "Glass jars are widely accepted for recycling and can be processed into new glass products."
+              },
+              {
+                "question": "What is the purpose of recycling programs?",
+                "options": ["To increase waste production", "To reduce waste and conserve resources", "To create pollution", "To increase energy consumption"],
+                "correctAnswer": "To reduce waste and conserve resources",
+                "responseMessage": "✅That's right! Recycling programs aim to reduce waste and conserve resources.",
+                "explanation": "Recycling helps minimize the amount of waste sent to landfills and preserves valuable resources."
+              },
+              {
+                "question": "How does recycling contribute to reducing greenhouse gas emissions?",
+                "options": ["By increasing emissions", "By using more energy", "By conserving energy and resources", "By creating more waste"],
+                "correctAnswer": "By conserving energy and resources",
+                "responseMessage": "✅That's right! Recycling conserves energy and resources, helping to reduce greenhouse gas emissions.",
+                "explanation": "Recycling reduces the need for new materials and energy, thereby lowering greenhouse gas emissions."
+              }
+            ]
+          },
+        { 
+          "setNumber": 6,
+          "questions": [
+            {
+              "question": "Which of the following items is most commonly recycled?",
+              "options": ["Electronics", "Plastic bags", "Glass bottles", "Wood"],
+              "correctAnswer": "Glass bottles",
+              "responseMessage": "✅That's right! Glass bottles are one of the most commonly recycled items.",
+              "explanation": "Glass can be recycled multiple times without losing quality."
+            },
+            {
+              "question": "What is composting?",
+              "options": ["A form of recycling metal", "A process of turning food waste into soil", "Burning waste for energy", "Melting down plastics"],
+              "correctAnswer": "A process of turning food waste into soil",
+              "responseMessage": "✅That's right! Composting is the process of turning food waste into soil.",
+              "explanation": "Composting reduces waste and enriches soil."
+            },
+            {
+              "question": "Which of these plastics can be recycled?",
+              "options": ["Plastic straws", "Plastic bottles", "Plastic bags", "All of the above"],
+              "correctAnswer": "Plastic bottles",
+              "responseMessage": "✅That's right! Plastic bottles can be recycled.",
+              "explanation": "Not all plastics are recyclable; plastic bottles are one of the more easily recycled types."
+            },
+            {
+              "question": "Why is it important to rinse containers before recycling?",
+              "options": ["To make them look clean", "To reduce contamination in the recycling process", "To increase their value", "None of the above"],
+              "correctAnswer": "To reduce contamination in the recycling process",
+              "responseMessage": "✅That's right! Rinsing containers reduces contamination in the recycling process.",
+              "explanation": "Contamination can spoil the recycling process and render materials unusable."
+            },
+            {
+              "question": "Which country is the largest producer of waste?",
+              "options": ["China", "United States", "India", "Brazil"],
+              "correctAnswer": "United States",
+              "responseMessage": "✅That's right! The United States is the largest producer of waste.",
+              "explanation": "This highlights the importance of recycling to manage waste effectively."
+            },
+            {
+              "question": "Which type of paper should not be recycled?",
+              "options": ["Newspaper", "Cardboard", "Shredded paper", "Waxed paper"],
+              "correctAnswer": "Waxed paper",
+              "responseMessage": "✅That's right! Waxed paper should not be recycled.",
+              "explanation": "Waxed paper is not easily processed in standard recycling facilities."
+            },
+            {
+              "question": "What is 'e-waste'?",
+              "options": ["Waste from electronic devices", "Waste from food production", "Waste that cannot be recycled", "None of the above"],
+              "correctAnswer": "Waste from electronic devices",
+              "responseMessage": "✅That's right! 'E-waste' refers to waste from electronic devices.",
+              "explanation": "E-waste includes old computers, phones, and other electronic items."
+            },
+            {
+              "question": "Which of the following is a benefit of recycling?",
+              "options": ["Conserves resources", "Saves energy", "Reduces pollution", "All of the above"],
+              "correctAnswer": "All of the above",
+              "responseMessage": "✅That's right! Recycling conserves resources, saves energy, and reduces pollution.",
+              "explanation": "These benefits make recycling a crucial part of sustainability efforts."
+            },
+            {
+              "question": "What is the term for materials that can be recycled and reused indefinitely?",
+              "options": ["Biodegradable", "Non-renewable", "Sustainable", "Perpetually recyclable"],
+              "correctAnswer": "Perpetually recyclable",
+              "responseMessage": "✅That's right! Perpetually recyclable materials can be reused indefinitely.",
+              "explanation": "Glass and aluminum are examples of perpetually recyclable materials."
+            },
+            {
+              "question": "How can individuals contribute to the recycling effort?",
+              "options": ["Sorting waste at home", "Participating in local recycling programs", "Buying recycled products", "All of the above"],
+              "correctAnswer": "All of the above",
+              "responseMessage": "✅That's right! Individuals can contribute by sorting waste, participating in recycling programs, and buying recycled products.",
+              "explanation": "Every small action helps in making recycling more effective."
+            }
+          ]
+        }
       ]
     },
-    {
+    
+      {
+        "name": "Solar power",
+        "explanation": "Solar power harnesses the energy from the sun and converts it into usable electricity or heat. This renewable energy source is central to efforts aimed at reducing greenhouse gas emissions and transitioning to a more sustainable energy system. Solar power technologies primarily fall into two categories: photovoltaic (PV) systems and solar thermal systems.",
+        "fullExplanation": "Solar power are essential components in PV systems. They convert the direct current (DC) electricity produced by solar panels into alternating current (AC) electricity, which is used in homes and businesses. Inverters also monitor the performance of the solar system and ensure optimal energy production.",
+        "sets": [
+          {
+            
+              "setNumber": 1,
+              "questions": [
+                {
+                  "question": "What is the primary source of energy for solar power?",
+                  "options": ["Wind", "Water", "Sun", "Geothermal"],
+                  "correctAnswer": "Sun",
+                  "responseMessage": "✅That's right! Solar power primarily relies on energy from the sun.",
+                  "explanation": "Solar power harnesses energy from the sun's rays and converts it into electricity or heat."
+                },
+                {
+                  "question": "What device converts sunlight directly into electricity?",
+                  "options": ["Solar panel", "Wind turbine", "Hydroelectric dam", "Geothermal pump"],
+                  "correctAnswer": "Solar panel",
+                  "responseMessage": "✅That's right! A solar panel converts sunlight directly into electricity.",
+                  "explanation": "Solar panels use photovoltaic cells to convert sunlight into electrical energy."
+                },
+                {
+                  "question": "What is the main advantage of solar power compared to fossil fuels?",
+                  "options": ["Lower cost", "Higher efficiency", "Renewable source", "More storage"],
+                  "correctAnswer": "Renewable source",
+                  "responseMessage": "✅That's right! Solar power is a renewable energy source.",
+                  "explanation": "Solar power is renewable and sustainable, unlike fossil fuels which are finite and contribute to environmental issues."
+                },
+                {
+                  "question": "Which type of solar power system generates electricity for immediate use?",
+                  "options": ["Solar thermal system", "Photovoltaic system", "Concentrated solar power", "Solar water heater"],
+                  "correctAnswer": "Photovoltaic system",
+                  "responseMessage": "✅That's right! A photovoltaic system generates electricity for immediate use.",
+                  "explanation": "Photovoltaic systems convert sunlight into electricity that can be used directly or stored for later use."
+                },
+                {
+                  "question": "What is a common material used in solar panels?",
+                  "options": ["Copper", "Aluminum", "Silicon", "Lead"],
+                  "correctAnswer": "Silicon",
+                  "responseMessage": "✅That's right! Silicon is commonly used in solar panels.",
+                  "explanation": "Silicon is used in photovoltaic cells because of its semiconductor properties, which are essential for converting sunlight into electricity."
+                },
+                {
+                  "question": "What is 'solar thermal energy' used for?",
+                  "options": ["Generating electricity", "Heating water or air", "Powering vehicles", "Storing energy"],
+                  "correctAnswer": "Heating water or air",
+                  "responseMessage": "✅That's right! Solar thermal energy is used for heating water or air.",
+                  "explanation": "Solar thermal systems capture sunlight to produce heat, which can be used for domestic hot water or space heating."
+                },
+                {
+                  "question": "What is a key challenge in the widespread adoption of solar power?",
+                  "options": ["High installation costs", "Lack of sunlight", "Complex technology", "Limited efficiency"],
+                  "correctAnswer": "High installation costs",
+                  "responseMessage": "✅That's right! High installation costs are a key challenge in the adoption of solar power.",
+                  "explanation": "The initial costs of purchasing and installing solar panels can be high, though costs have been decreasing over time."
+                },
+                {
+                  "question": "How does a 'solar farm' function?",
+                  "options": ["By using wind turbines", "By harnessing geothermal heat", "By deploying multiple solar panels", "By converting hydropower"],
+                  "correctAnswer": "By deploying multiple solar panels",
+                  "responseMessage": "✅That's right! A solar farm functions by deploying multiple solar panels.",
+                  "explanation": "Solar farms consist of large arrays of solar panels that generate electricity on a large scale."
+                },
+                {
+                  "question": "What is 'net metering'?",
+                  "options": ["The process of storing solar energy", "The sale of excess solar power back to the grid", "The process of cleaning solar panels", "The installation of solar panels"],
+                  "correctAnswer": "The sale of excess solar power back to the grid",
+                  "responseMessage": "✅That's right! Net metering allows for the sale of excess solar power back to the grid.",
+                  "explanation": "Net metering enables solar panel owners to earn credits for surplus energy they contribute to the electricity grid."
+                },
+                {
+                  "question": "What is the term for solar panels that follow the sun’s movement to increase efficiency?",
+                  "options": ["Fixed mounts", "Tracking systems", "Passive systems", "Reflectors"],
+                  "correctAnswer": "Tracking systems",
+                  "responseMessage": "✅That's right! Tracking systems help solar panels follow the sun's movement.",
+                  "explanation": "Tracking systems adjust the position of solar panels to maximize sunlight exposure throughout the day."
+                }
+              ]
+            },
+            {
+              "setNumber": 2,
+              "questions": [
+                {
+                  "question": "What does the term 'photovoltaic' refer to?",
+                  "options": ["A type of solar panel", "A method of solar energy storage", "The process of converting sunlight to electricity", "A form of solar thermal energy"],
+                  "correctAnswer": "The process of converting sunlight to electricity",
+                  "responseMessage": "✅That's right! Photovoltaic refers to converting sunlight into electricity.",
+                  "explanation": "Photovoltaic technology uses semiconductor materials to generate electricity from sunlight."
+                },
+                {
+                  "question": "Which type of solar power technology uses mirrors to concentrate sunlight?",
+                  "options": ["Photovoltaic panels", "Solar thermal collectors", "Concentrated solar power", "Solar water heaters"],
+                  "correctAnswer": "Concentrated solar power",
+                  "responseMessage": "✅That's right! Concentrated solar power uses mirrors to concentrate sunlight.",
+                  "explanation": "Concentrated solar power systems use mirrors or lenses to focus a large area of sunlight, creating high temperatures that generate electricity."
+                },
+                {
+                  "question": "What is the typical lifespan of a solar panel?",
+                  "options": ["5-10 years", "10-15 years", "15-25 years", "25-30 years"],
+                  "correctAnswer": "25-30 years",
+                  "responseMessage": "✅That's right! Solar panels typically have a lifespan of 25-30 years.",
+                  "explanation": "Most solar panels are designed to last for 25-30 years, providing a long-term source of renewable energy."
+                },
+                {
+                  "question": "What is the main benefit of using solar energy in residential areas?",
+                  "options": ["Lower electricity bills", "Improved aesthetic appeal", "Higher property values", "Decreased land use"],
+                  "correctAnswer": "Lower electricity bills",
+                  "responseMessage": "✅That's right! Solar energy can significantly lower electricity bills for residential users.",
+                  "explanation": "By generating their own electricity, homeowners can reduce their dependence on the grid and lower their utility costs."
+                },
+                {
+                  "question": "What is the role of an inverter in a solar power system?",
+                  "options": ["To store solar energy", "To convert DC electricity to AC electricity", "To clean solar panels", "To track sunlight"],
+                  "correctAnswer": "To convert DC electricity to AC electricity",
+                  "responseMessage": "✅That's right! An inverter converts DC electricity from solar panels into AC electricity.",
+                  "explanation": "Solar panels produce direct current (DC) electricity, and inverters convert this to alternating current (AC) for use in homes and businesses."
+                },
+                {
+                  "question": "What does 'solar irradiance' measure?",
+                  "options": ["The amount of solar energy hitting a surface", "The efficiency of solar panels", "The temperature of solar panels", "The angle of solar panels"],
+                  "correctAnswer": "The amount of solar energy hitting a surface",
+                  "responseMessage": "✅That's right! Solar irradiance measures the amount of solar energy hitting a surface.",
+                  "explanation": "Solar irradiance is a measure of the power per unit area received from the Sun in the form of electromagnetic radiation."
+                },
+                {
+                  "question": "Which factor most affects the efficiency of a solar panel?",
+                  "options": ["Temperature", "Wind speed", "Rainfall", "Snowfall"],
+                  "correctAnswer": "Temperature",
+                  "responseMessage": "✅That's right! Temperature most affects the efficiency of a solar panel.",
+                  "explanation": "While solar panels work in a range of temperatures, higher temperatures can reduce their efficiency."
+                },
+                {
+                  "question": "What is 'solar power potential'?",
+                  "options": ["The theoretical maximum power output of a solar panel", "The geographical area suitable for solar farms", "The amount of sunlight available for energy production", "The efficiency of a solar panel system"],
+                  "correctAnswer": "The amount of sunlight available for energy production",
+                  "responseMessage": "✅That's right! Solar power potential refers to the amount of sunlight available for energy production.",
+                  "explanation": "Solar power potential is determined by the amount of solar radiation received in a given area and time."
+                },
+                {
+                  "question": "What is a 'solar collector' used for?",
+                  "options": ["Capturing and converting sunlight into electricity", "Storing solar energy", "Heating water or air", "Distributing solar energy"],
+                  "correctAnswer": "Heating water or air",
+                  "responseMessage": "✅That's right! A solar collector is used for heating water or air.",
+                  "explanation": "Solar collectors are designed to capture sunlight and convert it into thermal energy for heating purposes."
+                },
+                {
+                  "question": "What is the primary challenge of solar energy storage?",
+                  "options": ["High costs", "Low efficiency", "Limited availability", "Complex technology"],
+                  "correctAnswer": "High costs",
+                  "responseMessage": "✅That's right! The primary challenge of solar energy storage is high costs.",
+                  "explanation": "Energy storage solutions such as batteries can be expensive, making it a significant challenge for widespread solar energy adoption."
+                }
+              ]
+            },
+            {
+              "setNumber": 3,
+              "questions": [
+                {
+                  "question": "What is the main difference between 'solar thermal' and 'photovoltaic' systems?",
+                  "options": ["Solar thermal uses sunlight to heat fluids, while photovoltaic converts sunlight into electricity", "Solar thermal converts sunlight into electricity, while photovoltaic heats fluids", "Solar thermal uses mirrors, while photovoltaic uses panels", "Solar thermal is less efficient than photovoltaic"],
+                  "correctAnswer": "Solar thermal uses sunlight to heat fluids, while photovoltaic converts sunlight into electricity",
+                  "responseMessage": "✅That's right! Solar thermal heats fluids, while photovoltaic systems generate electricity.",
+                  "explanation": "Solar thermal systems are designed for heating applications, while photovoltaic systems convert sunlight directly into electricity."
+                },
+                {
+                  "question": "What is the function of a 'solar tracker'?",
+                  "options": ["To clean solar panels", "To adjust the position of solar panels to follow the sun", "To store solar energy", "To increase the efficiency of solar batteries"],
+                  "correctAnswer": "To adjust the position of solar panels to follow the sun",
+                  "responseMessage": "✅That's right! A solar tracker adjusts the position of solar panels to follow the sun.",
+                  "explanation": "Solar trackers help increase the efficiency of solar panels by keeping them aligned with the sun’s path throughout the day."
+                },
+                {
+                  "question": "What is 'solar photovoltaic efficiency'?",
+                  "options": ["The amount of sunlight converted into electricity", "The size of the solar panel", "The cost of solar panel installation", "The lifespan of solar panels"],
+                  "correctAnswer": "The amount of sunlight converted into electricity",
+                  "responseMessage": "✅That's right! Solar photovoltaic efficiency refers to the amount of sunlight converted into electricity.",
+                  "explanation": "Photovoltaic efficiency is a measure of how effectively a solar panel converts sunlight into electrical energy."
+                },
+                {
+                  "question": "Which type of solar power system is best suited for large-scale electricity generation?",
+                  "options": ["Solar thermal power plants", "Residential solar panels", "Small solar water heaters", "Portable solar chargers"],
+                  "correctAnswer": "Solar thermal power plants",
+                  "responseMessage": "✅That's right! Solar thermal power plants are best suited for large-scale electricity generation.",
+                  "explanation": "Solar thermal power plants use mirrors or lenses to concentrate sunlight, generating high temperatures to produce electricity on a large scale."
+                },
+                {
+                  "question": "What is 'solar power grid integration'?",
+                  "options": ["Connecting solar panels to a local grid", "Storing solar energy in batteries", "Distributing solar panels across different locations", "Using solar power for off-grid systems"],
+                  "correctAnswer": "Connecting solar panels to a local grid",
+                  "responseMessage": "✅That's right! Solar power grid integration involves connecting solar panels to a local grid.",
+                  "explanation": "Grid integration allows solar power systems to feed electricity into the local power grid, providing a reliable energy source."
+                },
+                {
+                  "question": "What is the main component of a solar thermal system?",
+                  "options": ["Solar panels", "Heat exchangers", "Inverters", "Batteries"],
+                  "correctAnswer": "Heat exchangers",
+                  "responseMessage": "✅That's right! Heat exchangers are a main component of solar thermal systems.",
+                  "explanation": "In solar thermal systems, heat exchangers transfer heat from the solar collector to the water or air being heated."
+                },
+                {
+                  "question": "How does 'solar power' contribute to reducing greenhouse gas emissions?",
+                  "options": ["By increasing energy consumption", "By reducing reliance on fossil fuels", "By emitting more CO2", "By promoting deforestation"],
+                  "correctAnswer": "By reducing reliance on fossil fuels",
+                  "responseMessage": "✅That's right! Solar power helps reduce greenhouse gas emissions by decreasing reliance on fossil fuels.",
+                  "explanation": "Using solar energy reduces the need for fossil fuels, which are major sources of greenhouse gas emissions."
+                },
+                {
+                  "question": "What is the purpose of a 'solar inverter'?",
+                  "options": ["To convert solar energy into thermal energy", "To convert AC power into DC power", "To convert DC power into AC power", "To store solar energy"],
+                  "correctAnswer": "To convert DC power into AC power",
+                  "responseMessage": "✅That's right! A solar inverter converts DC power from solar panels into AC power.",
+                  "explanation": "Solar inverters are essential for making the electricity generated by solar panels usable in homes and businesses."
+                },
+                {
+                  "question": "Which factor does NOT significantly affect the performance of a solar panel?",
+                  "options": ["Shade", "Orientation", "Temperature", "Weather"],
+                  "correctAnswer": "Weather",
+                  "responseMessage": "✅That's right! Weather does not significantly affect the performance of a solar panel compared to shade, orientation, and temperature.",
+                  "explanation": "While weather conditions can affect solar panel performance temporarily, shade, orientation, and temperature have more consistent impacts."
+                },
+                {
+                  "question": "What is a 'solar array'?",
+                  "options": ["A single solar panel", "A collection of solar panels connected together", "A type of solar battery", "A solar heating system"],
+                  "correctAnswer": "A collection of solar panels connected together",
+                  "responseMessage": "✅That's right! A solar array is a collection of solar panels connected together.",
+                  "explanation": "Solar arrays are used to increase the amount of electricity generated by linking multiple solar panels."
+                }
+              ]
+            },
+            {
+              "setNumber": 4,
+              "questions": [
+                {
+                  "question": "What is 'solar energy'?",
+                  "options": ["Energy from wind", "Energy from the sun", "Energy from water", "Energy from the Earth’s core"],
+                  "correctAnswer": "Energy from the sun",
+                  "responseMessage": "✅That's right! Solar energy comes from the sun.",
+                  "explanation": "Solar energy is derived from sunlight and can be converted into electricity or heat for various applications."
+                },
+                {
+                  "question": "What is a 'solar panel's' main function?",
+                  "options": ["To convert sunlight into heat", "To generate electricity from sunlight", "To store solar energy", "To reflect sunlight"],
+                  "correctAnswer": "To generate electricity from sunlight",
+                  "responseMessage": "✅That's right! Solar panels generate electricity from sunlight.",
+                  "explanation": "Solar panels use photovoltaic cells to convert the energy from sunlight into electrical power."
+                },
+                {
+                  "question": "Which type of solar panel is known for high efficiency and high cost?",
+                  "options": ["Monocrystalline", "Polycrystalline", "Thin-film", "Flexible"],
+                  "correctAnswer": "Monocrystalline",
+                  "responseMessage": "✅That's right! Monocrystalline panels are known for high efficiency and high cost.",
+                  "explanation": "Monocrystalline panels are made from single-crystal silicon, which makes them more efficient but also more expensive."
+                },
+                {
+                  "question": "What is the main purpose of a 'solar battery'?",
+                  "options": ["To increase solar panel efficiency", "To store excess solar energy for later use", "To convert DC to AC power", "To clean solar panels"],
+                  "correctAnswer": "To store excess solar energy for later use",
+                  "responseMessage": "✅That's right! Solar batteries store excess energy generated by solar panels.",
+                  "explanation": "Solar batteries allow for the storage of excess energy produced during the day, which can be used during non-sunny periods."
+                },
+                {
+                  "question": "How do 'solar panels' help reduce energy bills?",
+                  "options": ["By increasing energy usage", "By generating free electricity from sunlight", "By reducing the need for maintenance", "By improving energy efficiency of appliances"],
+                  "correctAnswer": "By generating free electricity from sunlight",
+                  "responseMessage": "✅That's right! Solar panels generate free electricity from sunlight, which helps reduce energy bills.",
+                  "explanation": "Generating your own electricity with solar panels can significantly reduce the amount of energy you need to buy from your utility provider."
+                },
+                {
+                  "question": "What does 'solar power capacity' refer to?",
+                  "options": ["The total energy a solar panel can produce", "The size of a solar panel", "The efficiency of a solar panel", "The amount of sunlight a solar panel receives"],
+                  "correctAnswer": "The total energy a solar panel can produce",
+                  "responseMessage": "✅That's right! Solar power capacity refers to the total energy a solar panel can produce.",
+                  "explanation": "Capacity is a measure of how much electrical power a solar panel can generate under ideal conditions."
+                },
+                {
+                  "question": "Which of these is a common application of solar thermal energy?",
+                  "options": ["Heating swimming pools", "Generating electricity", "Powering electric cars", "Storing energy"],
+                  "correctAnswer": "Heating swimming pools",
+                  "responseMessage": "✅That's right! Solar thermal energy is commonly used for heating swimming pools.",
+                  "explanation": "Solar thermal systems are often used to heat water for pools, providing a cost-effective way to extend swimming seasons."
+                },
+                {
+                  "question": "What is the main advantage of using solar energy over traditional energy sources?",
+                  "options": ["Higher reliability", "Lower cost", "Environmental benefits", "Greater energy storage"],
+                  "correctAnswer": "Environmental benefits",
+                  "responseMessage": "✅That's right! Solar energy offers significant environmental benefits.",
+                  "explanation": "Solar energy reduces greenhouse gas emissions and pollution compared to traditional fossil fuels."
+                },
+                {
+                  "question": "What does 'solar power' contribute to energy independence?",
+                  "options": ["By reducing energy consumption", "By decreasing reliance on external energy sources", "By increasing energy bills", "By requiring more fossil fuels"],
+                  "correctAnswer": "By decreasing reliance on external energy sources",
+                  "responseMessage": "✅That's right! Solar power decreases reliance on external energy sources.",
+                  "explanation": "Solar power helps achieve energy independence by allowing individuals and businesses to produce their own electricity."
+                },
+                {
+                  "question": "Which of these is a benefit of solar power for the environment?",
+                  "options": ["Increased air pollution", "Reduced deforestation", "Higher greenhouse gas emissions", "More water consumption"],
+                  "correctAnswer": "Reduced deforestation",
+                  "responseMessage": "✅That's right! Solar power helps reduce deforestation.",
+                  "explanation": "Using solar power reduces the need for fossil fuel extraction and consumption, which helps prevent deforestation and habitat destruction."
+                }
+              ]
+            },
+            {
+              "setNumber": 5,
+              "questions": [
+                {
+                  "question": "What is the main advantage of solar power compared to non-renewable energy sources?",
+                  "options": ["Consistency", "Sustainability", "Efficiency", "Cost"],
+                  "correctAnswer": "Sustainability",
+                  "responseMessage": "✅That's right! Solar power is more sustainable than non-renewable energy sources.",
+                  "explanation": "Solar power is a renewable resource that does not deplete over time, unlike non-renewable sources such as coal and oil."
+                },
+                {
+                  "question": "Which of these is NOT a common use of solar power?",
+                  "options": ["Electricity generation", "Space heating", "Water desalination", "Coal mining"],
+                  "correctAnswer": "Coal mining",
+                  "responseMessage": "✅That's right! Coal mining is not a use of solar power.",
+                  "explanation": "Solar power is used for generating electricity, heating, and other applications, but it is not used in coal mining."
+                },
+                {
+                  "question": "What is the role of a 'solar power converter'?",
+                  "options": ["To increase the efficiency of solar panels", "To store solar energy", "To convert solar energy into usable forms", "To maintain solar panels"],
+                  "correctAnswer": "To convert solar energy into usable forms",
+                  "responseMessage": "✅That's right! A solar power converter transforms solar energy into usable electricity or heat.",
+                  "explanation": "Solar power converters include inverters and other devices that make solar energy practical for use in homes and businesses."
+                },
+                {
+                  "question": "What is 'solar panel degradation'?",
+                  "options": ["The process of increasing solar panel efficiency", "The loss of efficiency in solar panels over time", "The cleaning of solar panels", "The installation of solar panels"],
+                  "correctAnswer": "The loss of efficiency in solar panels over time",
+                  "responseMessage": "✅That's right! Solar panel degradation refers to the loss of efficiency over time.",
+                  "explanation": "Solar panels can experience gradual performance loss due to exposure to environmental conditions and aging."
+                },
+                {
+                  "question": "Which region of the world receives the most sunlight and is thus ideal for solar power?",
+                  "options": ["The Arctic", "The Sahara Desert", "The Amazon Rainforest", "The Antarctic"],
+                  "correctAnswer": "The Sahara Desert",
+                  "responseMessage": "✅That's right! The Sahara Desert receives the most sunlight and is ideal for solar power.",
+                  "explanation": "Regions with high solar irradiance, like the Sahara Desert, are ideal for harnessing solar energy."
+                },
+                {
+                  "question": "What is 'solar energy potential'?",
+                  "options": ["The cost of solar panels", "The theoretical maximum amount of solar energy that can be harnessed", "The efficiency of solar batteries", "The installation process of solar panels"],
+                  "correctAnswer": "The theoretical maximum amount of solar energy that can be harnessed",
+                  "responseMessage": "✅That's right! Solar energy potential is the theoretical maximum amount of solar energy that can be harnessed.",
+                  "explanation": "Solar energy potential measures the maximum amount of solar energy that can be captured and used in a specific area."
+                },
+                {
+                  "question": "What is 'solar power off-grid system'?",
+                  "options": ["A solar power system connected to the national grid", "A system that operates independently from the electricity grid", "A system used only for solar thermal applications", "A type of solar panel with higher efficiency"],
+                  "correctAnswer": "A system that operates independently from the electricity grid",
+                  "responseMessage": "✅That's right! An off-grid solar power system operates independently from the electricity grid.",
+                  "explanation": "Off-grid systems provide electricity in areas not connected to the main power grid, often using batteries for energy storage."
+                },
+                {
+                  "question": "Which of these is a disadvantage of solar power?",
+                  "options": ["High initial cost", "Low environmental impact", "Renewable resource", "Low operational costs"],
+                  "correctAnswer": "High initial cost",
+                  "responseMessage": "✅That's right! The high initial cost is a disadvantage of solar power.",
+                  "explanation": "While solar power has many benefits, the upfront cost of installation can be a barrier for some individuals and organizations."
+                },
+                {
+                  "question": "What is the typical efficiency range for commercial solar panels?",
+                  "options": ["5-10%", "10-15%", "15-20%", "20-25%"],
+                  "correctAnswer": "15-20%",
+                  "responseMessage": "✅That's right! Commercial solar panels typically have an efficiency range of 15-20%.",
+                  "explanation": "The efficiency of commercial solar panels indicates how much sunlight is converted into usable electricity, with most panels falling within this range."
+                },
+                {
+                  "question": "What is the main component of a solar photovoltaic system?",
+                  "options": ["Heat exchangers", "Wind turbines", "Solar panels", "Geothermal wells"],
+                  "correctAnswer": "Solar panels",
+                  "responseMessage": "✅That's right! Solar panels are the main component of a solar photovoltaic system.",
+                  "explanation": "Solar panels are the primary technology used in photovoltaic systems to convert sunlight into electricity."
+                }
+              ]
+            }
+          ]
+           },
+            {
+              "name": "Ecosystem",
+              "explanation": "Ecosystems are dynamic systems where living organisms interact with each other and their non-living environment. They range in size from tiny ponds to vast forests and even entire biomes like the tundra or rainforest. The health of an ecosystem is measured by its biodiversity, which contributes to the resilience and productivity of the system. Ecosystems provide essential services like clean water, air, food, and climate regulation, making them critical to human survival and well-being.",
+              "fullExplanation": "An ecosystem is a complex network of living organisms (plants, animals, and microorganisms) and their physical environment, interacting as a system. These interactions include the flow of energy and cycling of nutrients that sustain life.",
+              "sets": [
+                {
+                  
+                    "setNumber": 1,
+                    "questions": [
+                      {
+                        "question": "What is an ecosystem?",
+                        "options": ["A community of living organisms and their environment", "A single species of animal", "A group of planets", "A chemical element"],
+                        "correctAnswer": "A community of living organisms and their environment",
+                        "responseMessage": "✅ That's correct! An ecosystem includes both living organisms and their environment.",
+                        "explanation": "An ecosystem comprises all living organisms and their physical environment, interacting as a system."
+                      },
+                      {
+                        "question": "Which of the following is a biotic component of an ecosystem?",
+                        "options": ["Water", "Sunlight", "Soil", "Plants"],
+                        "correctAnswer": "Plants",
+                        "responseMessage": "✅ That's correct! Plants are biotic components of an ecosystem.",
+                        "explanation": "Biotic components are the living parts of an ecosystem, such as plants and animals."
+                      },
+                      {
+                        "question": "Which of the following is an abiotic component of an ecosystem?",
+                        "options": ["Animals", "Bacteria", "Rocks", "Plants"],
+                        "correctAnswer": "Rocks",
+                        "responseMessage": "✅ That's correct! Rocks are an abiotic component of an ecosystem.",
+                        "explanation": "Abiotic components are the non-living parts of an ecosystem, such as rocks, water, and sunlight."
+                      },
+                      {
+                        "question": "What term describes the role an organism plays in its ecosystem?",
+                        "options": ["Habitat", "Niche", "Population", "Community"],
+                        "correctAnswer": "Niche",
+                        "responseMessage": "✅ That's correct! A niche is the role an organism plays in its ecosystem.",
+                        "explanation": "An organism's niche includes its behavior, diet, and interactions with other species."
+                      },
+                      {
+                        "question": "Which process is essential for the flow of energy in an ecosystem?",
+                        "options": ["Photosynthesis", "Respiration", "Decomposition", "All of the above"],
+                        "correctAnswer": "All of the above",
+                        "responseMessage": "✅ That's correct! All of these processes are essential for energy flow in an ecosystem.",
+                        "explanation": "Energy flows through ecosystems via photosynthesis, respiration, and decomposition."
+                      },
+                      {
+                        "question": "Which type of organism is at the base of most food chains?",
+                        "options": ["Producers", "Consumers", "Decomposers", "Predators"],
+                        "correctAnswer": "Producers",
+                        "responseMessage": "✅ That's correct! Producers, like plants, are at the base of most food chains.",
+                        "explanation": "Producers convert sunlight into energy through photosynthesis, supporting the entire food chain."
+                      },
+                      {
+                        "question": "What is biodiversity?",
+                        "options": ["The number of species in an area", "The amount of energy in an ecosystem", "The variety of life in an ecosystem", "The size of an ecosystem"],
+                        "correctAnswer": "The variety of life in an ecosystem",
+                        "responseMessage": "✅ That's correct! Biodiversity refers to the variety of life in an ecosystem.",
+                        "explanation": "High biodiversity indicates a healthy ecosystem with many different species and complex interactions."
+                      },
+                      {
+                        "question": "What is the main function of decomposers in an ecosystem?",
+                        "options": ["To produce energy", "To decompose dead organisms", "To compete for resources", "To hunt prey"],
+                        "correctAnswer": "To decompose dead organisms",
+                        "responseMessage": "✅ That's correct! Decomposers break down dead organisms and recycle nutrients.",
+                        "explanation": "Decomposers play a crucial role in recycling nutrients and maintaining soil health."
+                      },
+                      {
+                        "question": "What is an example of a freshwater ecosystem?",
+                        "options": ["Ocean", "Lake", "Desert", "Forest"],
+                        "correctAnswer": "Lake",
+                        "responseMessage": "✅ That's correct! A lake is an example of a freshwater ecosystem.",
+                        "explanation": "Freshwater ecosystems include lakes, rivers, and streams, where the water is not salty."
+                      },
+                      {
+                        "question": "Which human activity is most likely to disrupt an ecosystem?",
+                        "options": ["Recycling", "Deforestation", "Planting trees", "Conservation"],
+                        "correctAnswer": "Deforestation",
+                        "responseMessage": "✅ That's correct! Deforestation can severely disrupt ecosystems.",
+                        "explanation": "Deforestation destroys habitats, reduces biodiversity, and alters the balance of ecosystems."
+                      }
+                    ]
+                  }
+                  
+          ]
+        },
+          {
+            
       "name": "Climate Change",
-      "explanation": "Understand the impact of climate change and what can be done to mitigate it.",
-      "fullExplanation": "Climate change refers to significant changes in global temperatures and weather patterns over time. While climate change is a natural phenomenon, scientific evidence shows that human activities are currently driving an unprecedented rate of change.",
-      "questions": [
+      "explanation": "Climate change refers to significant shifts in weather patterns and global temperatures. Human activities, particularly the burning of fossil fuels and deforestation, have been major contributors to this phenomenon, leading to an increase in greenhouse gases in the atmosphere.",
+      "fullExplanation": "Climate change is a long-term alteration of temperature and typical weather patterns in a place. It refers specifically to the rise in global temperatures from the mid-20th century to the present due to human activities. The effects of climate change include rising sea levels, extreme weather events, and biodiversity loss, all of which pose serious challenges to human life and the environment.",
+      "sets": [
         {
-          "question": "What is the main cause of recent climate change?",
-          "options": ["Natural variations", "Human activities", "Solar cycles", "Volcanic eruptions"],
-          "correctAnswer": "Human activities",
-          "responseMessage": "That's right! Human activities are the main cause of recent climate change.",
-          "explanation": "These activities, such as burning fossil fuels, contribute to greenhouse gas emissions."
+          "setNumber": 1,
+          "questions": [
+            {
+              "question": "What is the primary cause of recent climate change?",
+              "options": ["Volcanic activity", "Deforestation", "Burning fossil fuels", "Solar radiation"],
+              "correctAnswer": "Burning fossil fuels",
+              "responseMessage": "✅That's right! Burning fossil fuels is the primary cause of recent climate change.",
+              "explanation": "The combustion of fossil fuels releases greenhouse gases that trap heat in the atmosphere."
+            },
+            {
+              "question": "Which gas is the most significant contributor to the greenhouse effect?",
+              "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Methane"],
+              "correctAnswer": "Carbon dioxide",
+              "responseMessage": "✅That's right! Carbon dioxide is the most significant contributor to the greenhouse effect.",
+              "explanation": "Carbon dioxide (CO2) is a major greenhouse gas, primarily released through human activities like burning fossil fuels."
+            },
+            {
+              "question": "Which of the following is an effect of climate change?",
+              "options": ["Increased biodiversity", "Rising sea levels", "Stable weather patterns", "Decrease in global temperatures"],
+              "correctAnswer": "Rising sea levels",
+              "responseMessage": "✅That's right! Rising sea levels are a major effect of climate change.",
+              "explanation": "Melting polar ice caps and glaciers contribute to rising sea levels, threatening coastal communities."
+            },
+            {
+              "question": "What is the term for the gradual increase in the Earth's average surface temperature?",
+              "options": ["Global cooling", "Global warming", "Climate neutrality", "Ecosystem shift"],
+              "correctAnswer": "Global warming",
+              "responseMessage": "✅That's right! The gradual increase in Earth's average surface temperature is called global warming.",
+              "explanation": "Global warming is primarily caused by human activities that increase greenhouse gases in the atmosphere."
+            },
+            {
+              "question": "Which international agreement aims to reduce carbon emissions?",
+              "options": ["Kyoto Protocol", "Paris Agreement", "Montreal Protocol", "Geneva Convention"],
+              "correctAnswer": "Paris Agreement",
+              "responseMessage": "✅That's right! The Paris Agreement aims to reduce carbon emissions.",
+              "explanation": "The Paris Agreement is a global pact to combat climate change by limiting global warming to below 2°C."
+            },
+            {
+              "question": "What is the effect of deforestation on climate change?",
+              "options": ["Reduces carbon dioxide levels", "Increases carbon dioxide levels", "Has no effect", "Stabilizes the climate"],
+              "correctAnswer": "Increases carbon dioxide levels",
+              "responseMessage": "✅That's right! Deforestation increases carbon dioxide levels.",
+              "explanation": "Trees absorb CO2, so cutting them down releases stored carbon and reduces the planet's capacity to absorb CO2."
+            },
+            {
+              "question": "What are greenhouse gases?",
+              "options": ["Gases that trap heat in the atmosphere", "Gases that cool the atmosphere", "Gases that are harmful to plants", "None of the above"],
+              "correctAnswer": "Gases that trap heat in the atmosphere",
+              "responseMessage": "✅That's right! Greenhouse gases trap heat in the atmosphere.",
+              "explanation": "Greenhouse gases include carbon dioxide, methane, and water vapor, which contribute to the greenhouse effect."
+            },
+            {
+              "question": "Which human activity contributes the most to global warming?",
+              "options": ["Agriculture", "Transportation", "Industry", "Burning fossil fuels"],
+              "correctAnswer": "Burning fossil fuels",
+              "responseMessage": "✅That's right! Burning fossil fuels contributes the most to global warming.",
+              "explanation": "Burning fossil fuels for energy is the largest source of greenhouse gas emissions, driving climate change."
+            },
+            {
+              "question": "What is a carbon footprint?",
+              "options": ["A measure of carbon dioxide emissions for a given activity", "The impact of a person on biodiversity", "A trace of carbon left in the environment", "None of the above"],
+              "correctAnswer": "A measure of carbon dioxide emissions for a given activity",
+              "responseMessage": "That's right! A carbon footprint measures the carbon dioxide emissions for a given activity.",
+              "explanation": "Your carbon footprint includes all the greenhouse gases you produce, directly and indirectly, through your activities."
+            },
+            {
+              "question": "Which renewable energy source is most widely used?",
+              "options": ["Solar power", "Wind power", "Hydropower", "Geothermal power"],
+              "correctAnswer": "Hydropower",
+              "responseMessage": "That's right! Hydropower is the most widely used renewable energy source.",
+              "explanation": "Hydropower generates electricity by harnessing the energy of flowing water, making it the largest source of renewable energy."
+            }
+          ]
         },
-        {
-          "question": "Which greenhouse gas is the most abundant in Earth's atmosphere?",
-          "options": ["Carbon dioxide", "Methane", "Nitrous oxide", "Water vapor"],
-          "correctAnswer": "Water vapor",
-          "responseMessage": "That's right! Water vapor is the most abundant greenhouse gas.",
-          "explanation": "Water vapor plays a significant role in Earth's climate by trapping heat in the atmosphere."
-        },
-        {
-          "question": "What is the primary source of carbon dioxide emissions?",
-          "options": ["Deforestation", "Burning fossil fuels", "Agriculture", "Industrial processes"],
-          "correctAnswer": "Burning fossil fuels",
-          "responseMessage": "That's right! Burning fossil fuels is the primary source of carbon dioxide emissions.",
-          "explanation": "Fossil fuels, such as coal and oil, release large amounts of CO2 when burned."
-        },
-        {
-          "question": "Which of the following is a consequence of climate change?",
-          "options": ["Rising sea levels", "Increased extreme weather events", "Melting polar ice", "All of the above"],
-          "correctAnswer": "All of the above",
-          "responseMessage": "That's right! Climate change leads to rising sea levels, extreme weather events, and melting polar ice.",
-          "explanation": "These consequences have profound effects on ecosystems, communities, and economies."
-        },
-        {
-          "question": "What is the term for the gradual increase in Earth's average temperature?",
-          "options": ["Global warming", "Climate variability", "Ocean acidification", "Greenhouse effect"],
-          "correctAnswer": "Global warming",
-          "responseMessage": "That's right! The gradual increase in Earth's average temperature is called global warming.",
-          "explanation": "Global warming is primarily caused by the buildup of greenhouse gases in the atmosphere."
-        },
-        {
-          "question": "Which international agreement aims to limit global temperature rise?",
-          "options": ["Kyoto Protocol", "Paris Agreement", "Montreal Protocol", "Copenhagen Accord"],
-          "correctAnswer": "Paris Agreement",
-          "responseMessage": "That's right! The Paris Agreement aims to limit global temperature rise.",
-          "explanation": "This agreement seeks to mitigate the effects of climate change through international cooperation."
-        },
-        {
-          "question": "Which sector is the largest contributor to greenhouse gas emissions?",
-          "options": ["Transportation", "Energy production", "Agriculture", "Manufacturing"],
-          "correctAnswer": "Energy production",
-          "responseMessage": "That's right! Energy production is the largest contributor to greenhouse gas emissions.",
-          "explanation": "Burning fossil fuels for energy generates the majority of greenhouse gases."
-        },
-        {
-          "question": "What is ocean acidification?",
-          "options": ["Decrease in ocean pH due to increased CO2", "Increase in ocean salinity", "Rising ocean temperatures", "None of the above"],
-          "correctAnswer": "Decrease in ocean pH due to increased CO2",
-          "responseMessage": "That's right! Ocean acidification refers to the decrease in ocean pH due to increased CO2.",
-          "explanation": "This process affects marine life and ecosystems, particularly coral reefs."
-        },
-        {
-          "question": "Which renewable energy source does not contribute to climate change?",
-          "options": ["Solar power", "Wind power", "Hydropower", "All of the above"],
-          "correctAnswer": "All of the above",
-          "responseMessage": "That's right! Solar power, wind power, and hydropower do not contribute to climate change.",
-          "explanation": "These renewable energy sources produce little to no greenhouse gas emissions."
-        },
-        {
-          "question": "What is a carbon footprint?",
-          "options": ["The total greenhouse gases emitted by an individual", "A type of energy conservation method", "A renewable energy source", "None of the above"],
-          "correctAnswer": "The total greenhouse gases emitted by an individual",
-          "responseMessage": "That's right! A carbon footprint refers to the total greenhouse gases emitted by an individual.",
-          "explanation": "Understanding your carbon footprint helps in making more sustainable choices."
-        }
-      ]
-    },
-    {
-      "name": "Solar Power",
-      "explanation": "Discover how solar power works and its benefits to the environment.",
-      "fullExplanation": "Solar power is energy from the sun that is converted into thermal or electrical energy. It is one of the most abundant and renewable energy sources available.",
-      "questions": [
-        {
-          "question": "What is the primary component of solar panels?",
-          "options": ["Silicon", "Copper", "Aluminum", "Glass"],
-          "correctAnswer": "Silicon",
-          "responseMessage": "That's right! Silicon is the primary component of solar panels.",
-          "explanation": "Silicon is used due to its excellent photovoltaic properties, converting sunlight into electricity."
-        },
-        {
-          "question": "How do solar panels generate electricity?",
-          "options": ["By capturing wind energy", "By converting sunlight into electricity", "By using geothermal energy", "By burning fossil fuels"],
-          "correctAnswer": "By converting sunlight into electricity",
-          "responseMessage": "That's right! Solar panels generate electricity by converting sunlight into electricity.",
-          "explanation": "Photovoltaic cells in the panels convert light into electrical energy."
-        },
-        {
-          "question": "Which of the following is a benefit of solar power?",
-          "options": ["Reduces electricity bills", "Reduces carbon footprint", "Requires low maintenance", "All of the above"],
-          "correctAnswer": "All of the above",
-          "responseMessage": "That's right! Solar power reduces electricity bills, carbon footprint, and requires low maintenance.",
-          "explanation": "Solar power is a sustainable and cost-effective energy solution."
-        },
-        {
-          "question": "What is the average lifespan of a solar panel?",
-          "options": ["5-10 years", "10-15 years", "20-25 years", "30-35 years"],
-          "correctAnswer": "20-25 years",
-          "responseMessage": "That's right! The average lifespan of a solar panel is 20-25 years.",
-          "explanation": "With proper maintenance, solar panels can efficiently generate electricity for decades."
-        },
-        {
-          "question": "Which country is the largest producer of solar energy?",
-          "options": ["United States", "Germany", "China", "India"],
-          "correctAnswer": "China",
-          "responseMessage": "That's right! China is the largest producer of solar energy.",
-          "explanation": "China has invested heavily in solar power, leading the world in production capacity."
-        },
-        {
-          "question": "What is the efficiency range of most commercial solar panels?",
-          "options": ["5-10%", "10-15%", "15-20%", "20-25%"],
-          "correctAnswer": "15-20%",
-          "responseMessage": "That's right! The efficiency range of most commercial solar panels is 15-20%.",
-          "explanation": "Efficiency refers to how much sunlight the panel can convert into usable electricity."
-        },
-        {
-          "question": "What is the main challenge of solar energy?",
-          "options": ["Initial cost", "Availability at night", "Weather dependency", "All of the above"],
-          "correctAnswer": "All of the above",
-          "responseMessage": "That's right! Solar energy faces challenges such as initial cost, availability at night, and weather dependency.",
-          "explanation": "Despite these challenges, solar power remains a viable renewable energy source."
-        },
-        {
-          "question": "What type of current do solar panels produce?",
-          "options": ["Alternating current (AC)", "Direct current (DC)", "Pulsating current", "None of the above"],
-          "correctAnswer": "Direct current (DC)",
-          "responseMessage": "That's right! Solar panels produce direct current (DC).",
-          "explanation": "This DC is typically converted to alternating current (AC) for use in homes and businesses."
-        },
-        {
-          "question": "How is solar power stored for later use?",
-          "options": ["In batteries", "In water tanks", "In power grids", "None of the above"],
-          "correctAnswer": "In batteries",
-          "responseMessage": "That's right! Solar power is stored in batteries for later use.",
-          "explanation": "Batteries allow solar energy to be used when the sun is not shining."
-        },
-        {
-          "question": "Which of the following can solar energy be used for?",
-          "options": ["Heating water", "Generating electricity", "Cooking food", "All of the above"],
-          "correctAnswer": "All of the above",
-          "responseMessage": "That's right! Solar energy can be used for heating water, generating electricity, and cooking food.",
-          "explanation": "Solar energy is versatile and can be applied in various household and industrial applications."
-        }
-      ]
-    }
-  ]
-}
+          {
+            "setNumber": 2,
+            "questions": [
+              {
+                "question": "What is the primary greenhouse gas responsible for global warming?",
+                "options": ["Methane", "Carbon dioxide", "Nitrous oxide", "Ozone"],
+                "correctAnswer": "Carbon dioxide",
+                "responseMessage": "✅That's right! Carbon dioxide is the primary greenhouse gas responsible for global warming.",
+                "explanation": "Carbon dioxide (CO2) is a major greenhouse gas emitted by burning fossil fuels and deforestation."
+              },
+              {
+                "question": "What term describes the gradual increase in Earth's average temperature?",
+                "options": ["Climate change", "Global warming", "Greenhouse effect", "Ozone depletion"],
+                "correctAnswer": "Global warming",
+                "responseMessage": "✅That's right! Global warming refers to the gradual increase in Earth's average temperature.",
+                "explanation": "Global warming is a key aspect of climate change, driven by increased levels of greenhouse gases."
+              },
+              {
+                "question": "Which sector is the largest contributor to greenhouse gas emissions?",
+                "options": ["Transportation", "Agriculture", "Energy", "Industry"],
+                "correctAnswer": "Energy",
+                "responseMessage": "✅That's right! The energy sector is the largest contributor to greenhouse gas emissions.",
+                "explanation": "Burning fossil fuels for energy production releases significant amounts of CO2 and other greenhouse gases."
+              },
+              {
+                "question": "What is the purpose of the Paris Agreement?",
+                "options": ["To reduce global temperatures", "To phase out fossil fuels", "To limit global warming to below 2°C", "To eliminate plastic waste"],
+                "correctAnswer": "To limit global warming to below 2°C",
+                "responseMessage": "✅That's right! The Paris Agreement aims to limit global warming to well below 2°C above pre-industrial levels.",
+                "explanation": "The Paris Agreement is an international accord to combat climate change and limit global temperature rise."
+              },
+              {
+                "question": "Which of the following is a consequence of melting polar ice caps?",
+                "options": ["Rising sea levels", "Increased biodiversity", "Reduced ocean acidity", "Lower global temperatures"],
+                "correctAnswer": "Rising sea levels",
+                "responseMessage": "✅That's right! Melting polar ice caps contribute to rising sea levels.",
+                "explanation": "As polar ice melts, it adds to the volume of water in the oceans, leading to higher sea levels."
+              },
+              {
+                "question": "What is 'carbon footprint'?",
+                "options": ["The total amount of carbon dioxide emissions caused by an individual or organization", "The amount of carbon stored in forests", "The carbon content in the atmosphere", "The size of a carbon atom"],
+                "correctAnswer": "The total amount of carbon dioxide emissions caused by an individual or organization",
+                "responseMessage": "✅That's right! A carbon footprint measures the total amount of CO2 emissions caused by an individual or organization.",
+                "explanation": "Reducing your carbon footprint helps mitigate climate change by lowering greenhouse gas emissions."
+              },
+              {
+                "question": "Which renewable energy source helps reduce greenhouse gas emissions?",
+                "options": ["Solar power", "Natural gas", "Coal", "Nuclear power"],
+                "correctAnswer": "Solar power",
+                "responseMessage": "✅That's right! Solar power is a renewable energy source that helps reduce greenhouse gas emissions.",
+                "explanation": "Solar power generates electricity without emitting greenhouse gases, unlike fossil fuels."
+              },
+              {
+                "question": "What is 'climate resilience'?",
+                "options": ["The ability to adapt to climate change impacts", "The capacity to increase greenhouse gas emissions", "The process of reducing energy consumption", "The method of planting trees"],
+                "correctAnswer": "The ability to adapt to climate change impacts",
+                "responseMessage": "✅That's right! Climate resilience is the ability to adapt to and recover from the impacts of climate change.",
+                "explanation": "Building climate resilience helps communities and ecosystems withstand and adapt to climate-related challenges."
+              },
+              {
+                "question": "Which gas is often referred to as a 'powerful greenhouse gas' because of its high global warming potential?",
+                "options": ["Carbon dioxide", "Methane", "Nitrous oxide", "Water vapor"],
+                "correctAnswer": "Methane",
+                "responseMessage": "✅That's right! Methane is a powerful greenhouse gas with a high global warming potential.",
+                "explanation": "Methane traps heat in the atmosphere more effectively than CO2, making it a potent greenhouse gas."
+              },
+              {
+                "question": "What is the term for the process of planting trees to absorb CO2 from the atmosphere?",
+                "options": ["Afforestation", "Reforestation", "Deforestation", "Urbanization"],
+                "correctAnswer": "Reforestation",
+                "responseMessage": "✅That's right! Reforestation is the process of planting trees to absorb CO2 from the atmosphere.",
+                "explanation": "Reforestation helps combat climate change by increasing the number of trees that absorb CO2."
+              }
+            ]
+          },
+          {
+            "setNumber": 3,
+            "questions": [
+              {
+                "question": "Which of these is an effect of climate change on weather patterns?",
+                "options": ["More frequent and severe storms", "Stable weather patterns", "Decreased temperatures worldwide", "Increased ozone layer thickness"],
+                "correctAnswer": "More frequent and severe storms",
+                "responseMessage": "✅That's right! Climate change can lead to more frequent and severe storms.",
+                "explanation": "Climate change affects weather patterns, increasing the frequency and intensity of extreme weather events."
+              },
+              {
+                "question": "What is the main cause of ocean acidification?",
+                "options": ["Increased seaweed growth", "Rising sea temperatures", "Higher levels of CO2 in the atmosphere", "Decreased salinity"],
+                "correctAnswer": "Higher levels of CO2 in the atmosphere",
+                "responseMessage": "✅That's right! Higher levels of CO2 in the atmosphere lead to ocean acidification.",
+                "explanation": "CO2 from the atmosphere dissolves in ocean water, lowering its pH and causing acidification."
+              },
+              {
+                "question": "What role do forests play in mitigating climate change?",
+                "options": ["They increase CO2 levels", "They act as carbon sinks", "They contribute to global warming", "They decrease biodiversity"],
+                "correctAnswer": "They act as carbon sinks",
+                "responseMessage": "✅That's right! Forests act as carbon sinks by absorbing CO2 from the atmosphere.",
+                "explanation": "Forests capture and store carbon dioxide, helping to reduce the impact of climate change."
+              },
+              {
+                "question": "What is 'greenwashing'?",
+                "options": ["A genuine environmental initiative", "A deceptive practice of claiming to be environmentally friendly without real benefits", "A type of eco-friendly product", "A government regulation on emissions"],
+                "correctAnswer": "A deceptive practice of claiming to be environmentally friendly without real benefits",
+                "responseMessage": "✅That's right! Greenwashing is when companies falsely claim to be environmentally friendly.",
+                "explanation": "Greenwashing misleads consumers about the environmental benefits of products or practices."
+              },
+              {
+                "question": "Which of the following practices can help reduce individual carbon emissions?",
+                "options": ["Driving a gasoline-powered car", "Using energy-efficient appliances", "Increasing meat consumption", "Ignoring recycling programs"],
+                "correctAnswer": "Using energy-efficient appliances",
+                "responseMessage": "✅That's right! Using energy-efficient appliances helps reduce individual carbon emissions.",
+                "explanation": "Energy-efficient appliances consume less energy, leading to lower carbon emissions."
+              },
+              {
+                "question": "What is a major source of methane emissions?",
+                "options": ["Coal mining", "Landfills", "Hydroelectric dams", "Nuclear power plants"],
+                "correctAnswer": "Landfills",
+                "responseMessage": "✅That's right! Landfills are a major source of methane emissions.",
+                "explanation": "Organic waste decomposes in landfills, producing methane, a potent greenhouse gas."
+              },
+              {
+                "question": "What does the term 'climate adaptation' refer to?",
+                "options": ["Actions taken to prevent climate change", "Strategies to adapt to the effects of climate change", "Methods to increase greenhouse gas emissions", "Technologies to capture carbon dioxide"],
+                "correctAnswer": "Strategies to adapt to the effects of climate change",
+                "responseMessage": "✅That's right! Climate adaptation involves strategies to cope with the effects of climate change.",
+                "explanation": "Adaptation measures help communities and ecosystems manage the impacts of climate change."
+              },
+              {
+                "question": "What is the main goal of carbon offsetting?",
+                "options": ["To increase CO2 emissions", "To neutralize the carbon footprint by supporting emission-reducing projects", "To reduce the cost of energy", "To promote fossil fuel use"],
+                "correctAnswer": "To neutralize the carbon footprint by supporting emission-reducing projects",
+                "responseMessage": "✅That's right! Carbon offsetting aims to neutralize one's carbon footprint by funding projects that reduce emissions.",
+                "explanation": "Carbon offsetting helps balance out emissions by investing in projects that lower or capture CO2."
+              },
+              {
+                "question": "Which region is experiencing the fastest rate of warming due to climate change?",
+                "options": ["Equatorial regions", "The Arctic", "Tropical rainforests", "Desert regions"],
+                "correctAnswer": "The Arctic",
+                "responseMessage": "✅That's right! The Arctic is warming at a faster rate compared to other regions.",
+                "explanation": "The Arctic is experiencing rapid warming due to climate change, leading to significant ice melt."
+              }
+            ]
+          },
+          {
+            "setNumber": 4,
+            "questions": [
+              {
+                "question": "What is the term for the gradual loss of ice in polar regions due to global warming?",
+                "options": ["Ice sheet retreat", "Glacial advance", "Permafrost growth", "Ice shelf expansion"],
+                "correctAnswer": "Ice sheet retreat",
+                "responseMessage": "✅That's right! Ice sheet retreat refers to the gradual loss of ice in polar regions due to global warming.",
+                "explanation": "Ice sheet retreat contributes to rising sea levels and is a visible impact of global warming."
+              },
+              {
+                "question": "What is the 'greenhouse effect'?",
+                "options": ["The warming of Earth's surface due to trapped heat by greenhouse gases", "The cooling of Earth caused by the depletion of the ozone layer", "The process of plants absorbing CO2", "The increase in solar radiation reaching Earth"],
+                "correctAnswer": "The warming of Earth's surface due to trapped heat by greenhouse gases",
+                "responseMessage": "✅That's right! The greenhouse effect warms Earth's surface by trapping heat from greenhouse gases.",
+                "explanation": "Greenhouse gases trap heat in the atmosphere, leading to an increase in Earth's surface temperature."
+              },
+              {
+                "question": "What is a 'climate anomaly'?",
+                "options": ["A long-term shift in weather patterns", "A short-term weather event", "An unusual deviation from the expected climate", "A seasonal temperature change"],
+                "correctAnswer": "An unusual deviation from the expected climate",
+                "responseMessage": "✅That's right! A climate anomaly is an unusual deviation from the expected climate.",
+                "explanation": "Climate anomalies indicate significant changes from the norm and can be indicators of climate change."
+              },
+              {
+                "question": "Which country is the largest emitter of greenhouse gases?",
+                "options": ["India", "United States", "China", "Brazil"],
+                "correctAnswer": "China",
+                "responseMessage": "✅That's right! China is currently the largest emitter of greenhouse gases.",
+                "explanation": "China's large population and rapid industrialization contribute to its high levels of greenhouse gas emissions."
+              },
+              {
+                "question": "What is 'carbon sequestration'?",
+                "options": ["The process of capturing and storing carbon dioxide", "The emission of carbon gases", "The release of stored carbon", "The burning of fossil fuels"],
+                "correctAnswer": "The process of capturing and storing carbon dioxide",
+                "responseMessage": "✅That's right! Carbon sequestration involves capturing and storing CO2 to reduce atmospheric levels.",
+                "explanation": "Carbon sequestration helps mitigate climate change by removing CO2 from the atmosphere and storing it."
+              },
+              {
+                "question": "Which type of energy generation has the least impact on climate change?",
+                "options": ["Wind power", "Coal power", "Natural gas power", "Oil power"],
+                "correctAnswer": "Wind power",
+                "responseMessage": "✅That's right! Wind power has the least impact on climate change among these options.",
+                "explanation": "Wind power generates energy without emitting greenhouse gases, making it a cleaner energy source."
+              },
+              {
+                "question": "What is the main focus of climate change adaptation strategies?",
+                "options": ["Reducing greenhouse gas emissions", "Enhancing resilience to climate impacts", "Increasing industrial output", "Promoting deforestation"],
+                "correctAnswer": "Enhancing resilience to climate impacts",
+                "responseMessage": "✅That's right! Climate change adaptation focuses on enhancing resilience to climate impacts.",
+                "explanation": "Adaptation strategies aim to help communities and ecosystems adjust to the effects of climate change."
+              },
+              {
+                "question": "What is the role of 'sustainable development' in combating climate change?",
+                "options": ["To promote economic growth at any cost", "To balance economic, social, and environmental goals", "To increase greenhouse gas emissions", "To encourage deforestation for development"],
+                "correctAnswer": "To balance economic, social, and environmental goals",
+                "responseMessage": "✅That's right! Sustainable development seeks to balance economic, social, and environmental goals to address climate change.",
+                "explanation": "Sustainable development promotes practices that do not compromise the ability of future generations to meet their needs."
+              },
+              {
+                "question": "What does the term 'climate justice' refer to?",
+                "options": ["Fair distribution of climate change impacts and benefits", "Increased industrial pollution control", "Expansion of urban infrastructure", "Higher energy consumption rates"],
+                "correctAnswer": "Fair distribution of climate change impacts and benefits",
+                "responseMessage": "✅That's right! Climate justice focuses on the fair distribution of climate change impacts and benefits.",
+                "explanation": "Climate justice addresses how the impacts of climate change are distributed and seeks to ensure equitable solutions."
+              }
+            ]
+          },
+          {
+            "setNumber": 5,
+            "questions": [
+              {
+                "question": "Which international body monitors and reports on global climate change?",
+                "options": ["World Health Organization (WHO)", "Intergovernmental Panel on Climate Change (IPCC)", "World Trade Organization (WTO)", "United Nations Educational, Scientific and Cultural Organization (UNESCO)"],
+                "correctAnswer": "Intergovernmental Panel on Climate Change (IPCC)",
+                "responseMessage": "✅That's right! The IPCC monitors and reports on global climate change.",
+                "explanation": "The IPCC assesses scientific information related to climate change and provides reports to guide policy and decision-making."
+              },
+              {
+                "question": "What is the purpose of the 'Carbon Disclosure Project'?",
+                "options": ["To disclose individual carbon footprints", "To encourage companies to report on their carbon emissions", "To increase carbon emissions in industrial sectors", "To promote carbon offset projects"],
+                "correctAnswer": "To encourage companies to report on their carbon emissions",
+                "responseMessage": "✅That's right! The Carbon Disclosure Project encourages companies to disclose their carbon emissions.",
+                "explanation": "The Carbon Disclosure Project provides a platform for companies to report and manage their environmental impact."
+              },
+              {
+                "question": "What is the main impact of climate change on biodiversity?",
+                "options": ["Increased habitat destruction", "Enhanced species diversity", "Stable ecosystems", "Decreased extinction rates"],
+                "correctAnswer": "Increased habitat destruction",
+                "responseMessage": "✅That's right! Climate change often leads to increased habitat destruction, affecting biodiversity.",
+                "explanation": "Climate change can disrupt ecosystems and lead to habitat loss, threatening various species."
+              },
+              {
+                "question": "Which of these is an example of a climate change mitigation strategy?",
+                "options": ["Increasing fossil fuel use", "Building more coal power plants", "Implementing renewable energy sources", "Reducing energy efficiency standards"],
+                "correctAnswer": "Implementing renewable energy sources",
+                "responseMessage": "✅That's right! Implementing renewable energy sources is a climate change mitigation strategy.",
+                "explanation": "Renewable energy sources reduce reliance on fossil fuels and lower greenhouse gas emissions."
+              },
+              {
+                "question": "What does 'climate neutral' mean?",
+                "options": ["Having no impact on the climate", "Balancing emissions with an equivalent amount of carbon removal", "Increasing greenhouse gas emissions", "Reducing energy consumption to zero"],
+                "correctAnswer": "Balancing emissions with an equivalent amount of carbon removal",
+                "responseMessage": "✅That's right! 'Climate neutral' means balancing emissions with equivalent carbon removal efforts.",
+                "explanation": "Achieving climate neutrality involves offsetting emissions by reducing or removing an equivalent amount of CO2."
+              },
+              {
+                "question": "Which type of land use can help sequester carbon and mitigate climate change?",
+                "options": ["Urban sprawl", "Deforestation", "Agricultural practices", "Reforestation"],
+                "correctAnswer": "Reforestation",
+                "responseMessage": "✅That's right! Reforestation helps sequester carbon and mitigate climate change.",
+                "explanation": "Reforestation increases the number of trees that absorb CO2, helping to offset emissions."
+              },
+              {
+                "question": "What effect does increased atmospheric CO2 have on ocean life?",
+                "options": ["It enhances coral growth", "It increases ocean acidity", "It decreases sea surface temperatures", "It improves marine biodiversity"],
+                "correctAnswer": "It increases ocean acidity",
+                "responseMessage": "✅That's right! Increased atmospheric CO2 leads to higher ocean acidity.",
+                "explanation": "CO2 dissolves in ocean water, causing ocean acidification which affects marine life, particularly shellfish and corals."
+              },
+              {
+                "question": "What is the main goal of 'carbon neutrality'?",
+                "options": ["To have a net zero carbon footprint", "To increase carbon emissions", "To promote fossil fuel use", "To reduce energy efficiency"],
+                "correctAnswer": "To have a net zero carbon footprint",
+                "responseMessage": "✅That's right! Carbon neutrality aims for a net zero carbon footprint.",
+                "explanation": "Achieving carbon neutrality involves balancing out emissions by reducing and offsetting them."
+              },
+              {
+                "question": "Which of the following is a climate adaptation measure?",
+                "options": ["Reducing fossil fuel use", "Building seawalls to protect against rising sea levels", "Increasing meat consumption", "Promoting deforestation"],
+                "correctAnswer": "Building seawalls to protect against rising sea levels",
+                "responseMessage": "✅That's right! Building seawalls is a climate adaptation measure to protect against rising sea levels.",
+                "explanation": "Seawalls are constructed to safeguard coastal areas from the impacts of sea level rise and storm surges."
+              },
+              {
+                "question": "What is the 'climate crisis'?",
+                "options": ["A temporary weather change", "A long-term, urgent global issue caused by climate change", "A short-term increase in global temperatures", "A regional environmental problem"],
+                "correctAnswer": "A long-term, urgent global issue caused by climate change",
+                "responseMessage": "✅That's right! The climate crisis refers to the long-term, urgent global issue caused by climate change.",
+                "explanation": "The climate crisis encompasses the severe and urgent impacts of climate change that require immediate action."
+              }
+            ]
+          }, 
+          {
+            "setNumber": 6,
+            "questions": [
+              {
+                "question": "What is 'climate feedback'?",
+                "options": ["A response to greenhouse gas emissions by ecosystems", "The process of reducing carbon emissions", "A method of measuring climate change", "The impact of weather patterns on climate"],
+                "correctAnswer": "A response to greenhouse gas emissions by ecosystems",
+                "responseMessage": "✅That's right! Climate feedback refers to how ecosystems respond to greenhouse gas emissions.",
+                "explanation": "Climate feedback can amplify or reduce the effects of climate change, influencing the overall climate system."
+              },
+              {
+                "question": "Which process is a major natural sink for carbon dioxide?",
+                "options": ["Photosynthesis", "Combustion", "Respiration", "Decomposition"],
+                "correctAnswer": "Photosynthesis",
+                "responseMessage": "✅That's right! Photosynthesis is a major natural sink for carbon dioxide.",
+                "explanation": "Plants absorb CO2 during photosynthesis, helping to reduce atmospheric carbon levels."
+              },
+              {
+                "question": "What does the term 'climate mitigation' refer to?",
+                "options": ["Efforts to reduce greenhouse gas emissions", "Strategies to cope with climate impacts", "Processes to increase global temperatures", "Technologies to promote deforestation"],
+                "correctAnswer": "Efforts to reduce greenhouse gas emissions",
+                "responseMessage": "✅That's right! Climate mitigation involves efforts to reduce greenhouse gas emissions.",
+                "explanation": "Mitigation measures aim to limit the extent of climate change by reducing the causes of greenhouse gas emissions."
+              },
+              {
+                "question": "Which of the following is a renewable energy source?",
+                "options": ["Coal", "Natural gas", "Wind power", "Nuclear energy"],
+                "correctAnswer": "Wind power",
+                "responseMessage": "✅That's right! Wind power is a renewable energy source.",
+                "explanation": "Wind power generates electricity from wind, which is a renewable resource and helps reduce emissions."
+              },
+              {
+                "question": "What is the main cause of sea level rise?",
+                "options": ["Melting glaciers and ice sheets", "Increased rainfall", "Expansion of seawater due to warming", "Increased evaporation"],
+                "correctAnswer": "Melting glaciers and ice sheets",
+                "responseMessage": "✅That's right! Melting glaciers and ice sheets contribute significantly to sea level rise.",
+                "explanation": "As ice melts, it adds water to the oceans, leading to rising sea levels."
+              },
+              {
+                "question": "What impact does deforestation have on climate change?",
+                "options": ["Decreases CO2 levels", "Increases biodiversity", "Reduces carbon storage and increases CO2 levels", "Stabilizes local climates"],
+                "correctAnswer": "Reduces carbon storage and increases CO2 levels",
+                "responseMessage": "✅That's right! Deforestation reduces carbon storage and increases CO2 levels in the atmosphere.",
+                "explanation": "Trees absorb CO2; when they are cut down, the stored carbon is released back into the atmosphere."
+              },
+              {
+                "question": "What is the purpose of carbon pricing?",
+                "options": ["To increase carbon emissions", "To provide financial incentives for reducing emissions", "To lower the cost of fossil fuels", "To promote deforestation"],
+                "correctAnswer": "To provide financial incentives for reducing emissions",
+                "responseMessage": "✅That's right! Carbon pricing provides financial incentives to reduce greenhouse gas emissions.",
+                "explanation": "Carbon pricing encourages businesses and individuals to lower their carbon footprint by making emissions more costly."
+              },
+              {
+                "question": "What phenomenon is characterized by long-term changes in temperature and precipitation patterns?",
+                "options": ["Weather", "Climate change", "Seasonal variation", "Air pollution"],
+                "correctAnswer": "Climate change",
+                "responseMessage": "✅That's right! Climate change involves long-term changes in temperature and precipitation patterns.",
+                "explanation": "Climate change refers to significant, long-term alterations in temperature and weather patterns."
+              },
+              {
+                "question": "Which of the following is a method of reducing carbon emissions?",
+                "options": ["Increasing fossil fuel use", "Using public transportation", "Expanding urban sprawl", "Burning more coal"],
+                "correctAnswer": "Using public transportation",
+                "responseMessage": "✅That's right! Using public transportation helps reduce carbon emissions.",
+                "explanation": "Public transportation reduces the number of individual vehicles on the road, cutting overall emissions."
+              },
+              {
+                "question": "What effect does melting permafrost have on the climate?",
+                "options": ["It releases methane", "It lowers sea levels", "It reduces carbon dioxide levels", "It increases ice sheet stability"],
+                "correctAnswer": "It releases methane",
+                "responseMessage": "✅That's right! Melting permafrost releases methane, a potent greenhouse gas.",
+                "explanation": "Permafrost contains trapped methane that is released as it thaws, contributing to further warming."
+              }
+            ]
+          },
+          {
+          
+          "setNumber": 7,
+          "questions": [
+            {
+              "question": "What is the main effect of melting polar ice caps?",
+              "options": ["Increase in global fish populations", "Decrease in Earth's temperature", "Rising sea levels", "Increase in forest areas"],
+              "correctAnswer": "Rising sea levels",
+              "responseMessage": "✅That's right! Melting polar ice caps lead to rising sea levels.",
+              "explanation": "The melting of polar ice caps adds to ocean volume, contributing to rising sea levels."
+            },
+            {
+              "question": "Which of the following sectors is the largest emitter of greenhouse gases?",
+              "options": ["Agriculture", "Transportation", "Electricity and heat production", "Forestry"],
+              "correctAnswer": "Electricity and heat production",
+              "responseMessage": "✅That's right! Electricity and heat production are the largest emitters of greenhouse gases.",
+              "explanation": "The burning of fossil fuels for electricity and heat is the largest source of global greenhouse gas emissions."
+            },
+            {
+              "question": "What is ocean acidification?",
+              "options": ["A decrease in the pH of the ocean", "An increase in the pH of the ocean", "The bleaching of coral reefs", "None of the above"],
+              "correctAnswer": "A decrease in the pH of the ocean",
+              "responseMessage": "✅That's right! Ocean acidification refers to the decrease in the pH of the ocean.",
+              "explanation": "Ocean acidification is caused by the absorption of CO2 from the atmosphere, which forms carbonic acid."
+            },
+            {
+              "question": "Which of the following is a direct consequence of global warming?",
+              "options": ["More stable weather patterns", "Decreased agricultural yields", "Increased polar bear populations", "None of the above"],
+              "correctAnswer": "Decreased agricultural yields",
+              "responseMessage": "✅That's right! Global warming can lead to decreased agricultural yields.",
+              "explanation": "Climate change affects weather patterns and temperatures, which can negatively impact crop growth."
+            },
+            {
+              "question": "What is a carbon offset?",
+              "options": ["A reduction in emissions to compensate for emissions made elsewhere", "A tax on carbon emissions", "A form of renewable energy", "None of the above"],
+              "correctAnswer": "A reduction in emissions to compensate for emissions made elsewhere",
+              "responseMessage": "✅That's right! A carbon offset is a reduction in emissions to compensate for emissions made elsewhere.",
+              "explanation": "Carbon offsets help mitigate climate impact by funding projects that reduce or capture greenhouse gases."
+            },
+            {
+              "question": "Which country is the largest emitter of CO2?",
+              "options": ["United States", "China", "India", "Russia"],
+              "correctAnswer": "China",
+              "responseMessage": "✅That's right! China is the largest emitter of CO2.",
+              "explanation": "China's rapid industrial growth has made it the largest emitter of CO2, contributing significantly to global warming."
+            },
+            {
+              "question": "What role do forests play in climate regulation?",
+              "options": ["Absorb CO2", "Release oxygen", "Provide habitat for species", "All of the above"],
+              "correctAnswer": "All of the above",
+              "responseMessage": "✅That's right! Forests absorb CO2, release oxygen, and provide habitat for species.",
+              "explanation": "Forests are essential in regulating the Earth's climate by absorbing CO2 and supporting biodiversity."
+            },
+            {
+              "question": "Which of these is a greenhouse gas?",
+              "options": ["Oxygen", "Nitrogen", "Methane", "Argon"],
+              "correctAnswer": "Methane",
+              "responseMessage": "✅That's right! Methane is a greenhouse gas.",
+              "explanation": "Methane is a potent greenhouse gas with a higher global warming potential than CO2."
+            },
+            {
+              "question": "What is the impact of climate change on biodiversity?",
+              "options": ["Increases biodiversity", "Decreases biodiversity", "No impact", "Reverses evolution"],
+              "correctAnswer": "Decreases biodiversity",
+              "responseMessage": "✅That's right! Climate change decreases biodiversity.",
+              "explanation": "Climate change threatens species with habitat loss"
+              
+            }
+          ]}]}]}

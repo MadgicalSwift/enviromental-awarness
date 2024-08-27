@@ -32,4 +32,13 @@ export abstract class MessageService {
   abstract startEnvironmentSession(from: string, language: string);
   abstract endSession(from: string, language: string);
   abstract sendTextMessage(from: string, message: string);
+  abstract startQuiz(from: string, appState: any);
+  abstract askQuestion(from: string, questionIndex: number, appState: any);
+  abstract handleQuizResponse(from: string, button_response: any, appState: any);
+  abstract endQuiz(from: string, appState: any);
+  abstract handleTellMeMore(from: string, appState: any);
+  abstract handleTopicClick(from: string, button_response: any, appState: any);
+  abstract createTopicButtonsFromQuizData(from: string, appState);
+  abstract createYesNoButton(from: string);
+  abstract createButtons(from: string, button_data: any);
 }
