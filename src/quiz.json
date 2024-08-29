@@ -79,9 +79,385 @@
               "explanation": "Recycling contributes to a more sustainable environment by minimizing resource use."
             }
           ]
+        }, 
+        {
+          "setNumber": 1,
+          "questions": [
+            {
+              "question": "Which of the following can be recycled?",
+              "options": ["Plastic bottles", "Food waste", "Old clothes", "All of the above"],
+              "correctAnswer": "Plastic bottles",
+              "responseMessage": "✅That's right! Plastic bottles can be recycled. :recycle:",
+              "explanation": "Recycling these items helps reduce waste and conserve resources."
+            },
+            {
+              "question": "What color bin is typically used for recycling paper?",
+              "options": ["Green", "Blue", "Red", "Yellow"],
+              "correctAnswer": "Blue",
+              "responseMessage": "✅That's right! Blue is the color typically used for recycling paper.",
+              "explanation": "Using the correct bin ensures that paper is properly recycled, reducing contamination."
+            },
+            {
+              "question": "Which material cannot be recycled?",
+              "options": ["Glass", "Metal", "Plastic", "Styrofoam"],
+              "correctAnswer": "Styrofoam",
+              "responseMessage": "✅That's right! Styrofoam cannot be recycled.",
+              "explanation": "Styrofoam is a major pollutant, particularly in marine environments."
+            },
+            {
+              "question": "Which recycling process involves melting down material to create new products?",
+              "options": ["Composting", "Incineration", "Thermal recycling", "Reprocessing"],
+              "correctAnswer": "Reprocessing",
+              "responseMessage": "✅That's right! Reprocessing involves melting down materials to create new products.",
+              "explanation": "Reprocessing is a crucial step in the recycling of materials like metal and plastic."
+            },
+            {
+              "question": "Which of these is NOT a benefit of recycling?",
+              "options": ["Reduces landfill waste", "Conserves natural resources", "Increases pollution", "Saves energy"],
+              "correctAnswer": "Increases pollution",
+              "responseMessage": "✅That's right! Recycling reduces pollution, not increases it.",
+              "explanation": "Recycling helps in reducing pollution by minimizing the need for new raw materials."
+            },
+            {
+              "question": "What is the most recycled material in the world?",
+              "options": ["Aluminum", "Plastic", "Paper", "Glass"],
+              "correctAnswer": "Aluminum",
+              "responseMessage": "✅That's right! Aluminum is the most recycled material globally.",
+              "explanation": "Recycling aluminum saves a significant amount of energy compared to producing new aluminum."
+            },
+            {
+              "question": "Which of these items should NOT be placed in a recycling bin?",
+              "options": ["Pizza boxes", "Aluminum cans", "Newspapers", "Cardboard"],
+              "correctAnswer": "Pizza boxes",
+              "responseMessage": "✅That's right! Pizza boxes with grease cannot be recycled.",
+              "explanation": "Grease contaminates the paper, making it unsuitable for recycling."
+            },
+            {
+              "question": "What is a common issue that can contaminate an entire batch of recycling?",
+              "options": ["Broken glass", "Plastic bags", "Food residue", "Paper clips"],
+              "correctAnswer": "Food residue",
+              "responseMessage": "✅That's right! Food residue can contaminate recyclables.",
+              "explanation": "It's important to rinse recyclables before placing them in the bin."
+            },
+            {
+              "question": "Which country is known for having one of the highest recycling rates?",
+              "options": ["United States", "Germany", "China", "Brazil"],
+              "correctAnswer": "Germany",
+              "responseMessage": "✅That's right! Germany has one of the highest recycling rates in the world.",
+              "explanation": "Germany's efficient recycling system contributes to its high recycling rate."
+            },
+            {
+              "question": "What does the recycling symbol with a number inside a triangle represent?",
+              "options": ["Recyclability", "Plastic type", "Energy savings", "Material source"],
+              "correctAnswer": "Plastic type",
+              "responseMessage": "✅That's right! The number represents the type of plastic.",
+              "explanation": "The number indicates the type of plastic, which helps in the recycling process."
+            }
+          ]
+        },
+        {
+          "setNumber": 2,
+          "questions": [
+            {
+              "question": "Which of these can be composted?",
+              "options": ["Plastic bags", "Fruit peels", "Metal cans", "Glass bottles"],
+              "correctAnswer": "Fruit peels",
+              "responseMessage": "✅That's right! Fruit peels can be composted.",
+              "explanation": "Composting organic waste like fruit peels enriches the soil and reduces landfill waste."
+            },
+            {
+              "question": "What is the purpose of a bottle deposit scheme?",
+              "options": ["To encourage recycling", "To reduce product costs", "To increase waste", "To collect taxes"],
+              "correctAnswer": "To encourage recycling",
+              "responseMessage": "✅That's right! Bottle deposit schemes encourage recycling by offering refunds.",
+              "explanation": "This scheme incentivizes consumers to return bottles for recycling."
+            },
+            {
+              "question": "Which material takes the longest to decompose in a landfill?",
+              "options": ["Paper", "Plastic", "Glass", "Aluminum"],
+              "correctAnswer": "Glass",
+              "responseMessage": "✅That's right! Glass takes the longest to decompose in a landfill.",
+              "explanation": "Glass can take thousands of years to break down, making it important to recycle."
+            },
+            {
+              "question": "Which of these items should be recycled separately from other recyclables?",
+              "options": ["Batteries", "Glass bottles", "Newspapers", "Cardboard"],
+              "correctAnswer": "Batteries",
+              "responseMessage": "✅That's right! Batteries should be recycled separately.",
+              "explanation": "Batteries contain hazardous materials and must be recycled separately."
+            },
+            {
+              "question": "Which country was the first to ban single-use plastics?",
+              "options": ["United States", "India", "Canada", "Rwanda"],
+              "correctAnswer": "Rwanda",
+              "responseMessage": "✅That's right! Rwanda was the first country to ban single-use plastics.",
+              "explanation": "Rwanda's ban on single-use plastics has greatly reduced plastic pollution in the country."
+            },
+            {
+              "question": "Which of the following is a biodegradable material?",
+              "options": ["Styrofoam", "Glass", "Aluminum", "Paper"],
+              "correctAnswer": "Paper",
+              "responseMessage": "✅That's right! Paper is biodegradable.",
+              "explanation": "Biodegradable materials like paper break down naturally and are less harmful to the environment."
+            },
+            {
+              "question": "What is the process of turning waste into reusable material called?",
+              "options": ["Incineration", "Landfilling", "Recycling", "Composting"],
+              "correctAnswer": "Recycling",
+              "responseMessage": "✅That's right! The process is called recycling.",
+              "explanation": "Recycling transforms waste materials into new products, reducing the need for raw materials."
+            },
+            {
+              "question": "Which of these items is often recycled to make new newspapers?",
+              "options": ["Plastic bags", "Glass bottles", "Aluminum cans", "Old newspapers"],
+              "correctAnswer": "Old newspapers",
+              "responseMessage": "✅That's right! Old newspapers are often recycled into new newspapers.",
+              "explanation": "Recycling old newspapers reduces the demand for virgin paper."
+            },
+            {
+              "question": "Which plastic number is usually not accepted by recycling centers?",
+              "options": ["1", "2", "5", "6"],
+              "correctAnswer": "6",
+              "responseMessage": "✅That's right! Plastic number 6 is usually not accepted.",
+              "explanation": "Plastic number 6, or polystyrene, is difficult to recycle and often not accepted."
+            },
+            {
+              "question": "Which metal is the most cost-effective to recycle?",
+              "options": ["Iron", "Copper", "Aluminum", "Steel"],
+              "correctAnswer": "Aluminum",
+              "responseMessage": "✅That's right! Aluminum is the most cost-effective metal to recycle.",
+              "explanation": "Recycling aluminum uses only 5% of the energy required to produce new aluminum."
+            }
+          ]
+        },
+        {
+          "setNumber": 3,
+          "questions": [
+            {
+              "question": "Which of these products can be made from recycled plastic?",
+              "options": ["Carpets", "Textiles", "Park benches", "All of the above"],
+              "correctAnswer": "All of the above",
+              "responseMessage": "✅That's right! All of these products can be made from recycled plastic.",
+              "explanation": "Recycled plastic is a versatile material used in many products."
+            },
+            {
+              "question": "What is 'upcycling'?",
+              "options": ["Turning waste into new products", "Burning waste for energy", "Composting organic waste", "Using waste for landfill cover"],
+              "correctAnswer": "Turning waste into new products",
+              "responseMessage": "✅That's right! Upcycling means turning waste into new products.",
+              "explanation": "Upcycling involves creatively reusing waste materials to create higher-value products."
+            },
+            {
+              "question": "Which of these items is most likely to clog recycling machinery?",
+              "options": ["Plastic bags", "Glass bottles", "Newspapers", "Metal cans"],
+              "correctAnswer": "Plastic bags",
+              "responseMessage": "✅That's right! Plastic bags can clog recycling machinery.",
+              "explanation": "Plastic bags should not be placed in recycling bins as they can cause operational issues."
+            },
+            {
+              "question": "What is the recycling process called that involves breaking down plastic into its original components?",
+              "options": ["Mechanical recycling", "Chemical recycling", "Thermal recycling", "Organic recycling"],
+              "correctAnswer": "Chemical recycling",
+              "responseMessage": "✅That's right! Chemical recycling breaks down plastic into its original components.",
+              "explanation": "Chemical recycling offers a way to recycle plastics that are difficult to process mechanically."
+            },
+            {
+              "question": "Which city is known as the recycling capital of the world?",
+              "options": ["New York", "San Francisco", "Tokyo", "Copenhagen"],
+              "correctAnswer": "San Francisco",
+              "responseMessage": "✅That's right! San Francisco is known as the recycling capital of the world.",
+              "explanation": "San Francisco has implemented comprehensive recycling programs that have set global standards."
+            },
+            {
+              "question": "Which type of recycling involves collecting and processing materials from businesses and homes?",
+              "options": ["Industrial recycling", "Commercial recycling", "Residential recycling", "Electronic recycling"],
+              "correctAnswer": "Residential recycling",
+              "responseMessage": "✅That's right! Residential recycling involves collecting materials from homes.",
+              "explanation": "Residential recycling is key to reducing household waste and conserving resources."
+            },
+            {
+              "question": "What is the first step in the recycling process?",
+              "options": ["Sorting", "Collecting", "Processing", "Reusing"],
+              "correctAnswer": "Collecting",
+              "responseMessage": "✅That's right! Collecting is the first step in the recycling process.",
+              "explanation": "Collecting materials is the first step before they can be sorted and processed."
+            },
+            {
+              "question": "Which of the following should not be mixed with regular recyclables?",
+              "options": ["Plastic containers", "Metal cans", "Glass bottles", "Electronic waste"],
+              "correctAnswer": "Electronic waste",
+              "responseMessage": "✅That's right! Electronic waste should not be mixed with regular recyclables.",
+              "explanation": "E-waste requires special handling and should be recycled separately."
+            },
+            {
+              "question": "What is the main goal of recycling programs?",
+              "options": ["Generate revenue", "Conserve natural resources", "Increase landfill use", "Promote new products"],
+              "correctAnswer": "Conserve natural resources",
+              "responseMessage": "✅That's right! The main goal is to conserve natural resources.",
+              "explanation": "Recycling helps reduce the need for new raw materials, conserving natural resources."
+            },
+            {
+              "question": "Which of these is NOT an example of electronic waste?",
+              "options": ["Television", "Laptop", "Plastic bottle", "Cell phone"],
+              "correctAnswer": "Plastic bottle",
+              "responseMessage": "✅That's right! A plastic bottle is not electronic waste.",
+              "explanation": "Electronic waste includes devices like televisions, laptops, and cell phones."
+            }
+          ]
+        },
+        {
+          "setNumber": 4,
+          "questions": [
+            {
+              "question": "Which of these metals is the easiest to recycle?",
+              "options": ["Iron", "Aluminum", "Copper", "Steel"],
+              "correctAnswer": "Aluminum",
+              "responseMessage": "✅That's right! Aluminum is the easiest metal to recycle.",
+              "explanation": "Aluminum can be recycled indefinitely without losing quality."
+            },
+            {
+              "question": "What is a common use for recycled glass?",
+              "options": ["Building materials", "Plastic bags", "Textiles", "Fuel"],
+              "correctAnswer": "Building materials",
+              "responseMessage": "✅That's right! Recycled glass is commonly used in building materials.",
+              "explanation": "Recycled glass is often used in construction, particularly in road paving and building materials."
+            },
+            {
+              "question": "Which of these actions can reduce the amount of waste you produce?",
+              "options": ["Buying in bulk", "Using disposable products", "Throwing away unused items", "None of the above"],
+              "correctAnswer": "Buying in bulk",
+              "responseMessage": "✅That's right! Buying in bulk can reduce the amount of packaging waste.",
+              "explanation": "Reducing packaging by buying in bulk helps minimize waste."
+            },
+            {
+              "question": "Which of these items is often recycled into park benches and playground equipment?",
+              "options": ["Plastic bags", "Glass bottles", "Metal cans", "Newspapers"],
+              "correctAnswer": "Plastic bags",
+              "responseMessage": "✅That's right! Plastic bags are often recycled into park benches and playground equipment.",
+              "explanation": "Recycling plastic bags into durable products like park benches helps reduce plastic waste."
+            },
+            {
+              "question": "Which of these is NOT a step in the recycling process?",
+              "options": ["Sorting", "Manufacturing", "Landfilling", "Processing"],
+              "correctAnswer": "Landfilling",
+              "responseMessage": "✅That's right! Landfilling is not a step in the recycling process.",
+              "explanation": "Landfilling is the opposite of recycling; it involves disposing of waste rather than reusing it."
+            },
+            {
+              "question": "What is the term for using recycled materials to create products of lesser quality?",
+              "options": ["Upcycling", "Downcycling", "Reprocessing", "Precycling"],
+              "correctAnswer": "Downcycling",
+              "responseMessage": "✅That's right! Downcycling involves creating products of lesser quality.",
+              "explanation": "Downcycling often happens with plastics that are recycled into lower-grade materials."
+            },
+            {
+              "question": "Which country leads the world in paper recycling?",
+              "options": ["United States", "Germany", "Japan", "Brazil"],
+              "correctAnswer": "Germany",
+              "responseMessage": "✅That's right! Germany leads the world in paper recycling.",
+              "explanation": "Germany has an efficient recycling system, particularly for paper."
+            },
+            {
+              "question": "Which of these can be made from recycled paper?",
+              "options": ["Napkins", "Cardboard", "Toilet paper", "All of the above"],
+              "correctAnswer": "All of the above",
+              "responseMessage": "✅That's right! All of these can be made from recycled paper.",
+              "explanation": "Recycled paper is a versatile material used in many products."
+            },
+            {
+              "question": "Which of the following is a benefit of composting?",
+              "options": ["Reduces landfill waste", "Increases soil fertility", "Reduces greenhouse gas emissions", "All of the above"],
+              "correctAnswer": "All of the above",
+              "responseMessage": "✅That's right! Composting has all these benefits.",
+              "explanation": "Composting organic waste enriches the soil, reduces waste, and lowers greenhouse gas emissions."
+            },
+            {
+              "question": "What is the most important factor in ensuring effective recycling?",
+              "options": ["Proper sorting", "Using more materials", "Faster collection", "None of the above"],
+              "correctAnswer": "Proper sorting",
+              "responseMessage": "✅That's right! Proper sorting is essential for effective recycling.",
+              "explanation": "Sorting recyclables correctly ensures they can be processed and reused effectively."
+            }
+          ]
+        },
+        {
+          "setNumber": 5,
+          "questions": [
+            {
+              "question": "Which of these is a non-recyclable item?",
+              "options": ["Plastic bottle", "Glass jar", "Styrofoam cup", "Aluminum can"],
+              "correctAnswer": "Styrofoam cup",
+              "responseMessage": "✅That's right! Styrofoam cups are not recyclable.",
+              "explanation": "Styrofoam is difficult to recycle and is often not accepted in recycling programs."
+            },
+            {
+              "question": "What is 'single-stream' recycling?",
+              "options": ["Recycling all waste together", "Recycling paper only", "Recycling metals only", "Recycling food waste only"],
+              "correctAnswer": "Recycling all waste together",
+              "responseMessage": "✅That's right! Single-stream recycling allows all recyclables to be collected together.",
+              "explanation": "Single-stream recycling makes it easier for consumers, but requires sorting at a facility."
+            },
+            {
+              "question": "Which of these is a commonly recycled electronic device?",
+              "options": ["Television", "Plastic bottle", "Glass jar", "Styrofoam cup"],
+              "correctAnswer": "Television",
+              "responseMessage": "✅That's right! Televisions are commonly recycled.",
+              "explanation": "Recycling electronics like televisions is important to recover valuable materials."
+            },
+            {
+              "question": "What is the main environmental benefit of recycling aluminum?",
+              "options": ["Saves energy", "Reduces air pollution", "Conserves water", "Increases landfill space"],
+              "correctAnswer": "Saves energy",
+              "responseMessage": "✅That's right! Recycling aluminum saves a significant amount of energy.",
+              "explanation": "Recycling aluminum uses only 5% of the energy needed to produce new aluminum."
+            },
+            {
+              "question": "Which of these actions does NOT contribute to recycling contamination?",
+              "options": ["Rinsing containers", "Leaving food residue", "Mixing different materials", "Using plastic bags"],
+              "correctAnswer": "Rinsing containers",
+              "responseMessage": "✅That's right! Rinsing containers helps prevent recycling contamination.",
+              "explanation": "Clean recyclables are less likely to contaminate other materials."
+            },
+            {
+              "question": "Which of the following is NOT a recyclable material?",
+              "options": ["Plastic", "Metal", "Glass", "Grease-stained cardboard"],
+              "correctAnswer": "Grease-stained cardboard",
+              "responseMessage": "✅That's right! Grease-stained cardboard cannot be recycled.",
+              "explanation": "Grease stains can contaminate the recycling process, making the material unrecyclable."
+            },
+            {
+              "question": "What is the main reason for separating recyclables?",
+              "options": ["To make collection easier", "To increase landfill space", "To reduce energy use", "To prevent contamination"],
+              "correctAnswer": "To prevent contamination",
+              "responseMessage": "✅That's right! Separating recyclables prevents contamination.",
+              "explanation": "Properly separated recyclables are less likely to be contaminated and can be processed more efficiently."
+            },
+            {
+              "question": "Which material is often recycled into new road surfaces?",
+              "options": ["Glass", "Paper", "Plastic", "Asphalt"],
+              "correctAnswer": "Asphalt",
+              "responseMessage": "✅That's right! Asphalt is often recycled into new road surfaces.",
+              "explanation": "Recycled asphalt is commonly used in road construction, reducing the need for new materials."
+            },
+            {
+              "question": "Which of these actions can reduce plastic waste?",
+              "options": ["Using reusable bags", "Buying plastic water bottles", "Throwing away plastic containers", "None of the above"],
+              "correctAnswer": "Using reusable bags",
+              "responseMessage": "✅That's right! Using reusable bags helps reduce plastic waste.",
+              "explanation": "Reusable bags reduce the demand for single-use plastics and help cut down on plastic waste."
+            },
+            {
+              "question": "Which of these is NOT a common recycling symbol?",
+              "options": ["Triangle with arrows", "Square with arrows", "Circle with arrows", "Hexagon with arrows"],
+              "correctAnswer": "Hexagon with arrows",
+              "responseMessage": "✅That's right! A hexagon with arrows is not a common recycling symbol.",
+              "explanation": "The most common recycling symbol is the triangle with arrows, representing the recycling process."
+            }
+          ]
         },
         
-          {
+        
+       {
             "setNumber": 2,
             "questions": [
               {
