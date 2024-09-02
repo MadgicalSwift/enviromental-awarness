@@ -27,7 +27,8 @@ export class ChatbotService {
 
   public async processMessage(body: any): Promise<any> {
     const { from, button_response, text } = body;
-    const userData = await this.userService.findUserByMobileNumber(from);
+    const botId = process.env.BOT_ID;
+    const userData = await this.userService.findUserByMobileNumber(from,botId);
     const { intent = undefined, entities = undefined } = text ? this.intentClassifier.getIntent(text.body) : {};
 
     if (button_response) {
@@ -52,16 +53,17 @@ export class ChatbotService {
       }
     } else {
       if (userData.language === 'english' || userData.language === 'hindi') {
-        await this.userService.saveUser(userData);
+        // await this.userService.saveUser(userData);
       }
       if (intent === 'greeting') {
+        await this.userService.createUser(from,botId ,userData.language)
         await this.message.sendWelcomeMessage(from, userData.language);
         await this.message.createYesNoButton(from);
       } else if (intent === 'select_language') {
         const selectedLanguage = entities[0];
         const userData = await this.userService.findUserByMobileNumber(from);
         userData.language = selectedLanguage;
-        await this.userService.saveUser(userData);
+        // await this.userService.saveUser(userData);
         this.message.sendLanguageChangedMessage(from, userData.language);
       }
     }
