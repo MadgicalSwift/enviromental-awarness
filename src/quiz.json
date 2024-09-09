@@ -842,13 +842,7 @@
               "responseMessage": "✅ That's right! Glass bottles and jars are commonly recycled to make new glass products.",
               "explanation": "Recycling glass reduces the need for raw materials and energy to produce new glass, making it a highly sustainable process."
             },
-            {
-              "question": "Which type of plastic is most commonly accepted in curbside recycling programs?",
-              "options": ["Plastic bottles", "Plastic bags", "Plastic wrap", "Polystyrene foam"],
-              "correctAnswer": "Plastic bottles",
-              "responseMessage": "✅ That's right! Plastic bottles are most commonly accepted in curbside recycling programs.",
-              "explanation": "Plastic bottles are widely recycled because they are easily sorted and processed into new products, reducing environmental impact."
-            },
+           
             {
               "question": "What is 'contamination' in recycling?",
               "options": ["The presence of non-recyclable materials in recycling bins", "The process of separating recyclable materials", "The collection of recyclables from households", "The cost of recycling services"],
@@ -924,13 +918,7 @@
               "responseMessage": "✅ That's right! Plastic pollution refers to the accumulation of plastic waste in the environment.",
               "explanation": "Plastic pollution occurs when plastic waste accumulates in natural environments, causing harm to wildlife and ecosystems."
             },
-            {
-              "question": "Which type of material is often recycled to make new clothing?",
-              "options": ["Cotton", "Polyester", "Leather", "Wool"],
-              "correctAnswer": "Polyester",
-              "responseMessage": "✅ That's right! Polyester is often recycled to make new clothing.",
-              "explanation": "Recycling polyester helps reduce waste and the demand for new raw materials, contributing to a more sustainable fashion industry."
-            },
+           
             {
               "question": "What is the primary goal of 'zero waste' initiatives?",
               "options": ["To divert all waste from landfills and incineration", "To increase plastic production", "To reduce recycling rates", "To increase waste generation"],
@@ -1006,13 +994,7 @@
               "responseMessage": "✅ That's right! Cardboard is often recycled into new paper products.",
               "explanation": "Recycling cardboard helps reduce the need for new paper products and conserves resources by reprocessing paper fibers."
             },
-            {
-              "question": "What is a 'recycling audit'?",
-              "options": ["A review of recycling practices and materials", "A process for manufacturing new products", "A method for collecting recyclables", "A system for sorting waste"],
-              "correctAnswer": "A review of recycling practices and materials",
-              "responseMessage": "✅ That's right! A recycling audit is a review of recycling practices and materials.",
-              "explanation": "Recycling audits help organizations assess their recycling programs, identify areas for improvement, and enhance overall recycling efficiency."
-            },
+          
             {
               "question": "What does 'closed-loop recycling' involve?",
               "options": ["Recycling a material into the same product it was before", "Recycling materials into different products", "Disposing of waste in landfills", "Incinerating recyclable materials"],
@@ -2297,6 +2279,13 @@
                   "explanation": "Anti-reflective coatings are applied to solar panels to minimize light reflection and maximize light absorption."
                 },
                 {
+                  "question": "Which type of solar panel is known for being the most efficient but also the most expensive?",
+                  "options": ["Monocrystalline", "Polycrystalline", "Thin-film", "Organic photovoltaic"],
+                  "correctAnswer": "Monocrystalline",
+                  "responseMessage": "✅ That's right! Monocrystalline panels are known for being the most efficient but also the most expensive.",
+                  "explanation": "Monocrystalline panels are made from high-purity silicon, making them more efficient but also more costly compared to other types."
+                },
+                {
                   "question": "Which type of solar technology uses photovoltaic cells to convert sunlight into electricity?",
                   "options": ["Solar thermal", "Concentrated solar power", "Photovoltaic", "Hydroelectric"],
                   "correctAnswer": "Photovoltaic",
@@ -2439,13 +2428,7 @@
                   "responseMessage": "✅ That's right! The typical lifespan of a solar panel is 20-25 years.",
                   "explanation": "Solar panels are designed to last 20-25 years, with their efficiency gradually decreasing over time."
                 },
-                {
-                  "question": "What is the primary purpose of a solar tracker?",
-                  "options": ["Store energy", "Track the position of the sun", "Convert DC to AC", "Regulate voltage"],
-                  "correctAnswer": "Track the position of the sun",
-                  "responseMessage": "✅ That's right! A solar tracker adjusts the position of the solar panels to follow the sun.",
-                  "explanation": "Solar trackers optimize the angle of solar panels throughout the day to maximize sunlight exposure and energy production."
-                },
+               
                 {
                   "question": "Which of the following is a major advantage of thin-film solar panels?",
                   "options": ["High efficiency", "Flexibility and lightweight", "High cost", "Large size"],
@@ -2596,13 +2579,7 @@
                   "responseMessage": "✅ That's right! A solar power purchase agreement (PPA) is an agreement to buy solar energy from a provider.",
                   "explanation": "In a PPA, a provider installs and maintains the solar system, and the customer buys the electricity generated at a fixed rate."
                 },
-                {
-                  "question": "Which type of solar panel is known for being the most efficient but also the most expensive?",
-                  "options": ["Monocrystalline", "Polycrystalline", "Thin-film", "Organic photovoltaic"],
-                  "correctAnswer": "Monocrystalline",
-                  "responseMessage": "✅ That's right! Monocrystalline panels are known for being the most efficient but also the most expensive.",
-                  "explanation": "Monocrystalline panels are made from high-purity silicon, making them more efficient but also more costly compared to other types."
-                },
+               
                 {
                   "question": "What is 'solar panel orientation' and why is it important?",
                   "options": ["The color of the panel for aesthetic purposes", "The direction and angle at which panels are positioned relative to the sun", "The type of solar cells used", "The amount of energy produced"],
@@ -2908,13 +2885,7 @@
                   "responseMessage": "✅ That's right! The solar panel temperature coefficient measures how much panel efficiency decreases with increasing temperature.",
                   "explanation": "The temperature coefficient indicates how much the efficiency of a solar panel drops as the temperature rises, which is important for understanding performance in hot climates."
                 },
-                {
-                  "question": "What is 'solar power tracking'?",
-                  "options": ["Adjusting the position of solar panels to follow the sun's path", "Storing excess solar energy", "Increasing the panel’s efficiency", "Reducing the cost of solar installation"],
-                  "correctAnswer": "Adjusting the position of solar panels to follow the sun's path",
-                  "responseMessage": "✅ That's right! Solar power tracking involves adjusting the position of solar panels to follow the sun's path.",
-                  "explanation": "Tracking systems optimize energy production by adjusting the angle and direction of solar panels throughout the day to capture the maximum amount of sunlight."
-                },
+              
                 {
                   "question": "Which solar panel technology is known for having the highest efficiency?",
                   "options": ["Monocrystalline", "Polycrystalline", "Thin-film", "Flexible"],
@@ -4238,6 +4209,20 @@
                         "explanation": "During photosynthesis, plants absorb carbon dioxide and convert it into organic compounds, reducing atmospheric CO2."
                       },
                       {
+                        "question": "What is an example of a biotic factor in a desert ecosystem?",
+                        "options": ["Soil composition", "Temperature", "Precipitation", "Cacti"],
+                        "correctAnswer": "Cacti",
+                        "responseMessage": "✅ That's right! Cacti are a biotic factor in a desert ecosystem.",
+                        "explanation": "Biotic factors are living components of an ecosystem, such as plants and animals, that interact with each other."
+                      },
+                      {
+                        "question": "What is the primary purpose of a habitat?",
+                        "options": ["To provide shelter and resources for organisms", "To support species migration", "To regulate climate", "To produce energy"],
+                        "correctAnswer": "To provide shelter and resources for organisms",
+                        "responseMessage": "✅ That's right! A habitat provides shelter and resources for organisms.",
+                        "explanation": "Habitats are the natural environments where organisms live, offering necessary resources like food, water, and shelter."
+                      },
+                      {
                         "question": "What is the main difference between primary and secondary succession?",
                         "options": ["Primary succession occurs on bare land, while secondary succession occurs after a disturbance", "Primary succession involves plant growth, while secondary succession involves animal migration", "Primary succession happens in aquatic environments, while secondary occurs on land", "Primary succession happens quickly, while secondary is slow"],
                         "correctAnswer": "Primary succession occurs on bare land, while secondary succession occurs after a disturbance",
@@ -4269,6 +4254,13 @@
                         "correctAnswer": "Tropical rainforest",
                         "responseMessage": "✅ That's right! Tropical rainforests have high temperatures and high rainfall throughout the year.",
                         "explanation": "Tropical rainforests are known for their constant warm temperatures and abundant precipitation."
+                      },
+                      {
+                        "question": "What is an example of a biotic factor in a desert ecosystem?",
+                        "options": ["Soil composition", "Temperature", "Precipitation", "Cacti"],
+                        "correctAnswer": "Cacti",
+                        "responseMessage": "✅ That's right! Cacti are a biotic factor in a desert ecosystem.",
+                        "explanation": "Biotic factors are living components of an ecosystem, such as plants and animals, that interact with each other."
                       },
                       {
                         "question": "What is the role of decomposers in nutrient cycling?",
@@ -4329,6 +4321,13 @@
                         "correctAnswer": "Ecosystem succession",
                         "responseMessage": "✅ That's right! Ecosystem succession describes the gradual development of ecosystems over time.",
                         "explanation": "Succession involves changes in species composition and ecosystem structure as an area progresses towards a stable community."
+                      },
+                      {
+                        "question": "What is an example of a biotic factor in a desert ecosystem?",
+                        "options": ["Soil composition", "Temperature", "Precipitation", "Cacti"],
+                        "correctAnswer": "Cacti",
+                        "responseMessage": "✅ That's right! Cacti are a biotic factor in a desert ecosystem.",
+                        "explanation": "Biotic factors are living components of an ecosystem, such as plants and animals, that interact with each other."
                       },
                       {
                         "question": "Which of the following ecosystems is known for its dense vegetation and high biodiversity?",
@@ -4405,6 +4404,13 @@
                         "explanation": "Mangrove forests are found in coastal areas with high salinity and are adapted to survive in such environments."
                       },
                       {
+                        "question": "What is an example of a biotic factor in a desert ecosystem?",
+                        "options": ["Soil composition", "Temperature", "Precipitation", "Cacti"],
+                        "correctAnswer": "Cacti",
+                        "responseMessage": "✅ That's right! Cacti are a biotic factor in a desert ecosystem.",
+                        "explanation": "Biotic factors are living components of an ecosystem, such as plants and animals, that interact with each other."
+                      },
+                      {
                         "question": "What is the term for the role an organism plays in its environment, including its interactions with other organisms?",
                         "options": ["Habitat", "Niche", "Biome", "Ecosystem"],
                         "correctAnswer": "Niche",
@@ -4471,6 +4477,13 @@
                         "correctAnswer": "Taiga",
                         "responseMessage": "✅ That's right! The taiga is characterized by low temperatures and coniferous forests.",
                         "explanation": "The taiga, or boreal forest, is a cold biome dominated by evergreen trees and has long winters."
+                      },
+                      {
+                        "question": "Which of the following ecosystems has the highest biodiversity?",
+                        "options": ["Desert", "Tropical rainforest", "Taiga", "Temperate forest"],
+                        "correctAnswer": "Tropical rainforest",
+                        "responseMessage": "✅ That's right! Tropical rainforests have the highest biodiversity.",
+                        "explanation": "Tropical rainforests support a vast array of plant and animal species due to their stable climate and high productivity."
                       },
                       {
                         "question": "What is the role of scavengers in an ecosystem?",
@@ -5823,13 +5836,7 @@
                           "responseMessage": "✅ Correct! Biochar enhances soil fertility and carbon sequestration.",
                           "explanation": "Biochar improves soil fertility and increases soil's capacity to store carbon, contributing to carbon sequestration and enhanced soil health."
                         },
-                        {
-                          "question": "How does regenerative agriculture impact local wildlife?",
-                          "options": ["Reduces wildlife habitat", "Promotes habitat destruction", "Enhances wildlife habitat through diverse ecosystems", "Increases pesticide use"],
-                          "correctAnswer": "Enhances wildlife habitat through diverse ecosystems",
-                          "responseMessage": "✅ Correct! Regenerative agriculture enhances wildlife habitat through diverse ecosystems.",
-                          "explanation": "By maintaining diverse ecosystems and reducing chemical inputs, regenerative agriculture creates habitats that support a variety of wildlife species."
-                        },
+                      
                         {
                           "question": "What is the role of compost in regenerative agriculture?",
                           "options": ["Depletes soil nutrients", "Promotes soil erosion", "Improves soil health and fertility", "Increases dependency on synthetic fertilizers"],
@@ -5980,13 +5987,7 @@
                           "responseMessage": "✅ Correct! Rotational grazing promotes pasture recovery and soil health.",
                           "explanation": "Rotational grazing involves moving livestock between pastures to allow for recovery, which helps maintain healthy pasturelands and improve soil health."
                         },
-                        {
-                          "question": "How does regenerative agriculture approach pest management?",
-                          "options": ["Relies heavily on synthetic pesticides", "Promotes monoculture", "Uses integrated pest management and natural predators", "Reduces soil health"],
-                          "correctAnswer": "Uses integrated pest management and natural predators",
-                          "responseMessage": "✅ Correct! Regenerative agriculture uses integrated pest management and natural predators.",
-                          "explanation": "Integrated pest management (IPM) and the use of natural predators reduce the need for synthetic pesticides and support a balanced ecosystem."
-                        },
+                     
                         {
                           "question": "What is the benefit of incorporating pollinator-friendly plants in regenerative agriculture?",
                           "options": ["Reduces pollinator populations", "Decreases crop yields", "Supports healthy pollinator populations and improves crop productivity", "Increases pesticide use"],
@@ -6222,6 +6223,13 @@
                 "explanation": "Climate change affects weather patterns, increasing the frequency and intensity of extreme weather events."
               },
               {
+                "question": "Which greenhouse gas is often associated with the decay of organic waste in landfills?",
+                "options": ["Methane", "Nitrous oxide", "Carbon dioxide", "Chlorofluorocarbons"],
+                "correctAnswer": "Methane",
+                "responseMessage": "✅ That's correct! Methane is often associated with the decay of organic waste in landfills.",
+                "explanation": "Methane is a potent greenhouse gas produced during the anaerobic decomposition of organic waste in landfills."
+              },
+              {
                 "question": "What is the main cause of ocean acidification?",
                 "options": ["Increased seaweed growth", "Rising sea temperatures", "Higher levels of CO2 in the atmosphere", "Decreased salinity"],
                 "correctAnswer": "Higher levels of CO2 in the atmosphere",
@@ -6288,6 +6296,13 @@
                 "correctAnswer": "Ice sheet retreat",
                 "responseMessage": "✅That's right! Ice sheet retreat refers to the gradual loss of ice in polar regions due to global warming.",
                 "explanation": "Ice sheet retreat contributes to rising sea levels and is a visible impact of global warming."
+              },
+              {
+                "question": "Which greenhouse gas is often associated with the decay of organic waste in landfills?",
+                "options": ["Methane", "Nitrous oxide", "Carbon dioxide", "Chlorofluorocarbons"],
+                "correctAnswer": "Methane",
+                "responseMessage": "✅ That's correct! Methane is often associated with the decay of organic waste in landfills.",
+                "explanation": "Methane is a potent greenhouse gas produced during the anaerobic decomposition of organic waste in landfills."
               },
               {
                 "question": "What is the 'greenhouse effect'?",
@@ -6957,13 +6972,7 @@
                 "responseMessage": "✅ That's correct! The Intergovernmental Panel on Climate Change (IPCC) monitors the scientific aspects of climate change.",
                 "explanation": "The IPCC is responsible for assessing the scientific knowledge on climate change, its impacts, and potential adaptation and mitigation strategies."
               },
-              {
-                "question": "Which greenhouse gas is often associated with the decay of organic waste in landfills?",
-                "options": ["Methane", "Nitrous oxide", "Carbon dioxide", "Chlorofluorocarbons"],
-                "correctAnswer": "Methane",
-                "responseMessage": "✅ That's correct! Methane is often associated with the decay of organic waste in landfills.",
-                "explanation": "Methane is a potent greenhouse gas produced during the anaerobic decomposition of organic waste in landfills."
-              },
+           
               {
                 "question": "What is the term for the gradual increase in Earth's average surface temperature due to human activities?",
                 "options": ["Global cooling", "Global warming", "Greenhouse effect", "Climate variability"],
@@ -7039,13 +7048,7 @@
                 "responseMessage": "✅ That's correct! Permafrost melting can amplify the effects of climate change by releasing stored greenhouse gases.",
                 "explanation": "As permafrost melts due to rising temperatures, it releases stored methane and carbon dioxide, which can further intensify global warming."
               },
-              {
-                "question": "What term is used to describe the gradual loss of biodiversity due to climate change?",
-                "options": ["Extinction", "Habitat fragmentation", "Biodiversity loss", "Species migration"],
-                "correctAnswer": "Biodiversity loss",
-                "responseMessage": "✅ That's correct! Biodiversity loss refers to the gradual loss of species and ecosystems due to climate change.",
-                "explanation": "Climate change affects species distributions, interactions, and habitat conditions, leading to a decline in biodiversity and ecosystem health."
-              },
+             
               {
                 "question": "Which of the following is a key strategy for adapting to the impacts of climate change in coastal areas?",
                 "options": ["Building seawalls", "Increasing fossil fuel use", "Removing mangrove forests", "Expanding urban development"],
@@ -7121,13 +7124,7 @@
                 "responseMessage": "✅ That's correct! Methane is most commonly associated with agricultural practices.",
                 "explanation": "Methane is released from livestock digestion and manure management, making it a significant greenhouse gas in agriculture."
               },
-              {
-                "question": "What is the primary goal of carbon capture and storage (CCS) technology?",
-                "options": ["To reduce energy consumption", "To capture and store carbon dioxide emissions", "To increase fossil fuel production", "To promote renewable energy"],
-                "correctAnswer": "To capture and store carbon dioxide emissions",
-                "responseMessage": "✅ That's correct! The primary goal of CCS technology is to capture and store carbon dioxide emissions.",
-                "explanation": "CCS technology aims to capture CO2 emissions from industrial sources and store them underground to prevent them from entering the atmosphere."
-              },
+             
               {
                 "question": "Which international agreement aims to phase out substances that deplete the ozone layer?",
                 "options": ["Paris Agreement", "Montreal Protocol", "Kyoto Protocol", "Río Declaration"],
@@ -7259,13 +7256,7 @@
                 "responseMessage": "✅ That's correct! Green infrastructure involves managing and improving the quality of urban green spaces to reduce the impact of climate change.",
                 "explanation": "Green infrastructure includes practices like creating parks, green roofs, and urban forests to enhance resilience to climate change and improve urban living conditions."
               },
-              {
-                "question": "What is the primary benefit of using public transportation in the context of climate change?",
-                "options": ["Increased energy consumption", "Reduced greenhouse gas emissions", "Higher costs for consumers", "Increased urban congestion"],
-                "correctAnswer": "Reduced greenhouse gas emissions",
-                "responseMessage": "✅ That's correct! The primary benefit of using public transportation in the context of climate change is reduced greenhouse gas emissions.",
-                "explanation": "Public transportation reduces the number of individual vehicles on the road, leading to lower overall emissions and decreased fuel consumption."
-              },
+              
               {
                 "question": "What is the primary role of carbon sinks in mitigating climate change?",
                 "options": ["To increase fossil fuel use", "To absorb and store carbon dioxide from the atmosphere", "To enhance deforestation", "To promote industrial activities"],
@@ -7341,13 +7332,7 @@
                 "responseMessage": "✅ That's correct! Cover cropping helps increase soil carbon sequestration.",
                 "explanation": "Cover cropping involves planting crops specifically to cover the soil, which helps increase soil organic matter and carbon storage, improving soil health and reducing CO2 emissions."
               },
-              {
-                "question": "What term describes the transition from fossil fuel-based energy systems to renewable energy systems?",
-                "options": ["Energy transition", "Energy diversification", "Energy convergence", "Energy expansion"],
-                "correctAnswer": "Energy transition",
-                "responseMessage": "✅ That's correct! Energy transition describes the shift from fossil fuel-based energy systems to renewable energy systems.",
-                "explanation": "Energy transition involves moving towards renewable energy sources like wind, solar, and geothermal, reducing reliance on fossil fuels and mitigating climate change."
-              },
+              
               {
                 "question": "Which of the following is an example of an adaptation strategy to cope with the impacts of climate change?",
                 "options": ["Building more fossil fuel power plants", "Developing drought-resistant crops", "Increasing emissions from industrial activities", "Expanding urban sprawl"],
@@ -7423,13 +7408,7 @@
                 "responseMessage": "✅ That's correct! Global warming describes the warming of Earth's lower atmosphere due to an increase in greenhouse gases.",
                 "explanation": "Global warming refers to the rise in average global temperatures due to increased greenhouse gas concentrations in the atmosphere."
               },
-              {
-                "question": "What is the primary goal of the Paris Agreement's Long-Term Temperature Goal?",
-                "options": ["To limit global temperature rise to well below 2°C above pre-industrial levels", "To eliminate greenhouse gases by 2050", "To reduce air pollution levels worldwide", "To protect endangered species from extinction"],
-                "correctAnswer": "To limit global temperature rise to well below 2°C above pre-industrial levels",
-                "responseMessage": "✅ That's correct! The primary goal of the Paris Agreement's Long-Term Temperature Goal is to limit global temperature rise to well below 2°C above pre-industrial levels.",
-                "explanation": "The Paris Agreement aims to keep global temperature rise significantly below 2°C to prevent the worst impacts of climate change and support efforts to limit the rise to 1.5°C."
-              },
+             
               {
                 "question": "Which of the following practices can help reduce the urban heat island effect?",
                 "options": ["Increasing use of dark-colored materials", "Enhancing green spaces and urban vegetation", "Building more high-rise buildings", "Expanding road networks"],

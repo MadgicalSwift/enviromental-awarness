@@ -114,7 +114,7 @@ export class SwiftchatMessageService extends MessageService {
     }
   }
 
-  async askQuestion(from: string, questionIndex: number, appState: any) {
+ async askQuestion(from: string, questionIndex: number, appState: any) {
     try {
       const topic = data.topics[appState.topicSelected];
       if (!topic) {
@@ -307,7 +307,7 @@ export class SwiftchatMessageService extends MessageService {
         body: "Choose Topics"
       };
       appState.topicListShown = true;
-      await this.createButtons(from, button_data);
+      await this.createTopicButtonsFromQuizData(from, button_data);
     } catch (error) {
       console.error('Error creating topic buttons:', error);
     }
