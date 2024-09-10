@@ -10,6 +10,7 @@ import { SwiftchatModule } from './swiftchat/swiftchat.module';
 import { HttpExceptionFilter } from './common/exception/http-exception.filter';
 import { ChatbotModule } from './chat/chatbot.module';
 import { MessageModule } from './message/message.module';
+import { UserModule } from './model/user.module';
 
 dotenv.config();
 
