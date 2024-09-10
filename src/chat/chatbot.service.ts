@@ -2,6 +2,7 @@ import { Injectable } from '@nestjs/common';
 import IntentClassifier from '../intent/intent.classifier';
 import { MessageService } from 'src/message/message.service';
 import { UserService } from 'src/model/user.service';
+import { localisedStrings } from 'src/i18n/en/localised-strings';
 
 @Injectable()
 export class ChatbotService {
@@ -32,21 +33,21 @@ export class ChatbotService {
     const { intent = undefined, entities = undefined } = text ? this.intentClassifier.getIntent(text.body) : {};
 
     if (button_response) {
-      if (button_response.body === "Retake Quiz") {
+      if (button_response.body === localisedStrings.retakeQuiz) {
         await this.message.startQuiz(from, this.appState);
-      } else if (button_response.body === "Choose Another Topic" || button_response.body === "Yes, let's start!" || button_response.body === "Go to topic selection") {
+      } else if (button_response.body === localisedStrings.chooseAnotherTopic || button_response.body === localisedStrings.start || button_response.body === localisedStrings.gototopics) {
         this.appState.quizResponse = []; // Reset quiz responses
         this.appState.topicListShown = false; // Reset topic list shown state
         console.log("topicListShown 1: ", this.appState.topicListShown);
         await this.message.createTopicButtonsFromQuizData(from, this.appState);
         console.log("topicListShown 2: ", this.appState.topicListShown);
-      } else if (button_response.body === "Not right now.") {
+      } else if (button_response.body === localisedStrings.notrightnow) {
         this.message.endSession(from, button_response.body);
       } else if (this.appState.quizResponse.length > 0) {
         await this.message.handleQuizResponse(from, button_response, this.appState);
-      } else if (this.appState.topicListShown && button_response.body === "Tell me more.") {
+      } else if (this.appState.topicListShown && button_response.body === localisedStrings.tellmemore) {
         await this.message.handleTellMeMore(from, this.appState);
-      } else if (this.appState.topicListShown && button_response.body === "Got it, let's quiz!") {
+      } else if (this.appState.topicListShown && button_response.body === localisedStrings.gotitquiz) {
         await this.message.startQuiz(from, this.appState);
       } else if (this.appState.topicListShown) {
         await this.message.handleTopicClick(from, button_response, this.appState);

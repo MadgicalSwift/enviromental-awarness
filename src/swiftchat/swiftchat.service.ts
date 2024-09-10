@@ -5,6 +5,7 @@ import { MessageService } from 'src/message/message.service';
 import axios from 'axios';
 import data from "../quiz.json";
 import { generateRandomIntegerUpToMax } from 'src/utils/utils';
+import { localisedStrings } from 'src/i18n/en/localised-strings';
 
 dotenv.config();
 
@@ -182,7 +183,7 @@ export class SwiftchatMessageService extends MessageService {
         await this.sendTextMessage(from, currentQuestion.responseMessage);
         await this.sendTextMessage(from, currentQuestion.explanation);
       } else {
-        await this.sendTextMessage(from, `❌Not quite. The correct answer is: ${currentQuestion.correctAnswer}`);
+        await this.sendTextMessage(from, `${localisedStrings.notquite} ${currentQuestion.correctAnswer}`);
         await this.sendTextMessage(from, currentQuestion.explanation);
       }
 
@@ -211,8 +212,8 @@ export class SwiftchatMessageService extends MessageService {
       }
 
       const selectedSet = topic.sets[appState.setSelected];
-      await this.sendTextMessage(from, `You’ve completed the quiz on ${topic.name}! Here’s how you did:`);
-      await this.sendTextMessage(from, `You answered ${correctAnsCount} out of ${selectedSet.questions.length} questions correctly!`);
+      await this.sendTextMessage(from, `${localisedStrings.completedQuiz}${topic.name}! Here’s how you did:`);
+      await this.sendTextMessage(from, localisedStrings.quizResults(correctAnsCount, selectedSet.questions.length));
       appState.quizResponse = []; // Reset quiz responses
       appState.topicListShown = false; // Reset topic list shown state
 
@@ -220,13 +221,13 @@ export class SwiftchatMessageService extends MessageService {
         buttons: [
           {
             type: 'solid',
-            body: "Retake Quiz",
-            reply: "Retake Quiz",
+            body: localisedStrings.retakeQuiz,
+            reply: localisedStrings.retakeQuiz,
           },
           {
             type: 'solid',
-            body: "Choose Another Topic",
-            reply: "Choose Another Topic",
+            body: localisedStrings.chooseAnotherTopic,
+            reply: localisedStrings.chooseAnotherTopic,
           }
         ],
         body: " "
@@ -245,14 +246,14 @@ export class SwiftchatMessageService extends MessageService {
         throw new Error('Topic not found');
       }
 
-      await this.sendTextMessage(from, `Great choice! Here’s what you need to know about ${topic.name}:`);
+      await this.sendTextMessage(from, `${localisedStrings.description}${topic.name}:`);
       await this.sendTextMessage(from, topic.fullExplanation);
       const button_data = {
         buttons: [
           {
             type: 'solid',
-            body: "Got it, let's quiz!",
-            reply: "Got it, let's quiz!",
+            body: localisedStrings.gotitquiz,
+            reply: localisedStrings.gotitquiz,
           }
         ],
         body: "Choose Option"
@@ -277,13 +278,13 @@ export class SwiftchatMessageService extends MessageService {
         buttons: [
           {
             type: 'solid',
-            body: "Got it, let's quiz!",
-            reply: "Got it, let's quiz!",
+            body: localisedStrings.gotitquiz,
+            reply: localisedStrings.gotitquiz,
           },
           {
             type: 'solid',
-            body: 'Tell me more.',
-            reply: 'Tell me more.',
+            body: localisedStrings.tellmemore,
+            reply: localisedStrings.tellmemore,
           },
         ],
         body: "Choose Option"
@@ -319,13 +320,13 @@ export class SwiftchatMessageService extends MessageService {
         buttons: [
           {
             type: 'solid',
-            body: "Yes, let's start!",
-            reply: "Yes, let's start!",
+            body: localisedStrings.start,
+            reply: localisedStrings.start,
           },
           {
             type: 'solid',
-            body: 'Not right now.',
-            reply: 'Not right now.',
+            body: localisedStrings.notrightnow,
+            reply: localisedStrings.notrightnow,
           },
         ],
         body: "Choose option"

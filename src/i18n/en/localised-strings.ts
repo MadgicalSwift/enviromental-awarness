@@ -5,5 +5,17 @@ export const localisedStrings = {
   language_english: 'English',
   language_changed: 'Language changed to English',
   choose_topics: '"Choose a topic to learn about today:',
-  end_session: "session ended"
+  end_session: "session ended",
+  notquite: "❌ Not quite. The correct answer is: ",
+  completedQuiz:"You’ve completed the quiz on ",
+  quizResults:(correctAnsCount:number, totalQues: number)=> `You answered ${correctAnsCount} out of ${totalQues} questions correctly!`,
+  retakeQuiz:"Retake Quiz",
+  chooseAnotherTopic:"Choose Another Topic",
+  gotitquiz:"Got it, let's quiz!",
+  description: "Great choice! Here’s what you need to know about ",
+  tellmemore: "Tell me more.",
+  start:"Yes, let's start!",
+  notrightnow:"Not right now.",
+  gototopics:"Go to topic selection",
+
 };
