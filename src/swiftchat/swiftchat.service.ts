@@ -4,7 +4,8 @@ import { LocalizationService } from 'src/localization/localization.service';
 import { UserService } from 'src/model/user.service';
 import { MessageService } from 'src/message/message.service';
 import axios from 'axios';
-import data from "../quiz.json";
+import * as fs from 'fs';
+import * as path from 'path';
 import { generateRandomIntegerUpToMax } from 'src/utils/utils';
 
 dotenv.config();
@@ -15,9 +16,16 @@ export class SwiftchatMessageService extends MessageService {
   apiKey = process.env.API_KEY;
   apiUrl = process.env.API_URL;
   baseUrl = `${this.apiUrl}/${this.botId}/messages`;
+  private quizData: any;
 
   constructor(private readonly userService: UserService) {
     super();
+   
+  }
+  async onModuleInit() {
+    const filePath = path.resolve(__dirname,"..", "..",'quiz.json');
+    const fileContents = fs.readFileSync(filePath, 'utf-8');
+    this.quizData = JSON.parse(fileContents);
   }
 
   prepareRequestData(from: string, requestBody: string): any {
@@ -43,21 +51,6 @@ export class SwiftchatMessageService extends MessageService {
       console.error('Error sending welcome message:', error);
     }
   }
-
-  // async sendLanguageChangedMessage(from: string, language: string) {
-  //   try {
-  //     const localisedStrings = LocalizationService.getLocalisedString(language);
-  //     const requestData = this.prepareRequestData(from, localisedStrings.language_changed);
-  //     // update users's preferred language
-  //     await this.userService.setUserPreferredLanguage(from, language, this.botId);
-
-  //     const response = await this.sendMessage(this.baseUrl, requestData, this.apiKey);
-  //     console.log('Language change message sent:', response.data);
-  //     return response;
-  //   } catch (error) {
-  //     console.error('Error sending language change message:', error);
-  //   }
-  // }
   
   async sendLanguageChangedMessage(from: string, language: string) {
     const localisedStrings = LocalizationService.getLocalisedString(language);
@@ -119,124 +112,21 @@ export class SwiftchatMessageService extends MessageService {
     }
   }
 
-  // async startQuiz(from: string, appState: any): Promise<void> {
-  //   try {
-  //     const topic = data.topics[appState.topicSelected];
-  //     if (!topic) {
-  //       throw new Error('Topic not found');
-  //     }
-  //     console.log(topic);
-  //     appState.setSelected = generateRandomIntegerUpToMax(topic?.sets?.length-1)
-  //     appState.currentQuestionIndex = 0;
-  //     const selectedSet = topic.sets[appState.setSelected];
-  //     console.log('set',selectedSet)
-  //     if (!selectedSet) {
-  //       throw new Error('Set not found');
-  //     }
 
-  //     const questions = selectedSet.questions;
-  //     if (!questions) {
-  //       throw new Error('Questions not found');
-  //     }
+      
+      
+      
+   
 
-  //     let currentQuestionIndex = 0;
-  //     appState.quizResponse = []; // Reset quiz responses
-  //     appState.currentQuestionIndex = currentQuestionIndex; // Set current question index
 
-  //     await this.askQuestion(from, currentQuestionIndex, appState);
-  //   } catch (error) {
-  //     console.error('Error starting quiz:', error);
-  //   }
-  // }
-  async startQuiz(from: string, appState: any): Promise<void> {
-    try {
-      const topic = data.topics[appState.topicSelected];
-      console.log("Topic Name",topic.name);
-      if (!topic) {
-        throw new Error('Topic not found');
-      }
 
-      appState.setSelected = generateRandomIntegerUpToMax(topic?.sets?.length - 1);
-      appState.currentQuestionIndex = 0;
-      const selectedSet = topic.sets[appState.setSelected];
-      if (!selectedSet) {
-        throw new Error('Set not found');
-      }
-      console.log("Set Number",selectedSet.setNumber);
-      console.log("Ques index",appState.currentQuestionIndex);
-      const questions = selectedSet.questions;
-      if (!questions) {
-        throw new Error('Questions not found');
-      }
-
-      appState.quizResponse = []; // Reset quiz responses
-      appState.currentQuestionIndex = 0;
-
-      // Save current state in the database
-      await this.userService.saveCurrentSetNumber(from, this.botId, appState.setSelected);
-      await this.userService.saveQuestIndex(from, this.botId, appState.currentIndex);
-      await this.userService.saveCurrentTopic(from, this.botId, topic.name);
-
-      await this.askQuestion(from, appState.currentQuestionIndex, appState);
-    } catch (error) {
-      console.error('Error starting quiz:', error);
-    }
-  }
-
-//  async askQuestion(from: string, questionIndex: number, appState: any) {
-//     try {
-//       const topic = data.topics[appState.topicSelected];
-//       if (!topic) {
-//         throw new Error('Topic not found');
-//       }
-
-//       const selectedSet = topic.sets[appState.setSelected];
-//       if (!selectedSet) {
-//         throw new Error('Set not found');
-//       }
-
-//       const questions = selectedSet.questions;
-//       if (!questions) {
-//         throw new Error('Questions not found');
-//       }
-
-//       if (questionIndex < questions.length) {
-//         const question = questions[questionIndex];
-//         const button_data = {
-//           buttons: question.options.map(option => ({
-//             type: 'solid',
-//             body: option,
-//             reply: option,
-//           })),
-//           body: question.question
-//         };
-//         appState.currentQuestionIndex = questionIndex;
-//         appState.quizResponse.push({});
-//         await this.createButtons(from, button_data);
-//       } else {
-//         await this.endQuiz(from, appState); // All questions have been answered
-//       }
-//     } catch (error) {
-//       console.error('Error asking question:', error);
-//     }
-//   }
-
-async askQuestion(from: string, questionIndex: number, appState: any) {
+async askQuestion(from: string, questionIndex: number, topicSelected:string, setNumber:number, score:number ) {
   try {
-    const topic = data.topics[appState.topicSelected];
-    if (!topic) {
-      throw new Error('Topic not found');
-    }
+    let selectedTopic = this.quizData.topics.find((t: any) => t.name === topicSelected);
 
-    const selectedSet = topic.sets[appState.setSelected];
-    if (!selectedSet) {
-      throw new Error('Set not found');
-    }
+    let selectedSet = selectedTopic.sets[setNumber];
 
     const questions = selectedSet.questions;
-    if (!questions) {
-      throw new Error('Questions not found');
-    }
 
     if (questionIndex < questions.length) {
       const question = questions[questionIndex];
@@ -249,173 +139,59 @@ async askQuestion(from: string, questionIndex: number, appState: any) {
         body: question.question,
       };
 
-      appState.currentQuestionIndex = questionIndex;
-      appState.quizResponse.push({});
-
-      // Save current question index
-      await this.userService.saveQuestIndex(from, this.botId, questionIndex);
-
       await this.createButtons(from, button_data);
     } else {
-      await this.endQuiz(from, appState); // All questions have been answered
+      await this.endQuiz(from, score, topicSelected, setNumber); // All questions have been answered
     }
   } catch (error) {
     console.error('Error asking question:', error);
   }
 }
 
-  // async handleQuizResponse(from: string, button_response: any, appState: any): Promise<void> {
-  //   try {
-  //     const topic = data.topics[appState.topicSelected];
-  //     if (!topic) {
-  //       throw new Error('Topic not found');
-  //     }
 
-  //     const selectedSet = topic.sets[appState.setSelected];
-  //     if (!selectedSet) {
-  //       throw new Error('Set not found');
-  //     }
-
-  //     const questions = selectedSet.questions;
-  //     if (!questions) {
-  //       throw new Error('Questions not found');
-  //     }
-
-  //     const currentQuestionIndex = appState.currentQuestionIndex;
-  //     appState.currentQuestionIndex++;
-  //     const currentQuestion = questions[currentQuestionIndex];
-
-  //     appState.quizResponse[currentQuestionIndex] = {
-  //       userAnswer: button_response.body,
-  //       isCorrect: button_response.body === currentQuestion.correctAnswer
-  //     };
-
-  //     if (button_response.body === currentQuestion.correctAnswer) {
-  //       await this.sendTextMessage(from, currentQuestion.responseMessage);
-  //       await this.sendTextMessage(from, currentQuestion.explanation);
-  //     } else {
-  //       await this.sendTextMessage(from, `❌Not quite. The correct answer is: ${currentQuestion.correctAnswer}`);
-  //       await this.sendTextMessage(from, currentQuestion.explanation);
-  //     }
-
-  //     if (currentQuestionIndex === questions.length - 1) {
-  //       await this.endQuiz(from, appState);
-  //     } else {
-  //       await this.askQuestion(from, currentQuestionIndex + 1, appState);
-  //     }
-  //   } catch (error) {
-  //     console.error('Error handling quiz response:', error);
-  //   }
-  // }
-
-  async handleQuizResponse(from: string, button_response: any, appState: any): Promise<void> {
+  async handleQuizResponse(from: string, button_response: any, topicSelected: string, setNumber: number, currentIndex: number, score:number): Promise<void> {
     try {
-      const topic = data.topics[appState.topicSelected];
-      if (!topic) {
-        throw new Error('Topic not found');
-      }
+      const topic =this.quizData.topics.find((t: any) => t.name === topicSelected);
 
-      const selectedSet = topic.sets[appState.setSelected];
-      if (!selectedSet) {
-        throw new Error('Set not found');
-      }
-
+      const selectedSet = topic.sets[setNumber];
+  
       const questions = selectedSet.questions;
-      if (!questions) {
-        throw new Error('Questions not found');
-      }
-
-      const currentQuestionIndex = appState.currentQuestionIndex;
-      appState.currentQuestionIndex++;
-      console.log(appState.currentQuestionIndex);
-      const currentQuestion = questions[currentQuestionIndex];
+  
+      const currentQuestion = questions[currentIndex];
 
       const isCorrect = button_response.body === currentQuestion.correctAnswer;
-
-      appState.quizResponse[currentQuestionIndex] = {
-        userAnswer: button_response.body,
-        isCorrect: isCorrect,
-      };
-
-      // Update the user's quiz response in the database
-      await this.userService.saveCurrentScore(from, this.botId, appState.quizResponse.filter(r => r.isCorrect).length);
 
       if (isCorrect) {
         await this.sendTextMessage(from, currentQuestion.responseMessage);
         await this.sendTextMessage(from, currentQuestion.explanation);
+        await this.userService.saveCurrentScore(from,this.botId, score+1)
       } else {
         await this.sendTextMessage(from, `❌ Not quite. The correct answer is: ${currentQuestion.correctAnswer}`);
         await this.sendTextMessage(from, currentQuestion.explanation);
       }
 
-      if (currentQuestionIndex === (questions.length - 1)) {
-        await this.endQuiz(from, appState);
+      if (currentIndex === (questions.length - 1)) {
+        let userData = await this.userService.findUserByMobileNumber(from, this.botId);
+        await this.endQuiz(from, userData.score, topicSelected, setNumber);
       } else {
-        await this.askQuestion(from, currentQuestionIndex + 1, appState);
+        await this.askQuestion(from, currentIndex+1,  topicSelected, setNumber, score);
       }
     } catch (error) {
       console.error('Error handling quiz response:', error);
     }
   }
 
-  // async endQuiz(from: string, appState: any): Promise<void> {
-  //   try {
-  //     let correctAnsCount = 0;
-  //     appState.quizResponse.forEach(response => {
-  //       if (response.isCorrect) {
-  //         correctAnsCount++;
-  //       }
-  //     });
+ 
 
-  //     const topic = data.topics[appState.topicSelected];
-  //     if (!topic) {
-  //       throw new Error('Topic not found')
-  //     }
-
-  //     const selectedSet = topic.sets[appState.setSelected];
-  //     await this.sendTextMessage(from, `You’ve completed the quiz on ${topic.name}! Here’s how you did:`);
-  //     await this.sendTextMessage(from, `You answered ${correctAnsCount} out of ${selectedSet.questions.length} questions correctly!`);
-  //     appState.quizResponse = []; // Reset quiz responses
-  //     appState.topicListShown = false; // Reset topic list shown state
-
-  //     const button_data = {
-  //       buttons: [
-  //         {
-  //           type: 'solid',
-  //           body: "Retake Quiz",
-  //           reply: "Retake Quiz",
-  //         },
-  //         {
-  //           type: 'solid',
-  //           body: "Choose Another Topic",
-  //           reply: "Choose Another Topic",
-  //         }
-  //       ],
-  //       body: " "
-  //     };
-
-  //     await this.createButtons(from, button_data);
-  //   } catch (error) {
-  //     console.error('Error ending quiz:', error);
-  //   }
-  // }
-
-  async endQuiz(from: string, appState: any): Promise<void> {
+  async endQuiz(from: string, score:number, topicSelected:string, setNumber:number): Promise<void> {
     try {
-      const correctAnsCount = appState.quizResponse.filter(response => response.isCorrect).length;
+      // const correctAnsCount = appState.quizResponse.filter(response => response.isCorrect).length;
 
-      const topic = data.topics[appState.topicSelected];
-      if (!topic) {
-        throw new Error('Topic not found');
-      }
+      const topic = this.quizData.topics.find((t: any) => t.name === topicSelected);
 
-      const selectedSet = topic.sets[appState.setSelected];
+      const selectedSet = topic.sets[setNumber];
       await this.sendTextMessage(from, `You’ve completed the quiz on ${topic.name}! Here’s how you did:`);
-      await this.sendTextMessage(from, `You answered ${correctAnsCount} out of ${selectedSet.questions.length} questions correctly!`);
-
-      // Reset user state in the database after quiz ends
-      await this.userService.saveCurrentTopic(from, this.botId, null);
-      await this.userService.saveCurrentScore(from, this.botId, correctAnsCount);
+      await this.sendTextMessage(from, `You answered ${score} out of ${selectedSet.questions.length} questions correctly!`);
 
       const button_data = {
         buttons: [
@@ -440,12 +216,10 @@ async askQuestion(from: string, questionIndex: number, appState: any) {
   }
 
 
-  async handleTellMeMore(from: string, appState: any): Promise<void> {
+  async handleTellMeMore(from: string, currentTopic: string): Promise<void> {
     try {
-      const topic = data.topics[appState.topicSelected];
-      if (!topic) {
-        throw new Error('Topic not found');
-      }
+      const topic = this.quizData.topics.find((t: any) => t.name === currentTopic);
+     
 
       await this.sendTextMessage(from, `Great choice! Here’s what you need to know about ${topic.name}:`);
       await this.sendTextMessage(from, topic.fullExplanation);
@@ -465,14 +239,12 @@ async askQuestion(from: string, questionIndex: number, appState: any) {
     }
   }
 
-  async handleTopicClick(from: string, button_response: any, appState: any): Promise<void> {
+  async handleTopicClick(from: string, button_response: string): Promise<void> {
     try {
-      const { button_index } = button_response;
+     
 
-      const topic = data.topics[button_index];
-      if (!topic) {
-        throw new Error('Topic not found');
-      }
+      const topic = this.quizData.topics.find((t: any) => t.name === button_response);
+    
       console.log(topic);
       await this.sendTextMessage(from, `Explanation is: ${topic.explanation}`);
       const button_data = {
@@ -490,7 +262,7 @@ async askQuestion(from: string, questionIndex: number, appState: any) {
         ],
         body: "Choose Option"
       };
-      appState.topicSelected = button_index;
+     
       console.log(button_data);
       await this.createButtons(from, button_data);
     } catch (error) {
@@ -498,9 +270,9 @@ async askQuestion(from: string, questionIndex: number, appState: any) {
     }
   }
 
-  async createTopicButtonsFromQuizData(from: string, appState: any): Promise<void> {
+  async createTopicButtonsFromQuizData(from: string): Promise<void> {
     try {
-      const buttons = data.topics.map(item => ({
+      const buttons = this.quizData.topics.map(item => ({
         type: "solid",
         body: item.name,
         reply: item.name
@@ -509,7 +281,6 @@ async askQuestion(from: string, questionIndex: number, appState: any) {
         buttons: buttons,
         body: "Choose Topics"
       };
-      appState.topicListShown = true;
       
       await this.createButtons(from, button_data);
       

@@ -29,17 +29,12 @@ export abstract class MessageService {
   }
 
   abstract sendWelcomeMessage(from: string, language: string);
-  abstract sendLanguageChangedMessage(from: string, language: string);
-  abstract startEnvironmentSession(from: string, language: string);
   abstract endSession(from: string, language: string);
-  abstract sendTextMessage(from: string, message: string);
-  abstract startQuiz(from: string, appState: any);
-  abstract askQuestion(from: string, questionIndex: number, appState: any): Promise<void>;
-  abstract handleQuizResponse(from: string, button_response: any, appState: any);
-  abstract endQuiz(from: string, appState: any);
-  abstract handleTellMeMore(from: string, appState: any);
-  abstract handleTopicClick(from: string, button_response: any, appState: any);
-  abstract createTopicButtonsFromQuizData(from: string, appState: any);
+  abstract askQuestion(from: string,questionIndex: number, topicSelected:string, setNumber:number, score:number ): Promise<void>;
+  abstract handleQuizResponse(from: string, button_response: any, topicSelected: string, setNumber: number, currentIndex: number, score:number);
+  abstract handleTellMeMore(from: string, currentTopic: string);
+  abstract handleTopicClick(from: string, button_response: string);
+  abstract createTopicButtonsFromQuizData(from: string);
   abstract createYesNoButton(from: string);
-  abstract createButtons(from: string, button_data: any);
+ 
 }
