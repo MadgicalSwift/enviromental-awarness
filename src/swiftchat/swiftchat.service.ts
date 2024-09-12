@@ -44,20 +44,36 @@ export class SwiftchatMessageService extends MessageService {
     }
   }
 
-  async sendLanguageChangedMessage(from: string, language: string) {
-    try {
-      const localisedStrings = LocalizationService.getLocalisedString(language);
-      const requestData = this.prepareRequestData(from, localisedStrings.language_changed);
-      // update users's preferred language
-      await this.userService.setUserPreferredLanguage(from, language, this.botId);
+  // async sendLanguageChangedMessage(from: string, language: string) {
+  //   try {
+  //     const localisedStrings = LocalizationService.getLocalisedString(language);
+  //     const requestData = this.prepareRequestData(from, localisedStrings.language_changed);
+  //     // update users's preferred language
+  //     await this.userService.setUserPreferredLanguage(from, language, this.botId);
 
-      const response = await this.sendMessage(this.baseUrl, requestData, this.apiKey);
-      console.log('Language change message sent:', response.data);
-      return response;
-    } catch (error) {
-      console.error('Error sending language change message:', error);
-    }
+  //     const response = await this.sendMessage(this.baseUrl, requestData, this.apiKey);
+  //     console.log('Language change message sent:', response.data);
+  //     return response;
+  //   } catch (error) {
+  //     console.error('Error sending language change message:', error);
+  //   }
+  // }
+  
+  async sendLanguageChangedMessage(from: string, language: string) {
+    const localisedStrings = LocalizationService.getLocalisedString(language);
+    const requestData = this.prepareRequestData(
+      from,
+      localisedStrings.select_language,
+    );
+
+    const response = await this.sendMessage(
+      this.baseUrl,
+      requestData,
+      this.apiKey,
+    );
+    return response;
   }
+
 
   async startEnvironmentSession(from: string, language: string) {
     try {
@@ -135,6 +151,7 @@ export class SwiftchatMessageService extends MessageService {
   async startQuiz(from: string, appState: any): Promise<void> {
     try {
       const topic = data.topics[appState.topicSelected];
+      console.log("Topic Name",topic.name);
       if (!topic) {
         throw new Error('Topic not found');
       }
@@ -145,7 +162,8 @@ export class SwiftchatMessageService extends MessageService {
       if (!selectedSet) {
         throw new Error('Set not found');
       }
-
+      console.log("Set Number",selectedSet.setNumber);
+      console.log("Ques index",appState.currentQuestionIndex);
       const questions = selectedSet.questions;
       if (!questions) {
         throw new Error('Questions not found');
@@ -156,7 +174,7 @@ export class SwiftchatMessageService extends MessageService {
 
       // Save current state in the database
       await this.userService.saveCurrentSetNumber(from, this.botId, appState.setSelected);
-      await this.userService.saveQuestIndex(from, this.botId, appState.currentQuestionIndex);
+      await this.userService.saveQuestIndex(from, this.botId, appState.currentIndex);
       await this.userService.saveCurrentTopic(from, this.botId, topic.name);
 
       await this.askQuestion(from, appState.currentQuestionIndex, appState);
@@ -309,6 +327,7 @@ async askQuestion(from: string, questionIndex: number, appState: any) {
 
       const currentQuestionIndex = appState.currentQuestionIndex;
       appState.currentQuestionIndex++;
+      console.log(appState.currentQuestionIndex);
       const currentQuestion = questions[currentQuestionIndex];
 
       const isCorrect = button_response.body === currentQuestion.correctAnswer;
@@ -329,7 +348,7 @@ async askQuestion(from: string, questionIndex: number, appState: any) {
         await this.sendTextMessage(from, currentQuestion.explanation);
       }
 
-      if (currentQuestionIndex === questions.length - 1) {
+      if (currentQuestionIndex === (questions.length - 1)) {
         await this.endQuiz(from, appState);
       } else {
         await this.askQuestion(from, currentQuestionIndex + 1, appState);
@@ -407,11 +426,11 @@ async askQuestion(from: string, questionIndex: number, appState: any) {
           },
           {
             type: 'solid',
-            body: "End Session",
-            reply: "End Session",
+            body: "Choose Another Topic",
+            reply: "Choose Another Topic",
           },
         ],
-        body: "Would you like to retake the quiz or end the session?",
+        body: "Would you like to retake the quiz or choose another topic?",
       };
 
       await this.createButtons(from, button_data);
@@ -454,7 +473,7 @@ async askQuestion(from: string, questionIndex: number, appState: any) {
       if (!topic) {
         throw new Error('Topic not found');
       }
-
+      console.log(topic);
       await this.sendTextMessage(from, `Explanation is: ${topic.explanation}`);
       const button_data = {
         buttons: [
@@ -472,6 +491,7 @@ async askQuestion(from: string, questionIndex: number, appState: any) {
         body: "Choose Option"
       };
       appState.topicSelected = button_index;
+      console.log(button_data);
       await this.createButtons(from, button_data);
     } catch (error) {
       console.error('Error handling topic click:', error);
@@ -490,7 +510,9 @@ async askQuestion(from: string, questionIndex: number, appState: any) {
         body: "Choose Topics"
       };
       appState.topicListShown = true;
-      await this.createTopicButtonsFromQuizData(from, button_data);
+      
+      await this.createButtons(from, button_data);
+      
     } catch (error) {
       console.error('Error creating topic buttons:', error);
     }
