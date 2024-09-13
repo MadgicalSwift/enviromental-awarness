@@ -1,6 +1,8 @@
+
 import { Controller, Get, Post, Body, Res } from '@nestjs/common';
 import { Response } from 'express';
-import  ChatbotService  from './chat/chatbot.service'; // Named import
+import { ChatbotService } from './chat/chatbot.service'; // Named import
+
 import { UserService } from './model/user.service';
 import * as dotenv from 'dotenv';
 
@@ -35,6 +37,7 @@ export class AppController {
         },
       });
     } catch (error) {
+      console.log('error')
       res.status(500).send({
         status: {
           code: 1,
