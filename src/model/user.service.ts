@@ -134,6 +134,8 @@ import { dynamoDBClient } from 'src/config/database-config.service';
 import { User } from './user.entity';
 import { v4 as uuidv4 } from 'uuid';
 import { DocumentClient } from 'aws-sdk/clients/dynamodb';
+import { PutCommand, QueryCommand } from '@aws-sdk/lib-dynamodb';
+
 
 const { USERS_TABLE } = process.env;
 

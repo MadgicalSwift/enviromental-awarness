@@ -7,6 +7,8 @@ import axios from 'axios';
 import * as fs from 'fs';
 import * as path from 'path';
 import { generateRandomIntegerUpToMax } from 'src/utils/utils';
+import { localisedStrings } from 'src/i18n/en/localised-strings';
+import { MixpanelService } from 'src/mixpanel/mixpanel.service';
 
 dotenv.config();
 
@@ -18,9 +20,8 @@ export class SwiftchatMessageService extends MessageService {
   baseUrl = `${this.apiUrl}/${this.botId}/messages`;
   private quizData: any;
 
-  constructor(private readonly userService: UserService) {
-    super();
-   
+  constructor(private readonly userService: UserService, protected readonly mixpanel: MixpanelService) {
+    super(mixpanel)
   }
   async onModuleInit() {
     const filePath = path.resolve(__dirname,"..", "..",'quiz.json');
@@ -149,7 +150,7 @@ async askQuestion(from: string, questionIndex: number, topicSelected:string, set
 }
 
 
-  async handleQuizResponse(from: string, button_response: any, topicSelected: string, setNumber: number, currentIndex: number, score:number): Promise<void> {
+  async handleQuizResponse(from: string, button_response: any, language: string, topicSelected: string, setNumber: number, currentIndex: number, score:number): Promise<void> {
     try {
       const topic =this.quizData.topics.find((t: any) => t.name === topicSelected);
 
@@ -165,9 +166,25 @@ async askQuestion(from: string, questionIndex: number, topicSelected:string, set
         await this.sendTextMessage(from, currentQuestion.responseMessage);
         await this.sendTextMessage(from, currentQuestion.explanation);
         await this.userService.saveCurrentScore(from,this.botId, score+1)
+        
+        this.mixpanel.track('Taking_Quiz', {
+        distinct_id: from,
+        language: language,
+        question: currentQuestion,
+        user_answer: button_response?.body,
+        answer_is: 'correct',
+        });
       } else {
-        await this.sendTextMessage(from, `❌ Not quite. The correct answer is: ${currentQuestion.correctAnswer}`);
+        await this.sendTextMessage(from, `${localisedStrings.notquite} ${currentQuestion.correctAnswer}`);
         await this.sendTextMessage(from, currentQuestion.explanation);
+
+        this.mixpanel.track('Taking_Quiz', {
+          distinct_id: from,
+          language: language,
+          question: currentQuestion,
+          user_answer: button_response?.body,
+          answer_is: 'incorrect',
+          });
       }
 
       if (currentIndex === (questions.length - 1)) {
@@ -190,23 +207,23 @@ async askQuestion(from: string, questionIndex: number, topicSelected:string, set
       const topic = this.quizData.topics.find((t: any) => t.name === topicSelected);
 
       const selectedSet = topic.sets[setNumber];
-      await this.sendTextMessage(from, `You’ve completed the quiz on ${topic.name}! Here’s how you did:`);
-      await this.sendTextMessage(from, `You answered ${score} out of ${selectedSet.questions.length} questions correctly!`);
+      await this.sendTextMessage(from, `${localisedStrings.completedQuiz} ${topic.name}! Here’s how you did:`);
+      await this.sendTextMessage(from, localisedStrings.quizResults(score, selectedSet.questions.length));
 
       const button_data = {
         buttons: [
           {
             type: 'solid',
-            body: "Retake Quiz",
-            reply: "Retake Quiz",
+            body: localisedStrings.retakeQuiz,
+            reply: localisedStrings.retakeQuiz,
           },
           {
             type: 'solid',
-            body: "Choose Another Topic",
-            reply: "Choose Another Topic",
+            body: localisedStrings.chooseAnotherTopic,
+            reply: localisedStrings.chooseAnotherTopic,
           },
         ],
-        body: "Would you like to retake the quiz or choose another topic?",
+        body: localisedStrings.choice,
       };
 
       await this.createButtons(from, button_data);
@@ -221,17 +238,17 @@ async askQuestion(from: string, questionIndex: number, topicSelected:string, set
       const topic = this.quizData.topics.find((t: any) => t.name === currentTopic);
      
 
-      await this.sendTextMessage(from, `Great choice! Here’s what you need to know about ${topic.name}:`);
+      await this.sendTextMessage(from, `${localisedStrings.description} ${topic.name}:`);
       await this.sendTextMessage(from, topic.fullExplanation);
       const button_data = {
         buttons: [
           {
             type: 'solid',
-            body: "Got it, let's quiz!",
-            reply: "Got it, let's quiz!",
+            body: localisedStrings.gotitquiz,
+            reply: localisedStrings.gotitquiz,
           }
         ],
-        body: "Choose Option"
+        body: localisedStrings.chooseoption
       };
       await this.createButtons(from, button_data);
     } catch (error) {
@@ -251,16 +268,16 @@ async askQuestion(from: string, questionIndex: number, topicSelected:string, set
         buttons: [
           {
             type: 'solid',
-            body: "Got it, let's quiz!",
-            reply: "Got it, let's quiz!",
+            body: localisedStrings.gotitquiz,
+            reply: localisedStrings.gotitquiz,
           },
           {
             type: 'solid',
-            body: 'Tell me more.',
-            reply: 'Tell me more.',
+            body: localisedStrings.tellmemore,
+            reply: localisedStrings.tellmemore,
           },
         ],
-        body: "Choose Option"
+        body: localisedStrings.chooseoption
       };
      
       console.log(button_data);
@@ -279,7 +296,7 @@ async askQuestion(from: string, questionIndex: number, topicSelected:string, set
       }));
       const button_data = {
         buttons: buttons,
-        body: "Choose Topics"
+        body: localisedStrings.choose
       };
       
       await this.createButtons(from, button_data);
@@ -295,13 +312,13 @@ async askQuestion(from: string, questionIndex: number, topicSelected:string, set
         buttons: [
           {
             type: 'solid',
-            body: "Yes, let's start!",
-            reply: "Yes, let's start!",
+            body: localisedStrings.start,
+            reply: localisedStrings.start,
           },
           {
             type: 'solid',
-            body: 'Not right now.',
-            reply: 'Not right now.',
+            body: localisedStrings.notrightnow,
+            reply: localisedStrings.notrightnow,
           },
         ],
         body: "Choose option"

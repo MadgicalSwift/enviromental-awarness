@@ -2,9 +2,13 @@ import { Injectable } from '@nestjs/common';
 import axios from 'axios';
 import { CustomException } from 'src/common/exception/custom.exception';
 import { localisedStrings } from 'src/i18n/en/localised-strings';
+import { MixpanelService } from 'src/mixpanel/mixpanel.service';
 
 @Injectable()
 export abstract class MessageService {
+  constructor(
+    protected readonly mixpanel: MixpanelService
+  ) {}
   async prepareWelcomeMessage() {
     return localisedStrings.welcomeMessage;
   }
@@ -31,7 +35,7 @@ export abstract class MessageService {
   abstract sendWelcomeMessage(from: string, language: string);
   abstract endSession(from: string, language: string);
   abstract askQuestion(from: string,questionIndex: number, topicSelected:string, setNumber:number, score:number ): Promise<void>;
-  abstract handleQuizResponse(from: string, button_response: any, topicSelected: string, setNumber: number, currentIndex: number, score:number);
+  abstract handleQuizResponse(from: string, button_response: any, language:string ,topicSelected: string, setNumber: number, currentIndex: number, score:number);
   abstract handleTellMeMore(from: string, currentTopic: string);
   abstract handleTopicClick(from: string, button_response: string);
   abstract createTopicButtonsFromQuizData(from: string);

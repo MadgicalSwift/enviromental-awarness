@@ -5,12 +5,15 @@ import { UserService } from 'src/model/user.service';
 import * as fs from 'fs';
 import * as path from 'path';
 import { generateRandomIntegerUpToMax } from 'src/utils/utils';
+import { MixpanelService } from 'src/mixpanel/mixpanel.service';
+
 
 @Injectable()
 export class ChatbotService {
   private readonly intentClassifier: IntentClassifier;
   private readonly message: MessageService;
   private readonly userService: UserService;
+  private readonly mixpanel: MixpanelService;
   private quizData: any;
   
   async onModuleInit() {
@@ -23,15 +26,14 @@ export class ChatbotService {
     intentClassifier: IntentClassifier,
     message: MessageService,
     userService: UserService,
+    mixpanel: MixpanelService,
   ) {
     this.intentClassifier = intentClassifier;
     this.message = message;
     this.userService = userService;
-
-  
+    this.mixpanel= mixpanel;
   }
 
-  
 
   public async processMessage(body: any): Promise<any> {
     const { from, button_response, text } = body;
@@ -55,6 +57,11 @@ export class ChatbotService {
         await this.userService.saveCurrentSetNumber(from,botId, currentSetNumber)
         await this.userService.saveCurrentTopic(from,botId,button_response.body)
         await this.userService.saveCurrentScore(from,botId, 0)
+        this.mixpanel.track('Button_Click',{
+          distinct_id:from,
+          language:userData.language,
+          button:button_response?.body,
+        });
       }
       else if (button_response.body === "Retake Quiz") {
 
@@ -62,28 +69,57 @@ export class ChatbotService {
         await this.message.askQuestion(from,0, userData.currentTopic, userData.setNumber, 0 )
         await this.userService.saveQuestIndex(from,botId, 0)
         await this.userService.saveCurrentScore(from,botId, 0)
-  
+        
+        this.mixpanel.track('Button_Click',{
+          distinct_id: from,
+          language: userData.language,
+          button: button_response?.body,
+        });
       } 
       else if (button_response.body === "Choose Another Topic" || button_response.body === "Yes, let's start!" || button_response.body === "Go to topic selection") {
              
         await this.message.createTopicButtonsFromQuizData(from);
+
+        this.mixpanel.track('Button_Click',{
+          distinct_id: from,
+          language: userData.language,
+          button: button_response?.body,
+        });
       }
        else if (button_response.body === "Not right now.") {
         this.message.endSession(from, button_response.body);
+
+        this.mixpanel.track('Button_Click',{
+          distinct_id:from,
+          language:userData.language,
+          button:button_response?.body,
+        });
       } 
 
       else if ( button_response.body === "Tell me more.") {
         await this.message.handleTellMeMore(from, userData.currentTopic);
+        
+        this.mixpanel.track('Button_Click',{
+          distinct_id:from,
+          language:userData.language,
+          button:button_response?.body,
+        });
       } 
       else if (button_response.body === "Got it, let's quiz!") {
         
         await this.message.askQuestion(from,0, userData.currentTopic, userData.setNumber, 0 )
         await this.userService.saveQuestIndex(from,botId, 0)
         await this.userService.saveCurrentScore(from,botId, 0)
+
+        this.mixpanel.track('Button_Click',{
+          distinct_id:from,
+          language:userData.language,
+          button:button_response?.body,
+        });
       } 
       else{
         
-        await this.message.handleQuizResponse(from, button_response, userData.currentTopic, userData.setNumber, userData.currentQuestIndex, userData.score);
+        await this.message.handleQuizResponse(from, button_response, userData.language, userData.currentTopic, userData.setNumber, userData.currentQuestIndex, userData.score);
         await this.userService.saveQuestIndex(from,botId,  userData.currentQuestIndex+1)
       }
     } else {

@@ -5,7 +5,7 @@ import { MessageService } from './message.service'; // Update the path to messag
 import { CustomException } from 'src/common/exception/custom.exception';
 import { SwiftchatMessageService } from 'src/swiftchat/swiftchat.service';
 import { UserModule } from 'src/model/user.module';
-
+import { MixpanelService } from 'src/mixpanel/mixpanel.service';
 @Module({
   imports: [
     UserModule, // Import UserModule to make UserService available
@@ -16,6 +16,7 @@ import { UserModule } from 'src/model/user.module';
       useClass: SwiftchatMessageService, // Provide the WhatsAppMessageService implementation
     },
     CustomException,
+    MixpanelService
   ],
   exports: [MessageService, CustomException],
 })
