@@ -6,6 +6,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { generateRandomIntegerUpToMax } from 'src/utils/utils';
 import { MixpanelService } from 'src/mixpanel/mixpanel.service';
+import { localisedStrings } from 'src/i18n/en/localised-strings';
 
 
 @Injectable()
@@ -63,7 +64,7 @@ export class ChatbotService {
           button:button_response?.body,
         });
       }
-      else if (button_response.body === "Retake Quiz") {
+      else if (button_response.body === localisedStrings.retakeQuiz) {
 
         
         await this.message.askQuestion(from,0, userData.currentTopic, userData.setNumber, 0 )
@@ -76,7 +77,7 @@ export class ChatbotService {
           button: button_response?.body,
         });
       } 
-      else if (button_response.body === "Choose Another Topic" || button_response.body === "Yes, let's start!" || button_response.body === "Go to topic selection") {
+      else if (button_response.body === localisedStrings.chooseAnotherTopic || button_response.body === localisedStrings.start || button_response.body === localisedStrings.gototopics) {
              
         await this.message.createTopicButtonsFromQuizData(from);
 
@@ -86,7 +87,7 @@ export class ChatbotService {
           button: button_response?.body,
         });
       }
-       else if (button_response.body === "Not right now.") {
+       else if (button_response.body === localisedStrings.notrightnow) {
         this.message.endSession(from, button_response.body);
 
         this.mixpanel.track('Button_Click',{
@@ -96,7 +97,7 @@ export class ChatbotService {
         });
       } 
 
-      else if ( button_response.body === "Tell me more.") {
+      else if ( button_response.body === localisedStrings.tellmemore) {
         await this.message.handleTellMeMore(from, userData.currentTopic);
         
         this.mixpanel.track('Button_Click',{
@@ -105,7 +106,7 @@ export class ChatbotService {
           button:button_response?.body,
         });
       } 
-      else if (button_response.body === "Got it, let's quiz!") {
+      else if (button_response.body === localisedStrings.gotitquiz) {
         
         await this.message.askQuestion(from,0, userData.currentTopic, userData.setNumber, 0 )
         await this.userService.saveQuestIndex(from,botId, 0)

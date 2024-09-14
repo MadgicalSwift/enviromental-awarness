@@ -1,4 +1,4 @@
 export const localisedStrings = {
-  welcomeMessage: `नमस्कार 👋 Khabri Media Bot में आपका स्वागत है! 🤖 हमारे पास दुनिया भर से समाचार 🌍, आपके क्षेत्र से समाचार 🏡`,
+  welcomeMessage: 'Welcome to the Environmental Awareness and Sustainability Bot! 🌍 Let’s learn about how we can protect our planet. Are you ready to explore topics like recycling, climate change, and more?',
   language_changed: 'भाषा बदलकर हिंदी हो गई',
 };

@@ -11074,9 +11074,8 @@
                     },
                     {
                       "question": "What is 'passive solar design'?",
-                      "options": ["A design approach that uses building orientation and materials to maximize solar energy use without mechanical systems", 
-                      "The use of active solar panels to generate electricity", "A method for insulating buildings to reduce heat loss", "A technique for collecting and storing rainwater"],
-                      "correctAnswer": "A design approach that uses building orientation and materials to maximize solar energy use without mechanical systems",
+                      "options": ["Using building design to maximize sunlight", "Using solar panels for electricity", "Insulating buildings to save heat", "Collecting and storing rainwater"],
+                      "correctAnswer": "Using building design to maximize sunlight",
                       "responseMessage": "✅ Correct! Passive solar design maximizes solar energy use through building orientation and materials.",
                       "explanation": "It enhances energy efficiency by utilizing natural sunlight."
                     },
@@ -16189,7 +16188,7 @@
                     }
                   ]
                 }
-                ]
+              ]
             },
             {
             
@@ -17645,9 +17644,10 @@
             "options": ["To have a net zero carbon footprint", "To increase carbon emissions", "To promote fossil fuel use", "To reduce energy efficiency"],
             "correctAnswer": "To have a net zero carbon footprint",
             "responseMessage": "✅That's right! Carbon neutrality aims for a net zero carbon footprint.",
-            "explanation": "Achieving carbon neutrality involves balancing out emissions by reducing and offsetting them."}
-            
-          ]}]}, 
+            "explanation": "Achieving carbon neutrality involves balancing out emissions by reducing and offsetting them."
+            }
+          ]
+        }, 
           {
             "setNumber": 21,
             "questions": [
@@ -18877,12 +18877,8 @@
                 "explanation": "Adaptation helps safeguard investments and ensures that development efforts are not undermined by climate impacts."
               }
             ]
-          }
-          
-          
-          
-          
-
-          
-           
-          ]}
+          } 
+        ]
+      }
+    ]
+  }

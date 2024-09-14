@@ -126,13 +126,16 @@ async askQuestion(from: string, questionIndex: number, topicSelected:string, set
     let selectedTopic = this.quizData.topics.find((t: any) => t.name === topicSelected);
 
     let selectedSet = selectedTopic.sets[setNumber];
-
+    console.log(selectedSet);
     const questions = selectedSet.questions;
 
     if (questionIndex < questions.length) {
       const question = questions[questionIndex];
+
       const button_data = {
-        buttons: question.options.map(option => ({
+
+        buttons: question.options.map(option => (  {
+          
           type: 'solid',
           body: option,
           reply: option,
@@ -163,7 +166,8 @@ async askQuestion(from: string, questionIndex: number, topicSelected:string, set
       const isCorrect = button_response.body === currentQuestion.correctAnswer;
 
       if (isCorrect) {
-        await this.sendTextMessage(from, currentQuestion.responseMessage);
+        let correctans= localisedStrings.correctans(currentQuestion.correctAnswer);
+        await this.sendTextMessage(from, correctans);
         await this.sendTextMessage(from, currentQuestion.explanation);
         await this.userService.saveCurrentScore(from,this.botId, score+1)
         
@@ -175,7 +179,8 @@ async askQuestion(from: string, questionIndex: number, topicSelected:string, set
         answer_is: 'correct',
         });
       } else {
-        await this.sendTextMessage(from, `${localisedStrings.notquite} ${currentQuestion.correctAnswer}`);
+        let notright= localisedStrings.notquite(currentQuestion.correctAnswer);
+        await this.sendTextMessage(from, notright);
         await this.sendTextMessage(from, currentQuestion.explanation);
 
         this.mixpanel.track('Taking_Quiz', {
@@ -207,7 +212,7 @@ async askQuestion(from: string, questionIndex: number, topicSelected:string, set
       const topic = this.quizData.topics.find((t: any) => t.name === topicSelected);
 
       const selectedSet = topic.sets[setNumber];
-      await this.sendTextMessage(from, `${localisedStrings.completedQuiz} ${topic.name}! Here’s how you did:`);
+      await this.sendTextMessage(from, localisedStrings.completedQuiz );
       await this.sendTextMessage(from, localisedStrings.quizResults(score, selectedSet.questions.length));
 
       const button_data = {
