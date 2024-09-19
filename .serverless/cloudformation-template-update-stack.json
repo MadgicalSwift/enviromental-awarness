@@ -162,7 +162,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/environment-quiz/dev/1725018796596-2024-08-30T11:53:16.596Z/environment-quiz.zip"
+          "S3Key": "serverless/environment-quiz/dev/1726721408277-2024-09-19T04:50:08.277Z/environment-quiz.zip"
         },
         "Handler": "dist/lambda.handler",
         "Runtime": "nodejs20.x",
@@ -180,14 +180,14 @@
         "ApiLogGroup"
       ]
     },
-    "ApiLambdaVersiona2JovmNlB0bvGamM8ctTWZYD6OSSksFlRvtuo8adB5s": {
+    "ApiLambdaVersiona6SUU40dYjPsw4FZCbiW13tNnrqRQ1laYgmj7pVEgM": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ApiLambdaFunction"
         },
-        "CodeSha256": "bQvNkx9Or2sKCoH9BaBmA4KLMrS/TR86dkm/MapGvgg="
+        "CodeSha256": "jmovpT/9zxjT+T9cGHgMKos6nTilraLuEmgrKSKnmpY="
       }
     },
     "ApiGatewayRestApi": {
@@ -263,7 +263,7 @@
         "ApiLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1725018783414": {
+    "ApiGatewayDeployment1726721394005": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -325,7 +325,7 @@
     "ApiLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ApiLambdaVersiona2JovmNlB0bvGamM8ctTWZYD6OSSksFlRvtuo8adB5s"
+        "Ref": "ApiLambdaVersiona6SUU40dYjPsw4FZCbiW13tNnrqRQ1laYgmj7pVEgM"
       },
       "Export": {
         "Name": "sls-environment-quiz-dev-ApiLambdaFunctionQualifiedArn"

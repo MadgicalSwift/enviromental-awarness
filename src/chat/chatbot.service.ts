@@ -88,7 +88,7 @@ export class ChatbotService {
         });
       }
        else if (button_response.body === localisedStrings.notrightnow) {
-        this.message.endSession(from, button_response.body);
+        await this.message.endSession(from, button_response.body);
 
         this.mixpanel.track('Button_Click',{
           distinct_id:from,
